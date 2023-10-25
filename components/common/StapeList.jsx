@@ -18,7 +18,7 @@ const StapeList = () => {
         <div className="start__single__item column__space--secondary">          
           <h4>Innovation</h4>
           <p className="neutral-bottom">
-          The world is constantly evolving, and so are we. We're committed to pioneering new solutions, tools, and technologies that redefine the real estate experience.
+          The world is constantly evolving, and so are we. We&apos;re committed to pioneering new solutions, tools, and technologies that redefine the real estate experience.
           </p>
         </div>
       </div>
@@ -54,7 +54,7 @@ const StapeList = () => {
           
           <h4>Sustainability</h4>
           <p className="neutral-bottom">
-          Our responsibility extends beyond business. We're dedicated to promoting sustainable practices, ensuring that our operations have a positive impact on the environment and communities we serve.
+          Our responsibility extends beyond business. We&apos;re dedicated to promoting sustainable practices, ensuring that our operations have a positive impact on the environment and communities we serve.
           </p>
         </div>
       </div>

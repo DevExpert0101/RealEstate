@@ -120,7 +120,7 @@ const FeatureList = () => {
             <h4>Cost-Effective</h4>
             <p className="neutral-bottom">
                 Compare property prices and get the best deals.
-                Save on agent fees with platform's competitive pricing structure.
+                Save on agent fees with platform &apos;s competitive pricing structure.
             </p>
             </div>
         </div>
