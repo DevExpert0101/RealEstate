@@ -1,12 +1,12 @@
-import eight from "/public/images/gallery/eight.png";
-import five from "/public/images/gallery/five.png";
-import four from "/public/images/gallery/four.png";
-import nine from "/public/images/gallery/nine.png";
-import one from "/public/images/gallery/one.png";
-import seven from "/public/images/gallery/seven.png";
-import six from "/public/images/gallery/six.png";
-import three from "/public/images/gallery/three.png";
-import two from "/public/images/gallery/two.png";
+import eight from "/public/images/gallery/eight.webp";
+import five from "/public/images/gallery/five.webp";
+import four from "/public/images/gallery/four.webp";
+import nine from "/public/images/gallery/nine.webp";
+import one from "/public/images/gallery/one.webp";
+import seven from "/public/images/gallery/seven.webp";
+import six from "/public/images/gallery/six.webp";
+import three from "/public/images/gallery/three.webp";
+import two from "/public/images/gallery/two.webp";
 
 const imgArray = [
   {

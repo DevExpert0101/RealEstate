@@ -188,8 +188,10 @@
   }
 
   .language-select {
-    background-color: transparent;
+    // background-color: transparent;
+    background-color:#1e263a;
     border: 1px solid;
+    border-radius: 5px;
     color: $white;
     border: none;
     text-transform: uppercase;

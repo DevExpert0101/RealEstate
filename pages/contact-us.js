@@ -3,6 +3,7 @@ import Ask from "../components/contactUs/Ask";
 import Banner from "../components/contactUs/Banner";
 import ContactOverview from "../components/contactUs/ContactOverview";
 import faqData from "../data/faqData";
+import ContactInformation from "../components/contactUs/ContactInformation";
 
 const contactUs = () => {
   return (
@@ -17,7 +18,9 @@ const contactUs = () => {
       <Ask />
 
       {/* Faqs start here */}
-      <Faqs data={faqData} />
+      {/* <Faqs data={faqData} /> */}
+
+      <ContactInformation />
     </>
   );
 };

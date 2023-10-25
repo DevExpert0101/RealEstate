@@ -39,6 +39,7 @@ Footer:
 Contact Information
 Social Media Links
 Privacy Policy and Terms of Use Links
+
 2. Properties Page:
 
 Property Listings:
@@ -47,6 +48,7 @@ Grid or List View of Available Properties
 Property Thumbnails
 Basic Property Details (Type, Location, Size)
 "Invest Now" Buttons
+
 Search and Filter Options:
 
 Property Type
@@ -54,6 +56,7 @@ Location
 Price Range
 Size
 Sort and Filter Options
+
 Property Details Page:
 
 Detailed Property Description
@@ -67,26 +70,36 @@ CTA to Invest
 Mission and Vision:
 
 Platform's Mission and Vision Statement
+
+
 Team:
 
 Profiles of the Founding Team
 Their Expertise and Background
+
+
 Platform Features:
 
 Overview of Key Features and Benefits
+
+
 Testimonials:
 
 User Reviews and Testimonials
+
+
 4. How It Works Page:
 
 Tokenization Process:
 
 Step-by-Step Guide to Tokenizing Real Estate
 Visual Graphics or Videos for Clarity
+
 Investing Process:
 
 Step-by-Step Guide for Investors
 Clear Explanation of Dividend Distribution
+
 5. Blog Page:
 
 List of Blog Posts:

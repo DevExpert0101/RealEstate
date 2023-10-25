@@ -2,7 +2,7 @@ import Image from "next/image";
 import { FaStar } from "react-icons/fa";
 import Slider from "react-slick";
 
-import avatar from "/public/images/testimonial/avatar.png";
+import avatar from "/public/images/testimonial/avatar.jpg";
 
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
@@ -52,7 +52,7 @@ const TestimonialSlider = ({ cls }) => {
       <div className="container">
         <div className="testimonial__area">
           <div className="section__header">
-            <h5 className="neutral-top ">Investors Trust Us</h5>
+            <h5 className="neutral-top ">Testimonials</h5>
             <h2>Trusted by Over 40,000 Worldwide Customer since 2022</h2>
             <p className="neutral-bottom">
               We divide each property into shares so anyone can get started.

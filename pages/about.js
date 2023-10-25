@@ -6,6 +6,8 @@ import Team from "../components/about/Team";
 import Banner from "../components/common/Banner";
 import Breadcrumb from "../components/common/Breadcrumb";
 import GallerySlider from "../components/sliders/GallerySlider";
+import TestimonialSlider from "../components/sliders/TestimonialSlider";
+import Features from "../components/about/Features";
 
 const About = () => {
   return (
@@ -26,17 +28,25 @@ const About = () => {
 
       {/* Gallery Slider start here */}
       <section className="section__space">
-        <GallerySlider />
+        {/* <GallerySlider /> */}
       </section>
 
       {/* Team start here */}
       <Team />
 
+      {/* Platform features start here */}
+      <Features />
+          
+      {/* Testimonials start here */}
+      <TestimonialSlider />
+
+
       {/* Market start here */}
-      <Market />
+      {/* <Market /> */}
 
       {/* Job start here */}
-      <Job />
+      {/* <Job /> */}
+
     </>
   );
 };

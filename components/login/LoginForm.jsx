@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { GoogleLogin } from "@react-oauth/google";
 
 const LoginForm = () => {
   return (
@@ -53,7 +54,12 @@ const LoginForm = () => {
               <button type="submit" className="button button--effect">
                 Login
               </button>
+              
+            </div>            
+            <div style={{ margin: "20px"}}>
+              <GoogleLogin />  
             </div>
+            
           </form>
         </div>
       </div>

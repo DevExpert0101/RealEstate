@@ -17,7 +17,7 @@ import investor from "/public/images/icons/investor.png";
 import loan from "/public/images/icons/loan.png";
 import project from "/public/images/icons/project.png";
 import reinvest from "/public/images/icons/reinvest.png";
-import owner from "/public/images/owner.png";
+import owner from "/public/images/owner.jpg";
 
 const Details = () => {
   return (

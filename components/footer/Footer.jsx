@@ -67,18 +67,18 @@ const Footer = () => {
                   <li>
                     <Link href="/about">About Us</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/career">Careers</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/blog">Blog</Link>
                   </li>
                   <li>
                     <Link href="/contact-us">Contact Us</Link>
                   </li>
-                  <li className="neutral-bottom">
+                  {/* <li className="neutral-bottom">
                     <Link href="/affiliate-program">Affiliate</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -92,7 +92,7 @@ const Footer = () => {
                   <li>
                     <Link href="/how-it-works">How it works</Link>
                   </li>
-                  <li>
+                  {/* <li>
                     <Link href="/business-loan/application">
                       Loan Application{" "}
                     </Link>
@@ -102,7 +102,7 @@ const Footer = () => {
                   </li>
                   <li className="neutral-bottom">
                     <Link href="/support">FAQs</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -110,15 +110,15 @@ const Footer = () => {
               <div className="footer__links footer__links--alt--two">
                 <h5>Insights</h5>
                 <ul>
-                  <li>
+                  {/* <li>
                     <Link href="/support">Help Center</Link>
-                  </li>
+                  </li> */}
                   <li>
                     <Link href="/list-your-property">List Your Property</Link>
                   </li>
-                  <li className="neutral-bottom">
+                  {/* <li className="neutral-bottom">
                     <Link href="/loyality-program">Loyality program </Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>
@@ -135,9 +135,9 @@ const Footer = () => {
                   <li>
                     <Link href="/cookie-policy">Cookie Policy</Link>
                   </li>
-                  <li className="neutral-bottom">
+                  {/* <li className="neutral-bottom">
                     <Link href="/key-risks">Key Risks</Link>
-                  </li>
+                  </li> */}
                 </ul>
               </div>
             </div>

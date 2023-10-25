@@ -106,9 +106,10 @@ const PropertyCard = ({ singleData, colActiv }) => {
               </div>
               <div className="item__info">
                 <div className="item__info__single">
-                  <p>Annual Return</p>
+                  <p>Size</p>
                   <h6>
-                    {annualReturn.regular}% + {annualReturn.bonus}%
+                    {/* {annualReturn.regular}% + {annualReturn.bonus}% */}
+                    1, 500 sq ft
                   </h6>
                 </div>
                 <div className="item__info__single">

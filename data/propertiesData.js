@@ -1,9 +1,9 @@
-import grid_five from "/public/images/property/grid-five.jpg";
-import grid_four from "/public/images/property/grid-four.jpg";
-import grid_one from "/public/images/property/grid-one.jpg";
-import grid_six from "/public/images/property/grid-six.jpg";
-import grid_three from "/public/images/property/grid-three.jpg";
-import grid_two from "/public/images/property/grid-two.jpg";
+import grid_five from "/public/images/property/grid-five.webp";
+import grid_four from "/public/images/property/grid-four.webp";
+import grid_one from "/public/images/property/grid-one.webp";
+import grid_six from "/public/images/property/grid-six.webp";
+import grid_three from "/public/images/property/grid-three.webp";
+import grid_two from "/public/images/property/grid-two.webp";
 
 const propertiesData = [
   {

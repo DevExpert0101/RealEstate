@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { navData } from "./navData";
 import logo from "/public/images/logo.png";
+import { FaGlobe } from "react-icons/fa";
 
 const NavBar = () => {
   const [toggleActive, setToggleActive] = useState(false);
@@ -52,6 +53,17 @@ const NavBar = () => {
                 Join Now
                 <HiArrowNarrowRight className="fs-4" />
               </Link>
+              <div className="col-sm-3">
+                <div className="footer__language">
+                  {/* <FaGlobe className="text-white fs-5" /> */}
+                  <select className="language-select">
+                    <option value="english">En</option>
+                    <option value="australia">Aus</option>
+                    <option value="brazil">Bra</option>
+                    <option value="argentina">Arg</option>
+                  </select>
+                </div>
+              </div>
             </div>
             <button
               className={`navbar-toggler ${

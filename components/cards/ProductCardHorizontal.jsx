@@ -19,6 +19,7 @@ const ProductCardHorizontal = ({ singleItem }) => {
     type,
     distribution,
     security,
+    detailsLink,
   } = singleItem;
   return (
     <div className="row d-flex align-items-center">
@@ -87,12 +88,19 @@ const ProductCardHorizontal = ({ singleItem }) => {
           </div>
           <div className="item__info">
             <div className="item__info__single">
-              <p>Annual Return</p>
-              <h6>
-                {annualReturn.regular}% + {annualReturn.bonus}%
-              </h6>
+              <h6>Project Description</h6>
             </div>
-            <div className="item__info__single">
+              <h6>
+                {/* {annualReturn.regular}% + {annualReturn.bonus}% */}
+                The “Revest“ team is introducing a new buy to let
+                investment opportunity: A19, Vilnius I. The invest ment
+                offer consists of administrative premises, which are
+                currently being converted into studio apartments/lofts. In
+                this way, the aim is to increase the rental income of this
+                real estate project
+              </h6>
+            
+            {/* <div className="item__info__single">
               <p>Maximum Term</p>
               <h6>{max_term} Months</h6>
             </div>
@@ -103,7 +111,7 @@ const ProductCardHorizontal = ({ singleItem }) => {
             <div className="item__info__single">
               <p>Distribution</p>
               <h6>{distribution}</h6>
-            </div>
+            </div> */}
           </div>
           <div className="item__footer">
             <div className="item__security">
@@ -123,7 +131,7 @@ const ProductCardHorizontal = ({ singleItem }) => {
                 Invest Now
               </Link>
               <Link
-                href={singleItem.investLink}
+                href={singleItem.detailsLink}
                 className="button button--secondary button--effect"
               >
                 Details

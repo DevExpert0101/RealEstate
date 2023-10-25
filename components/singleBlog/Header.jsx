@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Social from "../social/Social";
-import avatar from "/public/images/blog/avatar.png";
+import avatar from "/public/images/blog/avatar.jpg";
 import calendar from "/public/images/blog/calendar.png";
 import singlePoster from "/public/images/blog/single-poster.png";
 import watch from "/public/images/blog/watch.png";

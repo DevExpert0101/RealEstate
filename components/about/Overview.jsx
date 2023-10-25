@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaPlay } from "react-icons/fa";
 import aboutVideoIllustration from "/public/images/about-video-illustration.png";
+import videoIllustration from "/public/images/video-illustration.png";
 import annualReturn from "/public/images/icons/annual-return.png";
 import completed from "/public/images/icons/completed.png";
 import Investors from "/public/images/icons/investors.png";
@@ -13,13 +14,13 @@ const Overview = () => {
         <div className="container">
           <div className="video__area">
             <Image
-              src={aboutVideoIllustration}
+              src={videoIllustration}
               alt="about Video illustration"
             />
             <div className="video__btn">
               <Link
                 className="video__popup"
-                href="https://www.youtube.com/watch?v=LCihLrSehCo"
+                href="https://www.youtube.com/watch?v=4LTwd2C9w88"
                 title="YouTube video player"
                 target={"_blank"}
               >

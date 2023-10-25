@@ -1,7 +1,10 @@
-import lily from "/public/images/property/lily.png";
+import lily from "/public/images/property/Lily.webp";
 import Log from "/public/images/property/los.png";
 import san from "/public/images/property/san.png";
-import weldon from "/public/images/property/weldon.png";
+import weldon from "/public/images/property/Weldon.webp";
+import LosAngeles from "/public/images/property/LosAngeles.webp";
+import Sanfrancisco from "/public/images/property/San Francisco.webp";
+
 
 const featuredData = [
   {
@@ -12,7 +15,7 @@ const featuredData = [
     investAmount: "4,94,196",
     investPer: 54.73,
     goal: "1,00,000",
-    img: Log,
+    img: LosAngeles,
     annualReturn: {
       regular: 7.5,
       bonus: 3,
@@ -32,7 +35,7 @@ const featuredData = [
     investAmount: "1,64,296",
     investPer: 64.73,
     goal: "5,00,000",
-    img: san,
+    img: Sanfrancisco,
     annualReturn: {
       regular: 3.5,
       bonus: 6,
@@ -92,7 +95,7 @@ const featuredData = [
     investAmount: "1,64,296",
     investPer: 64.73,
     goal: "5,00,000",
-    img: san,
+    img: Sanfrancisco,
     annualReturn: {
       regular: 3.5,
       bonus: 6,
@@ -112,7 +115,7 @@ const featuredData = [
     investAmount: "4,94,196",
     investPer: 54.73,
     goal: "1,00,000",
-    img: Log,
+    img: LosAngeles,
     annualReturn: {
       regular: 7.5,
       bonus: 3,

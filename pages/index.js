@@ -9,6 +9,10 @@ import Market from "../components/home/Market";
 import Numbers from "../components/home/Numbers";
 import SmartInvestor from "../components/home/SmartInvestor";
 import TestimonialSlider from "../components/sliders/TestimonialSlider";
+import AboutCEE from "../components/home/AboutCEE";
+import LatestPost from "../components/singleBlog/LatestPost";
+
+
 
 export default function Home() {
   return (
@@ -23,27 +27,32 @@ export default function Home() {
       <FeaturedProperties />
 
       {/* All Products start here */}
-      <AllProducts />
+      {/* <AllProducts /> */}
 
       {/* Smart Investor start here */}
-      <SmartInvestor />
+      {/* <SmartInvestor /> */}
 
       {/* about CEEtokenized */}
+      <AboutCEE />
 
       {/* Stape start here */}
-      <Stape bg={true} />
+      {/* <Stape bg={true} /> */}
 
       {/* Video Popup start here */}
-      <VideoPopup />
+      {/* <VideoPopup /> */}
 
       {/* Numbers start here */}
-      <Numbers />
+      {/* <Numbers /> */}
 
       {/* Testimonial Slider start here */}
-      <TestimonialSlider />
+      {/* <TestimonialSlider /> */}
+
+      {/* Blogs are here */}
+      <LatestPost />
+      
 
       {/* Market start here */}
-      <Market />
+      {/* <Market /> */}
     </>
   );
 }
