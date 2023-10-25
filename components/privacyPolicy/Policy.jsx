@@ -1,10 +1,10 @@
 const Policy = () => {
   return (
-    <section class="terms section__space">
-      <div class="container">
-        <div class="terms-area">
-          <div class="terms__single">
-            <h3 class="neutral-top">
+    <section className="terms section__space">
+      <div className="container">
+        <div className="terms-area">
+          <div className="terms__single">
+            <h3 className="neutral-top">
               We&#39;re always looking for new ways to provide privacy for our
               customers.
             </h3>
@@ -27,8 +27,8 @@ const Policy = () => {
             </ul>
           </div>
           <hr />
-          <div class="terms__single">
-            <h3 class="neutral-top">
+          <div className="terms__single">
+            <h3 className="neutral-top">
               Your data is safe with us, we will not share any information with
               external sources.
             </h3>
@@ -51,8 +51,8 @@ const Policy = () => {
             </ul>
           </div>
           <hr />
-          <div class="terms__single">
-            <h3 class="neutral-top">
+          <div className="terms__single">
+            <h3 className="neutral-top">
               We&#39;re always looking for new ways to provide privacy for our
               customers.
             </h3>
