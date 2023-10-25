@@ -99,10 +99,10 @@ const Footer = () => {
                   </li>
                   <li>
                     <Link href="/property/alert">Property Alerts</Link>
-                  </li>
+                  </li> */}
                   <li className="neutral-bottom">
                     <Link href="/support">FAQs</Link>
-                  </li> */}
+                  </li>
                 </ul>
               </div>
             </div>
