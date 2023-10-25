@@ -112,10 +112,7 @@ const Footer = () => {
             <div className="col-md-8">
               <div className="footer__copyright">
                 <p>
-                  Copyright &copy; Revest | Designed by{" "}
-                  <Link href="https://themeforest.net/user/pixelaxis">
-                    Pixelaxis
-                  </Link>
+                  Copyright &copy; 2023 - CEETOKENIZED.COM - All Rights Reserved
                 </p>
               </div>
             </div>

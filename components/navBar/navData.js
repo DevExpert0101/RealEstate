@@ -64,17 +64,12 @@ export const navData = [
   },
   {
     id: "m@06",
-    itm: "Dashboard",
-    url: "/dashboard",
-  },
-  {
-    id: "m@07",
     itm: "Contact",
     url: "/contact-us",
     dropdown: false,
   },
   {
-    id: "m@08",
+    id: "m@07",
     itm: "Legal and Compliance",
     url: "/privacy-policy",
     dropdown: false,

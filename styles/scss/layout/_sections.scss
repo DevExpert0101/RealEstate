@@ -1021,6 +1021,7 @@
   left: 0px;
   right: 0px;
   bottom: 0px;
+  
   @include responsive(md) {
     padding-left: 12px;
     padding-right: 12px;
