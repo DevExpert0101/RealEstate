@@ -29,11 +29,12 @@ const LeftSideMenu = ({ activSidebar, setActivSidebar }) => {
         <div className="sidenav__wrapper">
           <ul>
             {[
+              ["Profile", "/dashboard/profile", account],
               ["Dashboard", "/dashboard", dashboard],
               ["Investments", "/dashboard/investments", investments],
               ["Transactions", "/dashboard/transaction", transactions],
               ["Withdraw", "/dashboard/withdraw", withdraw],
-              ["Account", "/dashboard/account", account],
+              ["Settings & Preferences", "/dashboard/account", account],
             ].map(([item, url, icon], i) => (
               <li key={item}>
                 <Link

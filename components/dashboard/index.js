@@ -12,6 +12,9 @@ import LastIncome from "./home/LastIncome";
 import NewInvestments from "./home/NewInvestments";
 import SingleItem from "./home/SingleItem";
 import LeftSideMenu from "./LeftSideMenu";
+import PersonalInformation from "./profile/PersonalInfo";
+import PortfolioSummary from "./profile/PortfolioSummary";
+import InvestmentHistory from "./profile/InvestmentHistory";
 
 export {
   Footer,
@@ -20,6 +23,9 @@ export {
   Security,
   General,
   Billing,
+  PersonalInformation,
+  PortfolioSummary,
+  InvestmentHistory,
   CollapseSidebar,
   BankAccount,
   Chart,

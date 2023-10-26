@@ -54,11 +54,11 @@ const LoginForm = () => {
               <button type="submit" className="button button--effect">
                 Login
               </button>
-              
+              <div style={{ marginTop: "20px" }} className="googlelogin">
+                <GoogleLogin shape="re"/>  
+              </div>
             </div>            
-            <div style={{ margin: "20px"}}>
-              <GoogleLogin />  
-            </div>
+            
             
           </form>
         </div>

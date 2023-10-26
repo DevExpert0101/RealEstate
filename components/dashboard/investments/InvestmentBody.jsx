@@ -104,7 +104,7 @@ const InvestmentBody = () => {
                       <Link href="#">Generate Report</Link>
                     </div>
                     <div id="investmentChartTwo">
-                      {/* Generate Report */}
+                      Generate Report
                       <Chart />
                     </div>
                   </div>
