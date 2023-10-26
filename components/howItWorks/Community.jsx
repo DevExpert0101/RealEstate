@@ -14,7 +14,7 @@ const Community = () => {
             <h2>Join Thousands of Investors</h2>
             <p className="neutral-bottom">
               Individual and institutional investors invest $10–$100,000 per
-              deal on Revest.
+              deal on CEETokenized.
             </p>
           </div>
           <div className="comunity-wrapper section__space">

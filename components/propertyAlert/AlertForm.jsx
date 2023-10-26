@@ -9,7 +9,7 @@ const AlertForm = () => {
               Never Miss <br />A New Property!
             </h2>
             <p className="neutral-bottom">
-              Get the Revest Property Alert for a complete summary of our new
+              Get the CEETokenized Property Alert for a complete summary of our new
               properties.
             </p>
           </div>

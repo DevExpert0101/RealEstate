@@ -21,7 +21,7 @@ const Stape = ({ bg, cls }) => {
             </h5>
             <h2>It&apos;s Easy to Get Started.</h2>
             <p className="neutral-bottom">
-              Signing up with Revest is simple and only takes a few minutes. We
+              Signing up with CEETokenized is simple and only takes a few minutes. We
               can automatically connect with more than 3,500 banks, so no
               complicated paperwork is required to fund your account.
             </p>

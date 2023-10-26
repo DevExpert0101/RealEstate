@@ -56,7 +56,7 @@ const TestimonialSlider = ({ cls }) => {
             <h2>Trusted by Over 40,000 Worldwide Customer since 2022</h2>
             <p className="neutral-bottom">
               We divide each property into shares so anyone can get started.
-              Kindly check out our Investors say about revest.
+              Kindly check out our Investors say about CEETokenized.
             </p>
           </div>
           <Slider {...settings} className="testimonial__item__wrapper">

@@ -10,7 +10,7 @@ const ApplicationBody = () => {
           <InvestmentCard />
         </div>
 
-        {/* Revest Statistic */}
+        {/* CEETokenized Statistic */}
         <RevestStatistic />
       </div>
     </section>

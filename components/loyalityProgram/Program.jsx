@@ -37,7 +37,7 @@ const Program = () => {
           <div className="section__header">
             <h2 className="neutral-top">Loyalty Program</h2>
             <p className="neutral-bottom">
-              Revest Loyalty Program aims to reward our most active and larger
+              CEETokenized Loyalty Program aims to reward our most active and larger
               investors, whilst at the same time encouraging investors to
               minimize risk by spreading their investments into multiple
               investment opportunities.

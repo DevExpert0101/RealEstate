@@ -48,11 +48,17 @@ const Footer = () => {
             <div className="col-md-12 col-lg-4 col-xl-4">
               <div className="footer__intro">
                 <Link href="/">
-                  <Image src={logoLight} alt="logoLight" />
+                  <Image style={{width: "50%", height: "50%"}} src={logoLight} alt="logoLight" />
                 </Link>
                 <p>
-                  Revest is a platform offering anyone the ability to invest and
-                  potentially earn money from property at the click of a button
+                  <i className="fa-solid fa-location-dot"></i>1134 W Hubbard St.
+                  Floor 3,<br></br> Chicago, IL, 60642, USA
+                </p>
+                <p>
+                  <i className="fa-solid fa-phone"></i>(814) 277-4833
+                </p>
+                <p>
+                  <i className="fa-solid fa-envelope"></i>support@ceetokenized.com
                 </p>
                 <div className="social">
                   {/* Social icon here */}

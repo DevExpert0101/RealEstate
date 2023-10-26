@@ -62,7 +62,7 @@ const Portfolio = () => {
                     </h5>
                     <h2>Real Estate Investing For Everybody.</h2>
                     <p>
-                      Investing with Revest, is similar to owning a rental
+                      Investing with CEETokenized, is similar to owning a rental
                       property, however with us you don&#39;t have to worry
                       about day-to-day property management and in the periods of
                       vacancy the borrower is required to distribute

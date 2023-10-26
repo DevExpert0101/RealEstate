@@ -19,7 +19,7 @@ const OverView = () => {
           our founding team as we rapidly grow our client base. You will report
           directly to our Head of Investor Relations and will spend the majority
           of your time interacting with our investors to build new
-          relationships, help them onboard onto the Revest platform and
+          relationships, help them onboard onto the CEETokenized platform and
           generally ensure they receive a world-className experience. If you
           enjoy a fast-paced environment, an energetic and social culture, and
           are looking for an opportunity where you can scale your career
@@ -30,8 +30,8 @@ const OverView = () => {
         <h3>Responsibilities</h3>
         <ul>
           <li>
-            Help strengthen and support relationships with Revest’s existing
-            clients, and generally delight Revest&rsquo;s clients in every way
+            Help strengthen and support relationships with CEETokenized’s existing
+            clients, and generally delight CEETokenized&rsquo;s clients in every way
             possible.
           </li>
           <li>Expertly respond to and address client questions.</li>
@@ -59,8 +59,8 @@ const OverView = () => {
         <h3>Requirements</h3>
         <ul>
           <li>
-            Help strengthen and support relationships with Revest’s existing
-            clients, and generally delight Revest&rsquo;s clients in every way
+            Help strengthen and support relationships with CEETokenized’s existing
+            clients, and generally delight CEETokenized&rsquo;s clients in every way
             possible.
           </li>
           <li>Expertly respond to and address client questions.</li>
@@ -88,8 +88,8 @@ const OverView = () => {
         <h3>Benefits</h3>
         <ul>
           <li>
-            Help strengthen and support relationships with Revest’s existing
-            clients, and generally delight Revest&rsquo;s clients in every way
+            Help strengthen and support relationships with CEETokenized’s existing
+            clients, and generally delight CEETokenized&rsquo;s clients in every way
             possible.
           </li>
           <li>Expertly respond to and address client questions.</li>

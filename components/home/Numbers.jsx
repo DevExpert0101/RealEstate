@@ -12,7 +12,7 @@ const Numbers = () => {
           <div className="row d-flex align-items-center">
             <div className="col-lg-6">
               <div className="content column__space">
-                <h5 className="neutral-top">With Revest anyone can invest!</h5>
+                <h5 className="neutral-top">With CEETokenized anyone can invest!</h5>
                 <h2>Numbers Said More Than Words</h2>
                 <p>
                   our low minimums give you the flexibility to invest the right

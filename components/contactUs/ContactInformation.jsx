@@ -16,7 +16,7 @@ const ContactInformation = () => {
                 <div className="start__single__item column__space--secondary">
                     <h4>Email</h4>
                     <p className="neutral-bottom">
-                        contact@revest.com
+                        contact@ceetokenized.com
                     </p>
                 </div>
             </div>

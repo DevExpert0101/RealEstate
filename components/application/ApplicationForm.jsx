@@ -10,7 +10,7 @@ const ApplicationForm = () => {
             <h2>Grow Your Business Faster!</h2>
             <p className="neutral-bottom">
               Getting a business loan secured through collateral is much easier
-              and faster with Revest
+              and faster with CEETokenized
             </p>
           </div>
           <form action="#" name="property__alert__from" method="post">

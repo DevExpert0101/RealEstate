@@ -18,7 +18,7 @@ const Market = () => {
                 <h5 className="neutral-top">Earn Money</h5>
                 <h2>Affiliate Program</h2>
                 <p>
-                  Earn commission from every revest new user you help to
+                  Earn commission from every CEETokenized new user you help to
                   bring.Join our affiliate program, refer your audience, and
                   earn revenue.
                 </p>

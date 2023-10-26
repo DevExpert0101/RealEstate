@@ -17,9 +17,9 @@ const Market = () => {
                 <h5 className="neutral-top">
                   Real exposure to the real estate market
                 </h5>
-                <h2>You Invest. Revest Does the Rest</h2>
+                <h2>You Invest. CEETokenized Does the Rest</h2>
                 <p>
-                  Transparent Real Estate Investing Through Revest.Join us and
+                  Transparent Real Estate Investing Through CEETokenized.Join us and
                   experience a smarter,better way to invest in real estate
                 </p>
                 <Link href="" className="button button--effect">
@@ -42,7 +42,7 @@ const Market = () => {
                 <Image src={gain} alt="Gain Instant" />
                 <h4>Gain Instant</h4>
                 <p className="neutral-bottom">
-                  Revest performs deep due diligence on sponsors, giving
+                  CEETokenized performs deep due diligence on sponsors, giving
                   investors peace of mind.
                 </p>
               </div>
@@ -52,7 +52,7 @@ const Market = () => {
                 <Image src={noticed} alt="Get noticed" />
                 <h4>Get Noticed</h4>
                 <p className="neutral-bottom">
-                  REVEST VERIFIED sponsor profiles are available to accredited
+                  CEETokenized VERIFIED sponsor profiles are available to accredited
                   real estate investment investors.
                 </p>
               </div>

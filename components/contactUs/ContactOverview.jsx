@@ -10,7 +10,7 @@ const contactOverviewtaData = [
     tilte: "Send Us an Email",
     desc: "Lorem ipsum dolor sit amet consectetur adipiscing.",
     link: "mailto:example@example.com",
-    contact: "contact@revest.com",
+    contact: "contact@ceetokenized.com",
   },
   {
     id: "$k5d$5",

@@ -92,7 +92,7 @@ const ProductCardHorizontal = ({ singleItem }) => {
             </div>
               <h6>
                 {/* {annualReturn.regular}% + {annualReturn.bonus}% */}
-                The “Revest“ team is introducing a new buy to let
+                The “CEETokenized“ team is introducing a new buy to let
                 investment opportunity: A19, Vilnius I. The invest ment
                 offer consists of administrative premises, which are
                 currently being converted into studio apartments/lofts. In

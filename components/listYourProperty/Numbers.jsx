@@ -13,9 +13,9 @@ const Numbers = () => {
             <div className="col-lg-6">
               <div className="content column__space">
                 <h5 className="neutral-top">Your success is our success.</h5>
-                <h2>Why sell through Revest?</h2>
+                <h2>Why sell through CEETokenized?</h2>
                 <p>
-                  Revest enables real estate owners to sell their properties
+                  CEETokenized enables real estate owners to sell their properties
                   through its platform. Submit your property quickly and easily!
                 </p>
 

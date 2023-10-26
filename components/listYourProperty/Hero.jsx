@@ -16,7 +16,7 @@ const Hero = () => {
                   Receiving rent from a commercial property and now want to sell
                   it instantly? List your property and convert the lakhs of
                   annual rent you are receiving into Crores by selling to 5000+
-                  real estate investors on Revest.
+                  real estate investors on CEETokenized.
                 </p>
                 <div className="hero__cta__group">
                   <Link

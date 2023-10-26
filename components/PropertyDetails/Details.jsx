@@ -46,7 +46,7 @@ const Details = () => {
                   <div className="group__one">
                     <h4>Project Description</h4>
                     <p>
-                      The “Revest“ team is introducing a new buy to let
+                      The “CEETokenized“ team is introducing a new buy to let
                       investment opportunity: A19, Vilnius I. The invest ment
                       offer consists of administrative premises, which are
                       currently being converted into studio apartments/lofts. In
@@ -129,7 +129,7 @@ const Details = () => {
                       <TermSingleCard img={project} p="Project" heading="40%" />
                       <TermSingleCard
                         img={reinvest}
-                        p="Revest"
+                        p="CEETokenized"
                         heading="Up to 20%"
                       />
                     </div>
@@ -140,7 +140,7 @@ const Details = () => {
                       <h5>The project owner (borrower)</h5>
                       <p>
                         MB „Rego Properties“ - is a company serving as a special
-                        vehicle for revest investments. The CEO of the company -
+                        vehicle for CEETokenized investments. The CEO of the company -
                         Andrius Rimdeika is a former investment banker, who has
                         worked in investment firms such as ”Morgan Stanley” and
                         “Prime investment”.
