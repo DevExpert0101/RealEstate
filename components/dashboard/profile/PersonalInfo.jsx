@@ -1,6 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
-import ryan from "/public/images/team/ryan.png";
 import userData from "../../../data/userData";
 
 const PersonalInformation = () => {

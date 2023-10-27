@@ -37,12 +37,37 @@ const Details = () => {
                     Browse Gallery
                   </Link>
                   <div className="intro">
+                    
+
                     <h3>Los Angeles</h3>
                     <p className="d-flex align-items-center gap-1">
                       <FaMapMarkerAlt />
                       8706 Herrick Ave, Los Angeles
                     </p>
-                  </div>
+                                        
+
+                    <Link
+                      href="/dashboard/tokenize"
+                      className="button button-effect d-none d-sm-inline-flex"
+                      style={{
+                        float: "right",
+                        marginTop: "-70px",
+                        marginRight: "300px"
+                      }}>
+                        Tokenize
+                    </Link>
+                    <Link
+                      href="/dashboard/tokenize"
+                      className="button button-effect d-none d-sm-inline-flex"
+                      style={{
+                        float: "right",
+                        marginTop: "-70px",
+                        marginRight: "10px"
+                      }}>
+                        Allocated CEE Tokens
+                    </Link>
+                    </div>
+
                   <div className="group__one">
                     <h4>Project Description</h4>
                     <p>

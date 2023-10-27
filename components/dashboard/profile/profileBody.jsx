@@ -5,6 +5,7 @@ import {
   Billing,
   CollapseSidebar,
   General,
+  InvestmentHistory,
   LeftSideMenu,
   PersonalInformation,
   Security,
@@ -60,7 +61,7 @@ const ProfileBody = () => {
                     <div className="account-content_wrapper">
                       {tabItem == "personalinformation" && <PersonalInformation />}
                       {tabItem == "portfoliosummary" && <PorfolioSummary />}
-                      {tabItem == "investmenthistory" && <Security />}
+                      {tabItem == "investmenthistory" && <InvestmentHistory />}
                     </div>
                   </div>
                 </div>

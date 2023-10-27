@@ -6673,6 +6673,7 @@
   }
   .account-info__btn-wrapper {
     display: flex;
+    justify-content: space-around;
     align-items: center;
     gap: 20px;
     flex-wrap: wrap;

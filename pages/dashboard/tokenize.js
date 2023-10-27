@@ -1,13 +1,13 @@
 import { Footer, Header } from "../../components/dashboard";
-import TransactionBody from "../../components/dashboard/transaction/TransactionBody";
+import TokenizeBody from "../../components/dashboard/tokenize/TokenizeBody";
 import ScrollToTop from "../../components/scrollToTop/ScrollToTop";
 
-const Transaction = () => {
+const Tokenize = () => {
   return (
     <>
       <Header />
 
-      <TransactionBody />
+      <TokenizeBody />
 
       <Footer />
 
@@ -16,8 +16,8 @@ const Transaction = () => {
   );
 };
 
-export default Transaction;
+export default Tokenize;
 
-Transaction.getLayout = function getLayout(page) {
+Tokenize.getLayout = function getLayout(page) {
   return <>{page}</>;
 };

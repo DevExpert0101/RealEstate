@@ -7,7 +7,7 @@ import calendar from "/public/images/icons/calendar.png";
 import dashboard from "/public/images/icons/dashboard.png";
 import investments from "/public/images/icons/investments.png";
 import logout from "/public/images/icons/logout.png";
-import transactions from "/public/images/icons/transactions.png";
+import tokeinze from "/public/images/icons/transactions.png";
 import withdraw from "/public/images/icons/withdraw.png";
 
 const LeftSideMenu = ({ activSidebar, setActivSidebar }) => {
@@ -32,7 +32,7 @@ const LeftSideMenu = ({ activSidebar, setActivSidebar }) => {
               ["Profile", "/dashboard/profile", account],
               ["Dashboard", "/dashboard", dashboard],
               ["Investments", "/dashboard/investments", investments],
-              ["Transactions", "/dashboard/transaction", transactions],
+              ["Tokenize", "/dashboard/tokenize", tokeinze],
               ["Withdraw", "/dashboard/withdraw", withdraw],
               ["Settings & Preferences", "/dashboard/account", account],
             ].map(([item, url, icon], i) => (
