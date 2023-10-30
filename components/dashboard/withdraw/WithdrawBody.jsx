@@ -24,11 +24,11 @@ const WithdrawBody = () => {
 
                 <div className="main__content-dashboard">
                   <div className="breadcrumb-dashboard">
-                    <h5>Withdraw</h5>
+                    <h5>Submit Property</h5>
                     <div>
                       <Link href="/dashboard">Home</Link>
                       <BsArrowRight />
-                      <Link href="#">Withdraw</Link>
+                      <Link href="#">Submit Property</Link>
                     </div>
                   </div>
                   <div className="withdraw-funds">

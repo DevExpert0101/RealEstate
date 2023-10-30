@@ -1,14 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import { CollapseSidebar, LeftSideMenu } from "../index";
 import tableImg from "/public/images/table-img.png";
 import { PersonalInformation, PortfolioSummary, InvestmentHistory } from "../index";
-import SubmitBody from "../submit/SubmitBody";
+import FileUpload from "./FileUpload";
+
 
 const Rental = () =>  {
-  return(
+    return(
     <form action="#" name="save__from" method="post" className="save__form">
       <div className="row">
         <div className="col-sm-4">
@@ -365,7 +366,9 @@ const SelectDetails = () => {
 const SelectType = () => {
   const [tabItem, setTabItem] = useState("general");
 
-  return (         
+  return (
+    
+                    
         <div className="tokenize__style">
           <h5 style={{ textAlign: "center", marginBottom: "20px"}}>Select Type</h5>
           <div className="account-info__btn-wrapper">
@@ -397,12 +400,31 @@ const SelectType = () => {
   )
 }
 
-const TokenizeBody = () => {
+const SubmitBody = () => {
+    const [imgsSrc, setImgsSrc] = useState([]);
+    const onChange = (e) => {
+        for (const file of e.target.files) {
+            const reader = new FileReader();
+            reader.readAsDataURL(file);
+            reader.onload = () => {
+                setImgsSrc((imgs) => [...imgs, reader.result]);
+            };
+
+            reader.onerror = () => {
+                console.log(reader.error);
+            };
+        }
+    };
+
+    useEffect(() => {
+
+    })
+    
+
   const [tabItem, setTabItem] = useState("general");
   const [activSidebar, setActivSidebar] = useState(false);
 
   return (
-    <div>
     <div className="dashboard section__space__bottom">
       <div className="container">
         <div className="dashboard__area">
@@ -420,35 +442,82 @@ const TokenizeBody = () => {
 
                 <div className="main__content-dashboard">
                   <div className="breadcrumb-dashboard">
-                    <h5>Tokenization</h5>
+                    <h5>Submit Property</h5>
                     <div>
                       <Link href="/dashboard">Home</Link>
                       <BsArrowRight />
-                      <Link href="#">Tokenization</Link>
+                      <Link href="#">Submit</Link>
                     </div>
                   </div>
                   <div className="investment-table investment-table-two">
                     
                     <div className="account-info">
-                    <div className="account-info__btn-wrapper">
-                      {[
-                        ["Existing", "existing"],
-                        ["Envisioned", "envisioned"],                        
-                      ].map(([value, slag]) => (
-                        <button
-                          key={slag}
-                          className={`account-info__btn button button--effect ${
-                            tabItem === slag && "account-info__btn-active"
-                          }`}
-                          onClick={() => setTabItem(slag)}
-                        >
-                          {value}
-                        </button>
-                      ))}
-                    </div>
                     <div className="account-content_wrapper">
-                      {tabItem == "existing" && <SelectType />}
-                      {tabItem == "envisioned" && <SelectType />}
+                      {/* {tabItem == "existing" && <SelectType />}
+                      {tabItem == "envisioned" && <SelectType />} */}
+                      <form action="#" name="save__from" method="post" className="save__form">
+                        <div className="row">
+                            <div className="col-sm-12">
+                            <div className="input input--secondary">
+                                <label htmlFor="saveLocation">Location</label>
+                                <input
+                                type="text"
+                                name="save__location"
+                                id="saveLocation"
+                                placeholder="Location"
+                                required="required"
+                                />
+                            </div>
+                            </div>
+                            </div>
+                        <div className="row">
+                            <div className="col-sm-12">
+                            <div className="input input--secondary">
+                                <label htmlFor="saveDescription">Description</label>
+                                <textarea
+                                type="text"
+                                name="save__description"
+                                id="saveDescription"
+                                placeholder="Description"
+                                required="required"
+                                />
+                            </div>
+                            </div>
+                            <div className="col-sm-12">
+                            <div className="input input--secondary">
+                                <label htmlFor="saveReasonsToInvest">Reasons to invest</label>
+                                <textarea
+                                type="text"
+                                name="save_reason_invest"
+                                id="saveReasonsToInvest"
+                                placeholder="Reasons to Invest"
+                                required="required"
+                                />
+                            </div>
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-sm-12">
+                            <div className="input input--secondary">
+                                <label htmlFor="saveAboutProjectOwner">About project owner</label>
+                                <textarea
+                                type="text"
+                                row
+                                name="save_about_project_owner"
+                                id="saveAboutProjectOwner"
+                                placeholder="About Project Owner"
+                                required="required"
+                                />
+                            </div>
+                            </div>                            
+                        </div>  
+                        <div>        
+                            <FileUpload />
+                        </div>
+                        <button type="submit" className="button button--effect" style={{ marginTop: "20px"}}>
+                                Save
+                            </button>
+                        </form>
                       
                     </div>
                   </div>
@@ -460,9 +529,7 @@ const TokenizeBody = () => {
         </div>
       </div>
     </div>
-            <SubmitBody />
-    </div>
   );
 };
 
-export default TokenizeBody;
+export default SubmitBody;

@@ -24,7 +24,7 @@ const Numbers = () => {
                     Let us know about your property
                   </Link>
                 </p>
-                <Link href="/login" className="button button--effect">
+                <Link href="/dashboard/submit" className="button button--effect">
                   Submit Your Property
                 </Link>
               </div>
