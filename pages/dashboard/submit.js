@@ -1,13 +1,13 @@
 import { Footer, Header } from "../../components/dashboard";
 import ScrollToTop from "../../components/scrollToTop/ScrollToTop";
-// import SubmitBody from "../../components/dashboard/submit/SubmitBody";
+import SubmitBody from "../../components/dashboard/submit/SubmitBody";
 
 const Withdraw = () => {
   return (
     <>
       <Header />
 
-      {/* <SubmitBody /> */}
+      <SubmitBody />
 
       <Footer />
 

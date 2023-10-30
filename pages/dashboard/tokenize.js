@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Footer, Header } from "../../components/dashboard";
 import TokenizeBody from "../../components/dashboard/tokenize/TokenizeBody";
 import ScrollToTop from "../../components/scrollToTop/ScrollToTop";
