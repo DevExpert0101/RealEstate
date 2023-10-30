@@ -38,7 +38,7 @@ const NavBar = () => {
       >
         <div className="container">
           <Link href="/" className="navbar-brand">
-            <Image className="logo" src={logo} alt="logo" loading="lazy" />
+            <Image className="logo" src={logo} alt="logo" loading="lazy" style={{ width: "200px", height: "50px"}} />
           </Link>
           <div className="navbar__out order-2 order-xl-3">
             <div className="nav__group__btn">

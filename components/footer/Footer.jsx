@@ -48,7 +48,7 @@ const Footer = () => {
             <div className="col-md-12 col-lg-4 col-xl-4">
               <div className="footer__intro">
                 <Link href="/">
-                  <Image style={{width: "50%", height: "50%"}} src={logoLight} alt="logoLight" />
+                  <Image style={{width: "100%", height: "100%"}} src={logoLight} alt="logoLight" />
                 </Link>
                 <p>
                   <i className="fa-solid fa-location-dot"></i>1134 W Hubbard St.

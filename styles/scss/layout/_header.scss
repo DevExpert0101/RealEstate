@@ -46,7 +46,7 @@ header {
 }
 
 .logo {
-  max-width: 140px;
+  max-width: 400px;
   height: auto;
   @include responsive(xl) {
     height: 40px;
