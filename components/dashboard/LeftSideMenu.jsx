@@ -32,9 +32,9 @@ const LeftSideMenu = ({ activSidebar, setActivSidebar }) => {
               ["Profile", "/dashboard/profile", account],
               ["Dashboard", "/dashboard", dashboard],
               ["Investments", "/dashboard/investments", investments],
-              ["Tokenize", "/dashboard/tokenize", tokeinze],
+              ["Tokenize Property", "/dashboard/tokenize", tokeinze],
               // ["Withdraw", "/dashboard/withdraw", withdraw],
-              ["Submit Property", "/dashboard/submit", withdraw],
+              // ["Submit Property", "/dashboard/submit", withdraw],
               ["Settings & Preferences", "/dashboard/account", account],
             ].map(([item, url, icon], i) => (
               <li key={item}>

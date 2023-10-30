@@ -5,7 +5,8 @@ import { BsArrowRight } from "react-icons/bs";
 import { CollapseSidebar, LeftSideMenu } from "../index";
 import tableImg from "/public/images/table-img.png";
 import { PersonalInformation, PortfolioSummary, InvestmentHistory } from "../index";
-import SubmitBody from "../submit/SubmitBody";
+// import SubmitBody from "../submit/SubmitBody";
+import FileUpload from "./FileUpload";
 
 const Rental = () =>  {
   return(
@@ -348,12 +349,47 @@ const SelectDetails = () => {
               required="required"
               />
           </div>
+          
         </div>
+        
       </div>
       <div>        
       </div>
+      
+       {/* Submit Property part */}
+       <div className="col-sm-12">
+          <div className="input input--secondary">
+              <label htmlFor="saveReasonsToInvest">Reasons to invest</label>
+              <textarea
+              type="text"
+              name="save_reason_invest"
+              id="saveReasonsToInvest"
+              placeholder="Reasons to Invest"
+              required="required"
+              />
+          </div>
+        </div>
+        <div className="col-sm-12">
+          <div className="input input--secondary">
+              <label htmlFor="saveAboutProjectOwner">About project owner</label>
+              <textarea
+              type="text"
+              row
+              name="save_about_project_owner"
+              id="saveAboutProjectOwner"
+              placeholder="About Project Owner"
+              required="required"
+              />
+          </div>
+        </div>     
+        
+        <div>        
+            <FileUpload />
+        </div>
+
+
       <div>        
-        <button type="submit" className="button button--effect">
+        <button type="submit" className="button button--effect" style={{ marginTop: "30px"}}>
           Save Changes
         </button>
       </div>
@@ -459,8 +495,7 @@ const TokenizeBody = () => {
           </div>
         </div>
       </div>
-    </div>
-            <SubmitBody />
+    </div>            
     </div>
   );
 };
