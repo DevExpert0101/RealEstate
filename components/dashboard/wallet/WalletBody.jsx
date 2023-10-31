@@ -212,9 +212,10 @@ const WalletBody = () => {
                                 <tr key={i}>
                                   <td>
                                     
-                                    0xc58ab41ce2...
+                                    0xc58ab4e2...
                                   </td>
                                   <td>Transfer</td>
+                                  <td>18472822</td>
                                   <td>16 sec ago</td>
                                   <td>0x0e2485d..</td>
                                   <td>0x2ab4ed2..</td>
