@@ -1,13 +1,13 @@
 import { Footer, Header } from "../../components/dashboard";
-import ProfileBody from "../../components/dashboard/profile/profileBody";
 import ScrollToTop from "../../components/scrollToTop/ScrollToTop";
+import StakeBody from "../../components/dashboard/stake/StakeBody";
 
-const Profile = () => {
+const Stake = () => {
   return (
     <>
       <Header />
 
-      <ProfileBody />
+      <StakeBody />
 
       <Footer />
 
@@ -16,8 +16,8 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default Stake;
 
-Profile.getLayout = function getLayout(page) {
+Stake.getLayout = function getLayout(page) {
   return <>{page}</>;
 };

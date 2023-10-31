@@ -535,6 +535,30 @@ const TokenizeBody = () => {
                     </div>
                   </div>
                   </div>
+
+                  <div className="breadcrumb-dashboard" style={{ marginTop: "20px"}}>
+                    <h5>Incoming Pool</h5>
+                  </div>
+                  <div className="investment-table investment-table-two">                    
+                    <div className="account-info">
+                    <div className="account-info__btn-wrapper">                      
+                    </div>
+                    <div className="row">
+                      <div className="col-sm-3">
+                        <div className="input input--secondary">
+                          <label htmlFor="saveYearBuilt">Incoming Pool</label>
+                          <input
+                            type="number"
+                            name="save__incomping_pool"
+                            id="saveIncomingPool"
+                            placeholder="Incoming Pool"
+                            required="required"
+                            />
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                  </div>
                 </div>
               </div>
             </div>

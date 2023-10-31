@@ -7051,6 +7051,18 @@
   }
 }
 
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background-color: #ddd;
+}
+
+.progress {
+  height: 100%;
+  background-color: #4e0dff; /* Change this to your desired color */
+  transition: width 0.2s ease-in;
+}
+
 /* ==== 
  --------- (4.4) all sections styles end ---------
  ==== */

@@ -7,7 +7,7 @@ const Income = () => {
     <>
       <div className="balance-report">
         <div>
-          <h4>€537,00</h4>
+          <h4>CEE 537,00</h4>
           <p className="secondary">Monthly Income</p>
         </div>
         <div className="dashboard-balance-report select">

@@ -32,22 +32,22 @@ const Filter = () => {
                 <select className="border-1 w-100 text-capitalize">
                   <option data-display="Location">Select Location</option>
                   <option value="angeles">Hungry</option>
-                  <option value="angeles">Poland</option>
-                  <option value="angeles">Czechia</option>
-                  <option value="angeles">Bulgaria</option>
-                  <option value="angeles">Estonia</option>
-                  <option value="angeles">Latvia</option>
-                  <option value="angeles">Albania</option>
-                  <option value="angeles">Romania</option>
-                  <option value="angeles">Serbia</option>
-                  <option value="angeles">Slovakia</option>
-                  <option value="angeles">Bosnia and Herzegovina</option>
-                  <option value="angeles">North Macedonia</option>
-                  <option value="angeles">Slovenia</option>
-                  <option value="angeles">Kosovo</option>
-                  <option value="angeles">Lithuania</option>
-                  <option value="angeles">Moldova</option>
-                  <option value="angeles">Croatia</option>
+                  <option value="polabd">Poland</option>
+                  <option value="czechia">Czechia Republic</option>
+                  <option value="bulgaria">Bulgaria</option>
+                  <option value="estonia">Estonia</option>
+                  <option value="latvia">Latvia</option>
+                  <option value="albania">Albania</option>
+                  <option value="romania">Romania</option>
+                  <option value="serbia">Serbia</option>
+                  <option value="slovakia">Slovakia</option>
+                  <option value="bosnia">Bosnia and Herzegovina</option>
+                  <option value="north">North Macedonia</option>
+                  <option value="slovenia">Slovenia</option>
+                  <option value="kosovo">Kosovo</option>
+                  <option value="lithuania">Lithuania</option>
+                  <option value="moldova">Moldova</option>
+                  <option value="croatia">Croatia</option>
                 </select>
               </div>
             </div>
