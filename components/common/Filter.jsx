@@ -31,10 +31,23 @@ const Filter = () => {
                 <span className="location__select"></span>
                 <select className="border-1 w-100 text-capitalize">
                   <option data-display="Location">Select Location</option>
-                  <option value="angeles">Los Angeles</option>
-                  <option value="francis">San Francisco, CA</option>
-                  <option value="weldon">The Weldon</option>
-                  <option value="diego">San Diego</option>
+                  <option value="angeles">Hungry</option>
+                  <option value="angeles">Poland</option>
+                  <option value="angeles">Czechia</option>
+                  <option value="angeles">Bulgaria</option>
+                  <option value="angeles">Estonia</option>
+                  <option value="angeles">Latvia</option>
+                  <option value="angeles">Albania</option>
+                  <option value="angeles">Romania</option>
+                  <option value="angeles">Serbia</option>
+                  <option value="angeles">Slovakia</option>
+                  <option value="angeles">Bosnia and Herzegovina</option>
+                  <option value="angeles">North Macedonia</option>
+                  <option value="angeles">Slovenia</option>
+                  <option value="angeles">Kosovo</option>
+                  <option value="angeles">Lithuania</option>
+                  <option value="angeles">Moldova</option>
+                  <option value="angeles">Croatia</option>
                 </select>
               </div>
             </div>
