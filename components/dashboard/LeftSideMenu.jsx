@@ -35,6 +35,7 @@ const LeftSideMenu = ({ activSidebar, setActivSidebar }) => {
               ["Tokenize Property", "/dashboard/tokenize", tokeinze],
               ["Stake", "/dashboard/stake", withdraw],
               ["Wallet", "/dashboard/wallet", withdraw],
+              ["Income Pools", "/dashboard/income/", withdraw],
               ["Settings & Preferences", "/dashboard/account", account],
             ].map(([item, url, icon], i) => (
               <li key={item}>

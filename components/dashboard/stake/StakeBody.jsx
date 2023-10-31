@@ -84,6 +84,23 @@ const StakeBody = () => {
                                   CEE Stake
                                 </label>
                                 <ProgressBar />
+                                <div style={{ display: "flex", flexDirection: "row"}}>
+
+                                <button
+                                    type="submit"
+                                    className="button button--effect"
+                                    style={{ marginTop: "20px",  height: "30px" }}
+                                    >
+                                    Unstake
+                                </button>
+                                <button
+                                    type="submit"
+                                    className="button button--effect"
+                                    style={{ marginTop: "20px", marginLeft:"5px",  height: "30px" }}
+                                    >
+                                    Redeem
+                                </button>
+                                </div>
                               </div>
                             </div>
                           </div>
@@ -95,6 +112,7 @@ const StakeBody = () => {
                         >
                           <div className="account-info__btn-wrapper"></div>
                           <div className="row">
+                            
                             <div className="col-sm-4">
                               <div className="input input--secondary">
                                 <label htmlFor="saveYearBuilt">
@@ -130,6 +148,7 @@ const StakeBody = () => {
                         >
                           <div className="account-info__btn-wrapper"></div>
                           <div className="row">
+                            
                             <div className="col-sm-3">
                               <div className="input input--secondary">
                                 <label htmlFor="saveYearBuilt">
