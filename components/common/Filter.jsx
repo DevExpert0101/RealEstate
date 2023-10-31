@@ -44,7 +44,9 @@ const Filter = () => {
                 <select className="border-1 w-100 text-capitalize">
                   <option data-display="Property">Property Type</option>
                   <option value="commercial">Commercial</option>
+                  <option value="residential">Mixed-used</option>
                   <option value="residential">Residential</option>
+                  <option value="residential">Retail</option>
                 </select>
               </div>
             </div>
