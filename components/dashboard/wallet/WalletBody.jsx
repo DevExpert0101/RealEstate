@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { BsArrowRight } from "react-icons/bs";
 import {
@@ -8,6 +9,9 @@ import {
   LeftSideMenu,
   Security,
 } from "../index";
+import explore from "/public/images/icons/explore.png";
+import wallet from "/public/images/icons/wallet.png";
+import table_img from "/public/images/table-img.png";
 
 const Send = () => {
     return (
@@ -157,8 +161,7 @@ const WalletBody = () => {
                   </div>
                   
 
-                  <div className="account-info">
-                    
+                  <div className="account-info">                    
                     <div className="account-info__btn-wrapper">
                       {[
                         ["Send", "send"],
@@ -181,6 +184,50 @@ const WalletBody = () => {
                       {tabItem == "receive" && <Receive />}
                       {tabItem == "airdrop" && <Airdrop />}
                     </div>
+                    
+                  </div>
+                  <div className="row">
+                    <div className="col-lg-12" style={{ marginTop: "30px"}}>
+                      <div className="investment-table">
+                        <div className="intro">
+                          <h5>Transactions</h5>
+                        </div>
+                        <div className="table-wrapper">
+                          <table>
+                            <thead>
+                              <tr>
+                                <th>Txn Hash</th>
+                                <th>Method</th>
+                                <th>Block</th>
+                                <th>Age</th>
+                                <th>From</th>
+                                <th>To</th>
+                                <th>Value</th>
+                                <th>Txn Fee</th>
+                                
+                              </tr>
+                            </thead>
+                            <tbody>
+                              {[...Array(5)].map((item, i) => (
+                                <tr key={i}>
+                                  <td>
+                                    
+                                    0xc58ab41ce2...
+                                  </td>
+                                  <td>Transfer</td>
+                                  <td>16 sec ago</td>
+                                  <td>0x0e2485d..</td>
+                                  <td>0x2ab4ed2..</td>
+                                  <td>0.1138 ETH</td>
+                                  <td>0.000044</td>
+                                </tr>
+                              ))}
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    
                   </div>
                 </div>
               </div>

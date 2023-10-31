@@ -32,6 +32,7 @@ const LeftSideMenu = ({ activSidebar, setActivSidebar }) => {
               ["Profile", "/dashboard/profile", account],
               ["Dashboard", "/dashboard", dashboard],
               ["Investments", "/dashboard/investments", investments],
+              ["My Property", "/dashboard/property", tokeinze],
               ["Tokenize Property", "/dashboard/tokenize", tokeinze],
               ["Stake", "/dashboard/stake", withdraw],
               ["Wallet", "/dashboard/wallet", withdraw],

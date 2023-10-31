@@ -544,7 +544,7 @@ const TokenizeBody = () => {
                     <div className="account-info__btn-wrapper">                      
                     </div>
                     <div className="row">
-                      <div className="col-sm-3">
+                      <div className="col-sm-4">
                         <div className="input input--secondary">
                           <label htmlFor="saveYearBuilt">Incoming Pool</label>
                           <input
@@ -552,6 +552,26 @@ const TokenizeBody = () => {
                             name="save__incomping_pool"
                             id="saveIncomingPool"
                             placeholder="Incoming Pool"
+                            required="required"
+                            />
+                        </div>
+                      </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div className="investment-table investment-table-two" style={{ marginTop: "30px" }}>                     
+                    <div className="account-info">
+                    <div className="account-info__btn-wrapper">                      
+                    </div>
+                    <div className="row" >
+                      <div className="col-sm-4">
+                        <div className="input input--secondary">
+                          <label htmlFor="saveYearBuilt">Wallet Address</label>
+                          <input
+                            type="number"
+                            name="save__incomping_pool"
+                            id="saveIncomingPool"
+                            placeholder="CEE Token Address"
                             required="required"
                             />
                         </div>
