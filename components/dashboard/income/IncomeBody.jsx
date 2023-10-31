@@ -46,9 +46,9 @@ const InecomeBody = () => {
                           <table>
                             <thead>
                               <tr>
-                                <th>Pool Name</th>
-                                <th>Amount Invested</th>
-                                <th>Date Invested</th>
+                                <th>Income Pool</th>
+                                <th>Assets</th>
+                                <th>Revenue(CEE)</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -58,8 +58,8 @@ const InecomeBody = () => {
                                     {/* <Image src={table_img} alt="Investment" /> */}
                                     CRO-01-ZAG
                                   </td>
-                                  <td>$500.00</td>
-                                  <td>18.03.2022</td>
+                                  <td>1</td>
+                                  <td>20,534,45</td>
                                 </tr>
                               ))}
                             </tbody>

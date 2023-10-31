@@ -16,35 +16,108 @@ const Send = () => {
         <div className="col-sm-4" style={{ alignItems: "center"}} />  
           <div className="col-sm-4" style={{ alignItems: "center"}}>
             <div className="input input--secondary">
-                <div  style={{ display: "flex", flexDirection: "row"}}>
+                <div  style={{ display: "flex", flexDirection: "row", padding: "5px"}}>
+                    <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", marginRight: "5px", width: "100px"}}>
 
-                    <label htmlFor="saveFirstName" style={{ verticalAlign: "center", marginTop: "auto"}}>To</label>
+                    <p >To</p>
+                    </div>
                     <input
                         type="text"
                         name="save__first__name"
                         id="saveFirstName"
-                        placeholder="First Name"
+                        placeholder="Account ID"
                         required="required"
                     />
                 </div>
+
+                <div  style={{ display: "flex", flexDirection: "row", padding: "5px"}}>
+                    <div style={{ display: "flex", justifyContent: "flex-end", alignItems: "center", marginRight: "5px", width: "100px"}}>
+
+                    <p >Amount</p>
+                    </div>
+                    <input
+                        type="text"
+                        name="save__first__name"
+                        id="saveFirstName"
+                        placeholder="Amount"
+                        required="required"
+                    />
+                </div>
+
+                <div style={{ marginTop: "20px"}}>
+                <button type="submit" className="button button--effect" style={{ width:"100%"}}>
+                    Connect
+                </button>
             </div>
+            </div>
+            
           </div>
           </div>
-        <div>
-          <button type="submit" className="button button--effect">
-            Save Changes
-          </button>
-        </div>
+        
       </form>
     )
 }
 
 const Receive = () => {
+    return (
 
+    
+    <form action="#" name="save__from" method="post" className="save__form">
+        <div className="row">
+        <div className="col-sm-4" style={{ alignItems: "center"}} />  
+          <div className="col-sm-4" style={{ alignItems: "center"}}>
+            <div className="input input--secondary">
+                <div  style={{ display: "flex", flexDirection: "row", padding: "5px"}}>
+                    
+
+                        <p style={{ width: "100%", textAlign: "center"}}>Please connect wallet</p>
+                    
+                </div>
+
+                
+                <div style={{ marginTop: "20px"}}>
+                <button type="submit" className="button button--effect" style={{ width:"100%"}}>
+                    Connect
+                </button>
+            </div>
+            </div>
+            
+          </div>
+          </div>
+        
+      </form>
+    )
 }
 
 const Airdrop = () => {
+    return (
+        <form action="#" name="save__from" method="post" className="save__form">
+        <div className="row">
+        <div className="col-sm-4" style={{ alignItems: "center"}} />  
+          <div className="col-sm-4" style={{ alignItems: "center"}}>
+            <div className="input input--secondary">
+                <div  style={{ display: "flex", flexDirection: "column", padding: "5px"}}>
+                        <p style={{ width: "100%", textAlign: "center"}}>Airdrop started at Aug 3.</p>
+                        <p style={{ width: "100%", textAlign: "center"}}>9995 airdrop remains</p>                    
+                </div>
 
+                <div  style={{ display: "flex", flexDirection: "column", padding: "5px"}}>
+                        <p style={{ width: "100%", textAlign: "center"}}>Airdrop 4 CEE($20)</p>
+                        <p style={{ width: "100%", textAlign: "center"}}>1CEE = $5</p>                    
+                </div>
+                
+                <div style={{ marginTop: "20px"}}>
+                <button type="submit" className="button button--effect" style={{ width:"100%"}}>
+                    Connect
+                </button>
+            </div>
+            </div>
+            
+          </div>
+          </div>
+        
+      </form>
+    )
 }
 
 const WalletBody = () => {
@@ -55,7 +128,7 @@ const WalletBody = () => {
       <div className="container">
         <div className="dashboard__area">
           <div className="row">
-            {/* @TODO: left sidebar */}
+            {/* @TODO: left sidebar */} 
             <LeftSideMenu
               activSidebar={activSidebar}
               setActivSidebar={setActivSidebar}
@@ -68,19 +141,29 @@ const WalletBody = () => {
 
                 <div className="main__content-dashboard">
                   <div className="breadcrumb-dashboard">
-                    <h5>Account</h5>
+                    <h5>Wallet</h5>
                     <div>
                       <Link href="/dashboard">Home</Link>
                       <BsArrowRight />
-                      <Link href="#">Account</Link>
+                      <Link href="#">Wallet</Link>
                     </div>
                   </div>
+
+                  <div className="breadcrumb-dashboard" >
+                    <div style={{ display: "grid", justifyContent: "center", width: "100%"}}>                                                
+                        <p style={{  textAlign: "center" , fontSize: "20px"}}>My Balance</p>  
+                        <p style={{  textAlign: "center", fontSize: "30px" }}> 3 CEE </p>                                                                                      
+                    </div>
+                  </div>
+                  
+
                   <div className="account-info">
+                    
                     <div className="account-info__btn-wrapper">
                       {[
                         ["Send", "send"],
                         ["Receive", "receive"],
-                        ["AirDrop", "airdrop"],
+                        // ["AirDrop", "airdrop"],
                       ].map(([value, slag]) => (
                         <button
                           key={slag}
@@ -95,8 +178,8 @@ const WalletBody = () => {
                     </div>
                     <div className="account-content_wrapper">
                       {tabItem == "send" && <Send />}
-                      {tabItem == "receive" && <Billing />}
-                      {tabItem == "airdrop" && <Security />}
+                      {tabItem == "receive" && <Receive />}
+                      {tabItem == "airdrop" && <Airdrop />}
                     </div>
                   </div>
                 </div>
