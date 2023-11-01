@@ -16,7 +16,7 @@ const businessData = [
       bonus: 3,
     },
     max_term: 12,
-    investLink: "/business-loan/{id}",
+    investLink: "/investment/{id}",
   },
   {
     id: "238hs72&#",
@@ -31,7 +31,7 @@ const businessData = [
       bonus: 12,
     },
     max_term: 48,
-    investLink: "/business-loan/{id}",
+    investLink: "/investment/{id}",
   },
   {
     id: "238s72&#",
@@ -46,7 +46,7 @@ const businessData = [
       bonus: 1,
     },
     max_term: 36,
-    investLink: "/business-loan/{id}",
+    investLink: "/investment/{id}",
   },
 ];
 
