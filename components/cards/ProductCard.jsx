@@ -74,7 +74,7 @@ const ProductCard = ({ singleItem }) => {
             />
           </div>
           <div className="invest__cta">
-            <Link href="/investment" className="button button--effect">
+            <Link href={investLink} className="button button--effect">
               Invest Now
             </Link>
           </div>

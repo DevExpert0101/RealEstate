@@ -120,7 +120,7 @@ const ProductCardHorizontal = ({ singleItem }) => {
               </div>
               <div className="item__security__content">
                 <p className="secondary">Security</p>
-                <h6>{security} Mortgage</h6>
+                <h6>Asset-Backed Stablecoin</h6>
               </div>
             </div>
             <div className="item__cta__group">
@@ -132,7 +132,7 @@ const ProductCardHorizontal = ({ singleItem }) => {
               </Link>
               <Link
                 href={singleItem.detailsLink}
-                className="button button--secondary button--effect"
+                className="button  button--effect"
               >
                 Details
               </Link>

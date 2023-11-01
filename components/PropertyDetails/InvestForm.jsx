@@ -58,9 +58,9 @@ const InvestForm = () => {
       </div>
       <div className="suby">
         <h5>500</h5>
-        <Link type="submit" className="button button--effect" href="/investment">
+        {/* <Link type="submit" className="button button--effect" href="/investment">
           Invest Now
-        </Link>
+        </Link> */}
         {/* <button type="submit" className="button button--effect">
           Invest Now
         </button> */}
