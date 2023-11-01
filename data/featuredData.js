@@ -24,7 +24,7 @@ const featuredData = [
     type: "Commercial",
     distribution: "Monthly",
     security: "1st-Rank",
-    investLink: "#",
+    investLink: "/investment",
     detailsLink: "/property/{id}",
   },
   {
@@ -44,7 +44,7 @@ const featuredData = [
     type: "Commercial",
     distribution: "Monthly",
     security: "1st-Rank",
-    investLink: "#",
+    investLink: "/investment",
     detailsLink: "/property/{id}",
   },
   {
@@ -64,7 +64,7 @@ const featuredData = [
     type: "Commercial",
     distribution: "Monthly",
     security: "1st-Rank",
-    investLink: "#",
+    investLink: "/investment",
     detailsLink: "/property/{id}",
   },
   {
@@ -84,7 +84,7 @@ const featuredData = [
     type: "Commercial",
     distribution: "Monthly",
     security: "1st-Rank",
-    investLink: "#",
+    investLink: "/investment",
     detailsLink: "/property/{id}",
   },
   {
@@ -104,7 +104,7 @@ const featuredData = [
     type: "Commercial",
     distribution: "Monthly",
     security: "1st-Rank",
-    investLink: "#",
+    investLink: "/investment",
     detailsLink: "/property/{id}",
   },
   {
@@ -124,7 +124,7 @@ const featuredData = [
     type: "Commercial",
     distribution: "Monthly",
     security: "1st-Rank",
-    investLink: "#",
+    investLink: "/investment",
     detailsLink: "/property/{id}",
   },
 ];

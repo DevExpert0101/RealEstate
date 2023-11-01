@@ -136,7 +136,7 @@ const PropertyCard = ({ singleData, colActiv }) => {
                   </div>
                 </div>
                 <div className="item__cta__group">
-                  <Link href={investLink} className="button button--effect">
+                  <Link href="/investment" className="button button--effect">
                     Invest Now
                   </Link>
                   <Link
@@ -161,7 +161,7 @@ const PropertyCard = ({ singleData, colActiv }) => {
                   />
                 </div>
                 <div className="invest__cta">
-                  <Link href={detailsLink} className="button button--effect">
+                  <Link href={investLink} className="button button--effect">
                     Invest Now
                   </Link>
                 </div>
