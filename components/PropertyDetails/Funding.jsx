@@ -13,9 +13,9 @@ const Funding = () => {
       <div className="project__info">
         <p className="project__has">
           <span className="project__has__investors">159 Investors</span> |{" "}
-          <span className="project__has__investors__amount">$1,94,196</span>
+          <span className="project__has__investors__amount">CEE 2,000,000</span>
         </p>
-        <p className="project__goal">$3,00,000 Goal</p>
+        <p className="project__goal">CEE 3,000,000 Goal</p>
       </div>
     </div>
   );

@@ -216,7 +216,7 @@ const Details = () => {
                       />
                     </div>
                     <h5>
-                      Available for funding: <span>€134 514</span>
+                      Available for funding: <span>CEE 3,000,000</span>
                     </h5>
                     {/* funding  */}
                     <Funding />

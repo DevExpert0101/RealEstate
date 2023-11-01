@@ -53,7 +53,7 @@ const InvestForm = () => {
         </div>
         <div className="item__security__content">
           <p className="secondary">Security</p>
-          <h6>1st-Rank Mortgage</h6>
+          <h6>Asset-Backed Stablecoin</h6>
         </div>
       </div>
       <div className="suby">
