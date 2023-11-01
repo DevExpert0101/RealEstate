@@ -124,14 +124,15 @@ const ProductCardHorizontal = ({ singleItem }) => {
               </div>
             </div>
             <div className="item__cta__group">
-              <Link
+              {/* <Link
                 href={singleItem.investLink}
                 className="button button--effect"
               >
                 Invest Now
-              </Link>
+              </Link> */}
               <Link
                 href={singleItem.detailsLink}
+                singleItem = {singleItem}
                 className="button  button--effect"
               >
                 Details

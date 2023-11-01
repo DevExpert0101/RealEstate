@@ -19,7 +19,7 @@ import project from "/public/images/icons/project.png";
 import reinvest from "/public/images/icons/reinvest.png";
 import owner from "/public/images/owner.jpg";
 
-const Details = () => {
+const Details = (singleItem) => {
   return (
     <>
       <div className="property__details__banner property__details__bg bg__img clear__top"></div>
@@ -236,7 +236,7 @@ const Details = () => {
                     </div>
                     <div className="acus__content">
                       {/* Invest Form  */}
-                      <InvestForm />
+                      <InvestForm singleItem={singleItem}/>
                     </div>
                     <p className="text-center neutral-bottom">
                       <Link href="/contact-us">Request a free callback</Link>

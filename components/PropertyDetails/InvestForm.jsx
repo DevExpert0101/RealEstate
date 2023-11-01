@@ -3,7 +3,8 @@ import Link from "next/link";
 import { FaInfoCircle } from "react-icons/fa";
 import home from "/public/images/home.png";
 
-const InvestForm = () => {
+const InvestForm = (singleItem) => {
+  const id = singleItem.id;
   return (
     <form action="#" method="post">
       <div className="input input--secondary">
@@ -58,9 +59,9 @@ const InvestForm = () => {
       </div>
       <div className="suby">
         <h5>500</h5>
-        {/* <Link type="submit" className="button button--effect" href="/investment">
+        <Link type="submit" className="button button--effect" href="/investment/{id}">
           Invest Now
-        </Link> */}
+        </Link>
         {/* <button type="submit" className="button button--effect">
           Invest Now
         </button> */}
