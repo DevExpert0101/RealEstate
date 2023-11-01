@@ -49,6 +49,7 @@ const FileUpload = () => {
     
   );
 }
+
 const Rental = () =>  {
   return(
     <form action="#" name="save__from" method="post" className="save__form">
@@ -436,9 +437,9 @@ const SelectDetails = () => {
 
 
       <div>        
-        <button type="submit" className="button button--effect" style={{ marginTop: "30px"}}>
-          Save Changes
-        </button>
+        <Link href="/dashboard/assesment" className="button button--effect" style={{ marginTop: "30px"}}> 
+        Save Changes
+        </Link>
       </div>
     </form>
 )
