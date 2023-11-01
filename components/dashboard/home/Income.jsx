@@ -8,10 +8,10 @@ const Income = () => {
       <div className="balance-report">
         <div>
           <h4>CEE 537,00</h4>
-          <p className="secondary">Monthly Income</p>
+          <p className="secondary">Volume</p>
         </div>
         <div className="dashboard-balance-report select">
-          <select className="select-balance-report ms-sm-4">
+          {/* <select className="select-balance-report ms-sm-4">
             <option value="last">Last Month</option>
             <option value="january">January</option>
             <option value="february">February</option>
@@ -25,7 +25,7 @@ const Income = () => {
             <option value="october">October</option>
             <option value="november">November</option>
             <option value="december">December</option>
-          </select>
+          </select> */}
         </div>
       </div>
       <hr />

@@ -18,11 +18,11 @@ const LastIncome = () => {
           <div className="group">
             <Image src={income} alt="Last Income" />
             <div>
-              <h6>Gerolstein | Am Rasbach 1-17</h6>
+              <h6>Property Name | CRO-01-ZAG</h6>
               <p className="secondary">18.03.2022</p>
             </div>
           </div>
-          <h6>€302,50</h6>
+          <h6>CEE 4</h6>
         </div>
       ))}
     </div>

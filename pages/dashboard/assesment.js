@@ -1,13 +1,13 @@
 import { Footer, Header } from "../../components/dashboard";
-import InecomeBody from "../../components/dashboard/income/IncomeBody";
 import ScrollToTop from "../../components/scrollToTop/ScrollToTop";
+import AssesmentBody from "../../components/dashboard/assesment/AssesmentBody";
 
 const Assesment = () => {
   return (
     <>
       <Header />
 
-      <InecomeBody />
+      <AssesmentBody />
 
       <Footer />
 
