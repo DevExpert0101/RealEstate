@@ -218,10 +218,10 @@ const StakeBody = () => {
                                     <div className="container">
                                       <div className="property__filter__area">
                                         <div className="row d-flex align-items-center">
-                                          <div className="col-lg-12 col-xl-6">
+                                          {/* <div className="col-lg-12 col-xl-6"> */}
                                             <div className="property__search__wrapper">
-                                              <form action="#" method="post">
-                                                <div className="input">
+                                              <div className="d-flex gap-3 align-items-center" method="post">
+                                                <div className="input flex-1">
                                                   <input
                                                     type="search"
                                                     name="property__search"
@@ -235,12 +235,12 @@ const StakeBody = () => {
                                                 <button
                                                   type="submit"
                                                   className="button button--effect"
-                                                  style={{ marginTop: "20px" }}
+                                                  // style={{ marginTop: "20px" }}
                                                 >
                                                   Deposit
                                                 </button>
-                                              </form>
-                                            </div>
+                                              </div>
+                                            {/* </div> */}
                                           </div>
                                         </div>
                                       </div>

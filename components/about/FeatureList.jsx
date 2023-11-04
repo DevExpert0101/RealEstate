@@ -2,13 +2,25 @@ import Image from "next/image";
 import browse from "/public/images/step/browse.png";
 import earn from "/public/images/step/earn.png";
 import invest from "/public/images/step/invest.png";
+import {featureList} from "../../constants/index"
 
 const FeatureList = () => {
   return (
     <div className="row">
+      {/* {featureList.map((feature, index) => (
+        <div key={`feature-${index}`} className="col-md-6 col-xl-4">
+        <div className="start__single__item column__space--secondary">
+          <h4>{feature.title}</h4>
+          <p className="neutral-bottom">
+            {feature.description}
+          </p>
+        </div>
+      </div>
+
+      ))} */}
       <div className="col-md-6 col-xl-4">
         <div className="start__single__item column__space--secondary">
-          <h4>Property Listings Database</h4>
+          <h4 >Property Listings Database</h4>
           <p className="neutral-bottom">
             Comprehensive listing of properties including homes, apartments, commercial spaces, and land.
             Filter and sort options based on price, location, size, and more.
@@ -17,7 +29,7 @@ const FeatureList = () => {
       </div>
       <div className="col-md-6 col-xl-4">
         <div className="start__single__item column__space--secondary">          
-          <h4>Virtual Tours</h4>
+          <h4 >Virtual Tours</h4>
           <p className="neutral-bottom">
           360-degree virtual property tours.
           Interactive floor plans for a better understanding of the property layout.
@@ -25,7 +37,7 @@ const FeatureList = () => {
         </div>
       </div>
       <div className="col-md-6 col-xl-4">
-        <div className="start__single__item">
+        <div className="start__single__item column__space--secondary">
           
           <h4>Advanced Search Algorithms</h4>
           <p className="neutral-bottom">
@@ -63,6 +75,7 @@ const FeatureList = () => {
           </p>
         </div>
       </div>
+
     <hr style={{margin: "20px"}} />
         <div className="col-md-6 col-xl-4">
             <div className="start__single__item">

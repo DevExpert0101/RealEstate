@@ -13,7 +13,7 @@ const Header = () => {
       <div className="container">
         <div className="dashboard-header__area">
           <Link href="/" className="header-logo">
-            <Image style={{ width: "12vw"}} src={logo} alt="logo" className="logo" />
+            <Image style={{ width: "140px",height: "43px"}} src={logo} alt="logo" className="logo" />
           </Link>
           <div className="dashboard-header__area-content">
             <Link className="button button--effect" href="/investment">

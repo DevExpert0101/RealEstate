@@ -36,35 +36,36 @@ const Details = (singleItem) => {
                     <FaImages />
                     Browse Gallery
                   </Link>
-                  <div className="intro">
-                    
+                  <div className="intro" style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly"}}>
+                    <div>
 
                     <h3>Los Angeles</h3>
                     <p className="d-flex align-items-center gap-1">
                       <FaMapMarkerAlt />
                       8706 Herrick Ave, Los Angeles
                     </p>
+                    </div>
                                         
+                    <Link
+                      href="#"
+                      className="button button-effect d-none d-sm-inline-flex"
+                      style={{
+                        display: "flex",
+                        flexDirection: "column"
+                      }}
+                      >
+                        <h5 
+                         style={{ color: "white"}}
+                        >
 
-                    <Link
-                      href="/dashboard/tokenize"
-                      className="button button-effect d-none d-sm-inline-flex"
-                      style={{
-                        float: "right",
-                        marginTop: "-70px",
-                        marginRight: "300px"
-                      }}>
-                        Tokenize
-                    </Link>
-                    <Link
-                      href="/dashboard/tokenize"
-                      className="button button-effect d-none d-sm-inline-flex"
-                      style={{
-                        float: "right",
-                        marginTop: "-70px",
-                        marginRight: "10px"
-                      }}>
                         Allocated CEE Tokens
+                        </h5>
+                        <p 
+                        style={{ color: "white"}}
+                        >
+
+                          3,000,000
+                        </p>
                     </Link>
                     </div>
 
