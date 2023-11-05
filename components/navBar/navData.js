@@ -74,6 +74,11 @@ export const navData = [
     url: "/privacy-policy",
     dropdown: false,
   },
+  {
+    id: "m@08",
+    itm: "Dashboard",
+    url: "/dashboard",
+  },
   // {
   //   id: "m@05",
   //   itm: "Pages",
