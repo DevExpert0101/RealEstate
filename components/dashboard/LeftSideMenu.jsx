@@ -8,7 +8,12 @@ import dashboard from "/public/images/icons/dashboard.png";
 import investments from "/public/images/icons/investments.png";
 import logout from "/public/images/icons/logout.png";
 import tokeinze from "/public/images/icons/transactions.png";
-import withdraw from "/public/images/icons/withdraw.png";
+import income from "/public/images/icons/income.png";
+import wallet from "/public/images/icons/wallet.png";
+import stake from "/public/images/icons/stake.png";
+import setting from "/public/images/icons/setting.png";
+import property from "/public/images/icons/property.png"
+
 
 const LeftSideMenu = ({ activSidebar, setActivSidebar }) => {
   // const [activSidebar, setActivSidebar] = useState(false);
@@ -32,12 +37,12 @@ const LeftSideMenu = ({ activSidebar, setActivSidebar }) => {
               ["Profile", "/dashboard/profile", account],
               ["Dashboard", "/dashboard", dashboard],
               ["Investments", "/dashboard/investments", investments],
-              ["My Property", "/dashboard/property", tokeinze],
+              ["My Property", "/dashboard/property", property],
               ["Tokenize Property", "/dashboard/tokenize", tokeinze],
-              ["Stake", "/dashboard/stake", withdraw],
-              ["Wallet", "/dashboard/wallet", withdraw],
-              ["Income Pools", "/dashboard/income/", withdraw],
-              ["Settings & Preferences", "/dashboard/account", account],
+              ["Stake", "/dashboard/stake", stake],
+              ["Wallet", "/dashboard/wallet", wallet],
+              ["Income Pools", "/dashboard/income/", income],
+              ["Settings & Preferences", "/dashboard/account", setting],
             ].map(([item, url, icon], i) => (
               <li key={item}>
                 <Link
