@@ -15,6 +15,7 @@ import LeftSideMenu from "./LeftSideMenu";
 import PersonalInformation from "./profile/PersonalInfo";
 import PortfolioSummary from "./profile/PortfolioSummary";
 import InvestmentHistory from "./profile/InvestmentHistory";
+import EarningChart from "./home/EarningChart";
 
 export {
   Footer,
@@ -29,6 +30,7 @@ export {
   CollapseSidebar,
   BankAccount,
   Chart,
+  EarningChart,
   CreditCard,
   Income,
   LastIncome,

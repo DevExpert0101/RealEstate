@@ -51,11 +51,10 @@ const Footer = () => {
                   <Image style={{width: "50%", height: "50%"}} src={logoLight} alt="logoLight" />
                 </Link>
                 <p>
-                  <i className="fa-solid fa-location-dot"></i>1134 W Hubbard St.
-                  Floor 3,<br></br> Chicago, IL, 60642, USA
+                  <i className="fa-solid fa-location-dot"></i>Divadelní 1088/22, Staré Město,<br></br> 110 00 Praha, Czech Republic
                 </p>
                 <p>
-                  <i className="fa-solid fa-phone"></i>(814) 277-4833
+                  <i className="fa-solid fa-phone"></i>+420 (602) 186 369
                 </p>
                 <p>
                   <i className="fa-solid fa-envelope"></i>support@ceetokenized.com

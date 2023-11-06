@@ -41,6 +41,7 @@ const InecomeBody = () => {
                       <div className="investment-table">
                         <div className="intro">
                           <h5>Income Pools</h5>
+                          <Link href="/dashboard/earnings" className="button button--effect">My Earnings</Link>
                         </div>
                         <div className="table-wrapper">
                           <table>
