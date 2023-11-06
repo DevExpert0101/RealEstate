@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import Social from "../social/Social";
 import logo from "/public/images/logo.png";
+import { FaGlobe, FaPhone, FaMailBulk } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -14,16 +15,32 @@ const Footer = () => {
                 <Link href="/">
                   <Image style={{ width: "50%", height: "50%"}} src={logo} alt="logo" />
                 </Link>
-                <p>
-                  <i className="fa-solid fa-location-dot"></i>1134 W Hubbard St.
-                  Floor 3, Chicago, IL, 60642, USA
-                </p>
-                <p>
-                  <i className="fa-solid fa-phone"></i>(814) 277-4833
-                </p>
-                <p>
-                  <i className="fa-solid fa-envelope"></i>support@ceetokenized.com
-                </p>
+                <div className="d-flex align-items-center ">
+                  <i className="fa-solid fa-location-dot p-3">
+                    <FaGlobe />
+                  </i>
+                  <p>
+                    Divadelní 1088/22, Staré Město,<br></br>110 00 Praha, Czech
+                    Republic
+                  </p>
+                </div>
+                <div className="d-flex align-items-center ">
+                  <i className="fa-solid fa-location-dot p-3 ">
+                    <FaPhone />
+                  </i>
+                  <p>
+                    +420 (602) 186 369
+                  </p>
+                </div>
+                <div className="d-flex align-items-center ">
+                  <i className="fa-solid fa-mail p-3">
+                    <FaMailBulk />
+                  </i>
+                  <p>
+                    support@ceetokenized.com
+                    </p>                    
+                </div>
+
               </div>
             </div>
             <div className="col-sm-6 col-md-3 col-lg-2 col-xl-2">

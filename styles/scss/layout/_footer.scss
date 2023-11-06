@@ -70,7 +70,7 @@
   p {
     color: $white;
     font-weight: 400;
-    margin-top: 23px;
+    // margin-top: 23px;
     @include responsive(xl) {
       font-size: 14px;
       line-height: 22px;
@@ -258,15 +258,18 @@
   background-color: #f6f6ff;
 
   .footer__intro {
+    i {
+      color: $theme-color;
+    }
     p {
       color: $theme-color;
       display: flex;
       align-items: center;
       gap: 10px;
-      max-width: 280px;
-      margin-top: 23px;
+      max-width: 300px;
+      // margin-top: 23px;
       @include responsive(xl) {
-        margin-top: 25px;
+        // margin-top: 25px;
       }
       @include responsive(lg) {
         margin-top: 22px;

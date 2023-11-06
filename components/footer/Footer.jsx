@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaGlobe } from "react-icons/fa";
+import { FaGlobe, FaPhone, FaMailBulk } from "react-icons/fa";
 import Social from "../social/Social";
 import footerHomeIllustration from "/public/images/footer/footer__home___illustration.png";
 import footerLeftCircle from "/public/images/footer/footer__left__circle.png";
@@ -48,17 +48,37 @@ const Footer = () => {
             <div className="col-md-12 col-lg-4 col-xl-4">
               <div className="footer__intro">
                 <Link href="/">
-                  <Image style={{width: "50%", height: "50%"}} src={logoLight} alt="logoLight" />
+                  <Image
+                    style={{ width: "50%", height: "50%" }}
+                    src={logoLight}
+                    alt="logoLight"
+                  />
                 </Link>
-                <p>
-                  <i className="fa-solid fa-location-dot"></i>Divadelní 1088/22, Staré Město,<br></br> 110 00 Praha, Czech Republic
-                </p>
-                <p>
-                  <i className="fa-solid fa-phone"></i>+420 (602) 186 369
-                </p>
-                <p>
-                  <i className="fa-solid fa-envelope"></i>support@ceetokenized.com
-                </p>
+                <div className="d-flex align-items-center ">
+                  <i className="fa-solid fa-location-dot p-3 text-light ">
+                    <FaGlobe />
+                  </i>
+                  <p>
+                    Divadelní 1088/22, Staré Město,<br></br> 110 00 Praha, Czech
+                    Republic
+                  </p>
+                </div>
+                <div className="d-flex align-items-center ">
+                  <i className="fa-solid fa-location-dot p-3 text-light ">
+                    <FaPhone />
+                  </i>
+                  <p>
+                    <i className="fa-solid fa-phone"></i>+420 (602) 186 369
+                  </p>
+                </div>
+                <div className="d-flex align-items-center ">
+                  <i className="fa-solid fa-mail p-3 text-light">
+                    <FaMailBulk />
+                  </i>
+                  <p>
+                    support@ceetokenized.com
+                    </p>
+                </div>
                 <div className="social">
                   {/* Social icon here */}
                   <Social />
