@@ -84,19 +84,19 @@ const StakeBody = () => {
                                   CEE Stake
                                 </label>
                                 <ProgressBar />
-                                <div style={{ display: "flex", flexDirection: "row"}}>
+                                <div
+                                className="d-flex justify-content-evenly" 
+                                >
 
                                 <button
                                     type="submit"
-                                    className="button button--effect"
-                                    style={{ marginTop: "20px",  height: "30px" }}
+                                    className="button button--effect mt-4"
                                     >
                                     Unstake
                                 </button>
                                 <button
                                     type="submit"
-                                    className="button button--effect"
-                                    style={{ marginTop: "20px", marginLeft:"5px",  height: "30px" }}
+                                    className="button button--effect mt-4"
                                     >
                                     Redeem
                                 </button>

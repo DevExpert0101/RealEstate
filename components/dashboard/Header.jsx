@@ -14,7 +14,7 @@ const Header = () => {
         <div className="dashboard-header__area">
           <Link href="/" className="header-logo">
             <Image
-              style={{ width: "140px", height: "43px" }}
+              style={{ width: "140px", height: "50px" }}
               src={logo}
               alt="logo"
               loading="lazy"

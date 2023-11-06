@@ -199,7 +199,7 @@ const AssesmentBody = () => {
                             John Smith - JM & Associates
                           </option>
                         </select>
-                        <p style={{ float: "right", marginRight: "10vw" }}>
+                        <p style={{marginRight: "10vw" }}>
                           Estimated Token Cost: $9999
                         </p>
                         <ul
@@ -218,7 +218,6 @@ const AssesmentBody = () => {
                           style={{
                             marginLeft: "2vw",
                             marginTop: "30px",
-                            width: "10vw",
                           }}
                         >
                           Submit

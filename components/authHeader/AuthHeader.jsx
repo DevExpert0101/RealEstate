@@ -9,7 +9,7 @@ const AuthHeader = () => {
       <nav className="navbar navbar-expand-xl">
         <div className="container">
           <Link href="/" className="navbar-brand">
-            <Image style={{ width: "50%", height: "50%"}} src={logo} alt="Logo" />
+            <Image style={{ width: "140px", height: "50px"}} src={logo} alt="Logo" />
           </Link>
           <div className="navbar__out order-2 order-xl-3">
             <div className="nav__group__btn">

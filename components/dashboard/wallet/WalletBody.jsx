@@ -13,6 +13,7 @@ import explore from "/public/images/icons/explore.png";
 import wallet from "/public/images/icons/wallet.png";
 import table_img from "/public/images/table-img.png";
 import WithdrawBody from "../withdraw/WithdrawBody";
+import transactionData from "../../../data/transactionData";
 
 const Send = () => {
   return (
@@ -393,16 +394,16 @@ const WalletBody = () => {
                               </tr>
                             </thead>
                             <tbody>
-                              {[...Array(5)].map((item, i) => (
+                              {transactionData.map((item, i) => (
                                 <tr key={i}>
-                                  <td>0xc58ab4e2...</td>
-                                  <td>Transfer</td>
-                                  <td>18472822</td>
-                                  <td>16 sec ago</td>
-                                  <td>0x0e2485d..</td>
-                                  <td>0x2ab4ed2..</td>
-                                  <td>0.1138 ETH</td>
-                                  <td>0.000044</td>
+                                  <td style={{maxWidth:"150px"}}>{item.txn}</td>
+                                  <td>{item.method}</td>
+                                  <td>{item.block}</td>
+                                  <td>{item.age}</td>
+                                  <td>{item.from}</td>
+                                  <td>{item.to}</td>
+                                  <td>{item.value}</td>
+                                  <td>{item.fee}</td>
                                 </tr>
                               ))}
                             </tbody>
