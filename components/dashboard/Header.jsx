@@ -22,7 +22,7 @@ const Header = () => {
             />
           </Link>
           <div className="dashboard-header__area-content">
-            <Link className="button button--effect" href="/investment">
+            <Link className="button button--effect" href="/property">
               <Image src={direction} alt="direction" />
               New Investments
             </Link>
