@@ -14,6 +14,7 @@ import {
 const HomeBody = () => {
   const [active, setActive] = useState(false);
   const [activSidebar, setActivSidebar] = useState(false);
+  const [kycStatus, setKYCStatus] = useState(true)
 
   return (
     <div className="dashboard section__space__bottom">
@@ -70,6 +71,10 @@ const HomeBody = () => {
                           </div>
 
                           {!active ? <BankAccount /> : <CreditCard />}
+                          <div className="d-flex ">
+                            <p>KYC STATUS: &nbsp;</p> 
+                            <p className="text-success fw-bold">{kycStatus === true ?"Approved": "Not Approved"} </p>
+                          </div>
                         </div>
 
                         {/* Last Income */}

@@ -18,7 +18,7 @@ const ProgressBar = () => {
     };
 
     updateProgress();
-  }, []);
+  }, [progress]);
 
   return (
     <div>

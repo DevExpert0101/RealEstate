@@ -34,8 +34,8 @@ const LeftSideMenu = ({ activSidebar, setActivSidebar }) => {
         <div className="sidenav__wrapper">
           <ul>
             {[
-              ["Profile", "/dashboard/profile", account],
               ["Dashboard", "/dashboard", dashboard],
+              ["Profile", "/dashboard/profile", account],
               ["Investments", "/dashboard/investments", investments],
               ["My Property", "/dashboard/property", property],
               ["Tokenize Property", "/dashboard/tokenize", tokeinze],

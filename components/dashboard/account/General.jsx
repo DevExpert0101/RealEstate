@@ -27,7 +27,7 @@ const General = () => {
         <div className="avatar-content">
           <div className="avatar">
             {/* <Image src={previews} alt="Ryan"/> */}
-            <img src={previews} />
+            <img src={previews} alt="Avatar"/>
           </div>
           <div className="avatar-content__guideline">
             <h6>Your Avatar</h6>
