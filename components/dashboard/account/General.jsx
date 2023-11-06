@@ -1,14 +1,33 @@
 import Image from "next/image";
 import Link from "next/link";
-import ryan from "/public/images/team/ryan.png";
+import ryan from "../../../public/images/profile.jpg";
+import { useScroll } from "framer-motion";
+import { useEffect, useState } from "react";
 
 const General = () => {
+
+  const [previews, setImagePreviews] = useState("/images/profile.jpg")
+  const [view ,setview] = useState(ryan)
+  const [selectedFiles, setSelectedFiles] = useState([]);
+
+  const handleFileUpload = (e) => {
+    const files = e.target.files;
+    setSelectedFiles(files);
+    const previews = Array.from(files).map((file) => URL.createObjectURL(file));
+    const preview = previews[0];
+    setImagePreviews(preview);
+  };
+  useEffect(() =>{
+    setview(previews);
+  },[previews])
+
   return (
     <div className="account-content">
       <div className="avatar-wrapper">
         <div className="avatar-content">
           <div className="avatar">
-            <Image src={ryan} alt="Ryan" />
+            {/* <Image src={previews} alt="Ryan"/> */}
+            <img src={previews} />
           </div>
           <div className="avatar-content__guideline">
             <h6>Your Avatar</h6>
@@ -16,7 +35,7 @@ const General = () => {
           </div>
         </div>
         <form action="#" method="post">
-          <input type="file" name="avatar_upload" id="avatarUpload" />
+          <input type="file" name="avatar_upload" id="avatarUpload" onChange={handleFileUpload}/>
           <label htmlFor="avatarUpload">Upload new avatar</label>
         </form>
       </div>

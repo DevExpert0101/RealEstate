@@ -279,7 +279,8 @@ const Swap = () => {
 }
 
 const WalletBody = () => {
-  const [tabItem, setTabItem] = useState("general");
+  const [tabItem, setTabItem] = useState("send");
+  const [swItem, setSwItem] = useState("swap")
   const [activSidebar, setActivSidebar] = useState(false);
   return (
     <div className="dashboard section__space__bottom">
@@ -331,12 +332,12 @@ const WalletBody = () => {
                         ["Send", "send"],
                         ["Receive", "receive"],
                         // ["AirDrop", "airdrop"],
-                      ].map(([value, slag]) => (
+                      ].map(([value, slag]) => (                        
                         <button
                           key={slag}
                           className={`account-info__btn button button--effect ${
-                            tabItem === slag && "account-info__btn-active"
-                          }`}
+                            tabItem === slag && "account-info__btn-active"                            
+                          }`}                          
                           onClick={() => setTabItem(slag)}
                         >
                           {value}
@@ -360,27 +361,27 @@ const WalletBody = () => {
                         <button
                           key={slag}
                           className={`account-info__btn button button--effect ${
-                            tabItem === slag && "account-info__btn-active"
+                            swItem === slag && "account-info__btn-active"
                           }`}
-                          onClick={() => setTabItem(slag)}
+                          onClick={() => setSwItem(slag)}
                         >
                           {value}
                         </button>
                       ))}
                     </div>
                     <div className="account-content_wrapper">
-                      {tabItem == "swap" && <Swap />}
-                      {tabItem == "withdraw" && <Withdraw />}                      
+                      {swItem == "swap" && <Swap />}
+                      {swItem == "withdraw" && <Withdraw />}                      
                     </div>
                   </div>
                   <div className="row">
                     <div className="col-lg-12" style={{ marginTop: "30px" }}>
-                      <div className="investment-table">
+                      <div className="investment-table ">
                         <div className="intro">
                           <h5>Transactions</h5>
                         </div>
-                        <div className="table-wrapper">
-                          <table>
+                        <div className="table-wrapper table-responsive">
+                          <table className="table">
                             <thead>
                               <tr>
                                 <th>Txn Hash</th>
@@ -396,14 +397,14 @@ const WalletBody = () => {
                             <tbody>
                               {transactionData.map((item, i) => (
                                 <tr key={i}>
-                                  <td style={{maxWidth:"150px"}}>{item.txn}</td>
-                                  <td>{item.method}</td>
-                                  <td>{item.block}</td>
-                                  <td>{item.age}</td>
-                                  <td>{item.from}</td>
-                                  <td>{item.to}</td>
-                                  <td>{item.value}</td>
-                                  <td>{item.fee}</td>
+                                  <td className="text-truncate col-1">{item.txn}</td>
+                                  <td className="text-truncate col-1" >{item.method}</td>
+                                  <td className="text-truncate col-1">{item.block}</td>
+                                  <td className="text-truncate col-1">{item.age}</td>
+                                  <td className="text-truncate col-1">{item.from}</td>
+                                  <td className="text-truncate col-1">{item.to}</td>
+                                  <td className="text-truncate col-1">{item.value}</td>
+                                  <td className="text-truncate col-1">{item.fee}</td>
                                 </tr>
                               ))}
                             </tbody>

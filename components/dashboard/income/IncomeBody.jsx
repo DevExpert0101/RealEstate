@@ -27,20 +27,20 @@ const InecomeBody = () => {
 
                 <div className="main__content-dashboard">
                   <div className="breadcrumb-dashboard">
-                    <h5>Incoming Pools</h5>
+                    <h5>Income Pools</h5>
                     <div>
                       <Link href="/deshbord">Home</Link>
                       <i>
                         <BsArrowRight />
                       </i>
-                      <Link href="#">Incoming Pools</Link>
+                      <Link href="#">Income Pools</Link>
                     </div>
                   </div>
                   <div className="row">
                     <div className="col-lg-12">
                       <div className="investment-table">
                         <div className="intro">
-                          <h5>Incoming Pools</h5>
+                          <h5>Income Pools</h5>
                         </div>
                         <div className="table-wrapper">
                           <table>

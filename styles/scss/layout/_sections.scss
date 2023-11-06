@@ -6146,7 +6146,7 @@
 
 .card-tab-content {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 30px;
   margin-top: 22px;
   @include responsive(xs) {
@@ -6193,6 +6193,7 @@
     flex-grow: 1;
     @include responsive(xs) {
       padding: 30px 20px;
+      width: 100%;
     }
     .group {
       display: flex;
@@ -6435,7 +6436,6 @@
     width: 100%;
     justify-content: space-between;
     padding: 20px 30px;
-    border-bottom: 1px solid #dbd8f0;
     @include responsive(sm) {
       padding: 15px 20px;
     }
@@ -6460,25 +6460,13 @@
       min-width: 0px;
       text-align: center;
       font-weight: 600;
-      &:first-of-type {
-        text-align: left;
-      }
     }
     td {
+      width: 110px;
       flex-grow: 1;
       flex-basis: 0;
       min-width: 0px;
       text-align: center;
-      &:first-of-type {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        img {
-          width: 50px;
-          height: 30px;
-          border-radius: 5px;
-        }
-      }
     }
   }
 }
@@ -6686,7 +6674,31 @@
     color: $theme-color;
     padding-left: 40px;
     padding-right: 40px;
+    // width: 10vw;
+
     @include responsive(sm) {
+      width:150px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    &:hover {
+      background-color: $secondary-color;
+      color: $white;
+    }
+  }
+  .account-info__btn-active {
+    background-color: $secondary-color;
+    color: $white;
+  }
+
+  .profilebtn {
+    background-color: $white;
+    color: $theme-color;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 10vw;
+    @include responsive(sm) {
+      width:60vw;
       padding-left: 30px;
       padding-right: 30px;
     }
@@ -6695,7 +6707,8 @@
       color: $white;
     }
   }
-  .account-info__btn-active {
+
+  .profilebtn-active {
     background-color: $secondary-color;
     color: $white;
   }
@@ -7064,6 +7077,10 @@
   height: 100%;
   background-color: #4e0dff; /* Change this to your desired color */
   transition: width 0.2s ease-in;
+}
+.imgsize {
+  width: 25px;
+  height: 25px;
 }
 
 /* ==== 

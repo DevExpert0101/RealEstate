@@ -38,7 +38,7 @@ const AccountBody = () => {
                     </div>
                   </div>
                   <div className="account-info">
-                    <div className="account-info__btn-wrapper">
+                    <div className="account-info__btn-wrapper" style={{ flexWrap: "nowrap" }}>
                       {[
                         ["General", "general"],
                         ["Billing", "billing"],
@@ -50,6 +50,7 @@ const AccountBody = () => {
                             tabItem === slag && "account-info__btn-active"
                           }`}
                           onClick={() => setTabItem(slag)}
+
                         >
                           {value}
                         </button>

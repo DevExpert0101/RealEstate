@@ -4,7 +4,7 @@ import { useState } from "react";
 import { FaBell } from "react-icons/fa";
 import direction from "/public/images/direction.png";
 import logo from "/public/images/logo.png";
-import profile from "/public/images/profile.png";
+import profile from "/public/images/profile.jpg";
 
 const Header = () => {
   const [activeNotification, setActiveNotification] = useState(false);

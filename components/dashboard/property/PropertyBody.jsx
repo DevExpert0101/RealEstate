@@ -63,29 +63,64 @@ const PropertyBody = () => {
                             <tbody>
                               {propertyData.map((item, i) => (
                                 <tr key={i}>
-                                  <td style={{ textWrap: "nowrap" }}>{item.name}</td>
-                                  <td>
-                                    <Image src={item.tokenized === true ? True:False} alt="tokenized"></Image>
+                                  <td style={{ textWrap: "nowrap" }}>
+                                    {item.name}
                                   </td>
                                   <td>
-                                    <Image src={item.listed === true ? True:False} alt="listed"></Image>
+                                    <Image
+                                      src={
+                                        item.tokenized === true ? True : False
+                                      }
+                                      alt="tokenized"
+                                    ></Image>
                                   </td>
                                   <td>
-                                    <Image src={item.funded === true ? True:False} alt="listed"></Image>
+                                    <Image
+                                      src={item.listed === true ? True : False}
+                                      alt="listed"
+                                    ></Image>
                                   </td>
-                                  <td style={{ display: "flex", flexDirection: "row", justifyContent: "center", gap: "3px" }}>
-                                    
-                                    {item.tokenized === true ? (<div><Image src={Stop} alt="stop"/> <Image src={Pause} alt="pause" /></div>): <div><Image src={Play} alt="play" /></div>}
-                                    
-                                    <div>
-                                     <FaEdit />
-                                    
-                                    <FaCopy /> 
-
-                                    </div>
-                                    
-                                        
-                                        
+                                  <td>
+                                    <Image
+                                      src={item.funded === true ? True : False}
+                                      alt="listed"
+                                    ></Image>
+                                  </td>
+                                  <td
+                                    style={{
+                                      display: "flex",
+                                      flexDirection: "row",
+                                      justifyContent: "center",
+                                      gap: "10px",
+                                    }}
+                                  >
+                                    {item.tokenized === true ? (
+                                      <>
+                                        <Image
+                                          className="imgsize"
+                                          src={Stop}
+                                          alt="stop"
+                                        />{" "}
+                                        <Image
+                                          className="imgsize"
+                                          src={Pause}
+                                          alt="pause"
+                                        />
+                                        <FaEdit className="imgsize" />
+                                        <FaCopy className="imgsize" />
+                                      </>
+                                    ) : (
+                                     <>
+                                        <Image
+                                          className="imgsize"
+                                          src={Play}
+                                          alt="play"
+                                          style={{marginLeft:"35px"}}
+                                        />
+                                        <FaEdit className="imgsize" />
+                                        <FaCopy className="imgsize" />
+                                        </>
+                                    )}
                                   </td>
                                 </tr>
                               ))}

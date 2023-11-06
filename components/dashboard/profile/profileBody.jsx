@@ -13,7 +13,7 @@ import {
 import PorfolioSummary from "./PortfolioSummary";
 
 const ProfileBody = () => {
-  const [tabItem, setTabItem] = useState("general");
+  const [tabItem, setTabItem] = useState("personalinformation");
   const [activSidebar, setActivSidebar] = useState(false);
   return (
     <div className="dashboard section__space__bottom">
@@ -49,8 +49,8 @@ const ProfileBody = () => {
                       ].map(([value, slag]) => (
                         <button
                           key={slag}
-                          className={`account-info__btn button button--effect ${
-                            tabItem === slag && "account-info__btn-active"
+                          className={`profilebtn button button--effect  ${
+                            tabItem === slag && "profilebtn-active"
                           }`}
                           onClick={() => setTabItem(slag)}
                         >
