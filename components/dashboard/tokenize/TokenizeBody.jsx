@@ -27,11 +27,9 @@ const FileUpload = () => {
       <div className="container ">
         <div className="row">
           {previews.map((preview, index) => (
-            <div className="col-md-4 col-sm-6 col-xs-12 mt-2">
-              
+            <div key={index} className="col-md-4 col-sm-6 col-xs-12 mt-2">              
               <img
                 className="w-100 h-100 rounded-1"
-                key={index}
                 src={preview}
                 alt={`Image ${index + 1}`}
                 // width="100"
