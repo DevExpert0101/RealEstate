@@ -3,7 +3,7 @@ import Log from "/public/images/property/los.png";
 import san from "/public/images/property/san.png";
 import weldon from "/public/images/property/Weldon.webp";
 import LosAngeles from "/public/images/property/LosAngeles.webp";
-import Sanfrancisco from "/public/images/property/San Francisco.webp";
+import Sanfrancisco from "/public/images/property/SanFrancisco.webp";
 
 
 const featuredData = [

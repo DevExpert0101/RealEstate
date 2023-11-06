@@ -161,8 +161,8 @@ const PropertyCard = ({ singleData, colActiv }) => {
                   />
                 </div>
                 <div className="invest__cta">
-                  <Link href={investLink} className="button button--effect">
-                    Invest Now
+                  <Link href={detailsLink} className="button button--effect">
+                    Details
                   </Link>
                 </div>
               </div>
