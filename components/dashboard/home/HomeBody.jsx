@@ -71,7 +71,7 @@ const HomeBody = () => {
                           </div>
 
                           {!active ? <BankAccount /> : <CreditCard />}
-                          <div className="d-flex ">
+                          <div className="d-flex mt-4">
                             <p>KYC STATUS: &nbsp;</p> 
                             <p className="text-success fw-bold">{kycStatus === true ?"Approved": "Not Approved"} </p>
                           </div>
