@@ -107,7 +107,7 @@ const PropertyBody = () => {
                                           alt="pause"
                                         />
                                         <Link
-                                          href="/property"
+                                          href="/property/{item.id}"
                                           className="editButton"
                                         >
                                           <FaEdit className="imgsize" />
@@ -123,7 +123,7 @@ const PropertyBody = () => {
                                           style={{ marginLeft: "35px" }}
                                         />
                                         <Link
-                                          href="/property"
+                                          href="/property/{item.id}"
                                           className="editButton"
                                         >
                                           <FaEdit className="imgsize" />
