@@ -36,7 +36,7 @@ const PropertyBody = () => {
                   <div className="breadcrumb-dashboard">
                     <h5>My Property</h5>
                     <div>
-                      <Link href="/deshbord">Home</Link>
+                      <Link href="/dashboard">Home</Link>
                       <i>
                         <BsArrowRight />
                       </i>
@@ -106,20 +106,30 @@ const PropertyBody = () => {
                                           src={Pause}
                                           alt="pause"
                                         />
-                                        <FaEdit className="imgsize" />
+                                        <a
+                                          href="/property"
+                                          className="editButton"
+                                        >
+                                          <FaEdit className="imgsize" />
+                                        </a>
                                         <FaCopy className="imgsize" />
                                       </>
                                     ) : (
-                                     <>
+                                      <>
                                         <Image
                                           className="imgsize"
                                           src={Play}
                                           alt="play"
-                                          style={{marginLeft:"35px"}}
+                                          style={{ marginLeft: "35px" }}
                                         />
-                                        <FaEdit className="imgsize" />
+                                        <a
+                                          herf="/property"
+                                          className="editButton"
+                                        >
+                                          <FaEdit className="imgsize" />
+                                        </a>
                                         <FaCopy className="imgsize" />
-                                        </>
+                                      </>
                                     )}
                                   </td>
                                 </tr>

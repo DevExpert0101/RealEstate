@@ -36,38 +36,34 @@ const Details = (singleItem) => {
                     <FaImages />
                     Browse Gallery
                   </Link>
-                  <div className="intro" style={{ display: "flex", flexDirection: "row", justifyContent: "space-evenly"}}>
+                  <div
+                    className="intro"
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      justifyContent: "space-evenly",
+                    }}
+                  >
                     <div>
-
-                    <h3>Los Angeles</h3>
-                    <p className="d-flex align-items-center gap-1">
-                      <FaMapMarkerAlt />
-                      8706 Herrick Ave, Los Angeles
-                    </p>
+                      <h3>Los Angeles</h3>
+                      <p className="d-flex align-items-center gap-1">
+                        <FaMapMarkerAlt />
+                        8706 Herrick Ave, Los Angeles
+                      </p>
                     </div>
-                                        
+
                     <Link
                       href="#"
                       className="button button-effect d-none d-sm-inline-flex"
                       style={{
                         display: "flex",
-                        flexDirection: "column"
+                        flexDirection: "column",
                       }}
-                      >
-                        <h5 
-                         style={{ color: "white"}}
-                        >
-
-                        Allocated CEE Tokens
-                        </h5>
-                        <p 
-                        style={{ color: "white"}}
-                        >
-
-                          3,000,000
-                        </p>
+                    >
+                      <h5 style={{ color: "white" }}>Allocated CEE Tokens</h5>
+                      <p style={{ color: "white" }}>3,000,000</p>
                     </Link>
-                    </div>
+                  </div>
 
                   <div className="group__one">
                     <h4>Project Description</h4>
@@ -166,10 +162,10 @@ const Details = (singleItem) => {
                       <h5>The project owner (borrower)</h5>
                       <p>
                         MB „Rego Properties“ - is a company serving as a special
-                        vehicle for CEETokenized investments. The CEO of the company -
-                        Andrius Rimdeika is a former investment banker, who has
-                        worked in investment firms such as ”Morgan Stanley” and
-                        “Prime investment”.
+                        vehicle for CEETokenized investments. The CEO of the
+                        company - Andrius Rimdeika is a former investment
+                        banker, who has worked in investment firms such as
+                        ”Morgan Stanley” and “Prime investment”.
                       </p>
                     </div>
                   </div>
@@ -223,25 +219,9 @@ const Details = (singleItem) => {
                     <Funding />
                   </div>
                   <div className="group brin">
-                    <h5 className="neutral-top">Occupancy</h5>
-                    <div className="acus__btns">
-                      {[0, 20, 40, 60, 80, 100].map((item, i) => (
-                        <Link
-                          key={item}
-                          href="/"
-                          className="acus__btn acus__btn__active"
-                        >
-                          {item}%
-                        </Link>
-                      ))}
+                    <div className="d-flex flex-column">
+                      
                     </div>
-                    <div className="acus__content">
-                      {/* Invest Form  */}
-                      <InvestForm singleItem={singleItem}/>
-                    </div>
-                    <p className="text-center neutral-bottom">
-                      <Link href="/contact-us">Request a free callback</Link>
-                    </p>
                   </div>
                   <div className="group brini">
                     <h5 className="neutral-top">Investment Overview</h5>

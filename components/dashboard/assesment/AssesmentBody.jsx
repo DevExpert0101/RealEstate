@@ -53,13 +53,14 @@ const AssesmentBody = () => {
                               id="saveIncomingPool"
                               required="required"
                               style={{ width: "7vw" }}
+                              placeholder="10"
                             />
                             <div
                               style={{
                                 display: "flex",
                                 flexDirection: "row",
                                 alignItems: "center",
-                                marginLeft: "5px",
+                                marginLeft: "5px",                                
                               }}
                             >
                               <label htmlFor="saveYearBuilt">
@@ -79,6 +80,7 @@ const AssesmentBody = () => {
                               id="saveIncomingPool"
                               required="required"
                               style={{ width: "7vw" }}
+                              placeholder="19"
                             />
                             <div
                               style={{
@@ -106,6 +108,7 @@ const AssesmentBody = () => {
                               id="saveIncomingPool"
                               required="required"
                               style={{ width: "7vw" }}
+                              placeholder="8"
                             />
                             <div
                               style={{
@@ -132,6 +135,7 @@ const AssesmentBody = () => {
                               id="saveIncomingPool"
                               required="required"
                               style={{ width: "7vw" }}
+                              placeholder="Commercial"
                             />
                             <div
                               style={{
@@ -159,6 +163,7 @@ const AssesmentBody = () => {
                               id="saveIncomingPool"
                               required="required"
                               style={{ width: "7vw" }}
+                              placeholder="03/31/2023"
                             />
                             <div
                               style={{
@@ -209,7 +214,7 @@ const AssesmentBody = () => {
                             listStyleType: "disc",
                           }}
                         >
-                          <li>Whitepaper</li>
+                          <li>Property Valuation</li>
                           <li>Prospectus</li>
                         </ul>
                         <Link
