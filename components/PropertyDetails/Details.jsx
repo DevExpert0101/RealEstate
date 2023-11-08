@@ -219,8 +219,72 @@ const Details = (singleItem) => {
                     <Funding />
                   </div>
                   <div className="group brin">
-                    <div className="d-flex flex-column">
-                      
+                    <div className="d-flex justify-content-between m-1 align-items-center">
+                      <h6 className="">Token Name</h6>
+                      <p>CEE Token</p>
+                    </div>
+                    <div className="d-flex flex-fill justify-content-between m-1 align-items-center">
+                      <h6>Token Type</h6>
+                      <p>ERC3643-Security</p>
+                    </div>
+                    <div className="d-flex justify-content-between m-1 align-items-center" >
+                      <h6>Issuer</h6>
+                      <p>Organization</p>
+                    </div>
+                    <div className="d-flex justify-content-between m-1 align-items-center">
+                      <h6>Asset-Backed</h6>
+                      <p>Fraction of ownership</p>
+                    </div>
+                    <div className="d-flex justify-content-between m-1 align-items-center">
+                      <h6>Offering Size</h6>
+                      <div className="w-50">
+                        <input type="text" placeholder="2,500,000" className="d-flex bg-light text-black rounded-pill text-end"></input>
+                      </div>
+                    </div>
+                    <div className="d-flex justify-content-between m-1 align-items-center">
+                      <h6>Token Price</h6>
+                      <div className="w-50">
+                        <input type="text" placeholder="0,9" className="d-flex bg-light text-black rounded-pill text-end"></input>
+                      </div>
+                    </div>
+                    <div className="d-flex justify-content-between m-1 align-items-center">
+                      <h6>Discount</h6>
+                      <p>10%</p>
+                    </div>
+                    <div className="d-flex justify-content-between m-1 align-items-center">
+                      <h6>Start Date</h6>
+                      <p>01/01/2024</p>
+                    </div>
+                    <div className="d-flex justify-content-between m-1 align-items-center">
+                      <h6>End Date</h6>
+                      <p>01/31/2024</p>
+                    </div>
+                    <div className="d-flex justify-content-between m-1 align-items-center">
+                      <h6>Divident Payment</h6>
+                      <p>Monthly</p>
+                    </div>
+                    <div className="d-flex justify-content-between m-1 align-items-center">
+                      <h6>Income Pool</h6>
+                      <p>CRZ-01-ZAG</p>
+                    </div>
+                    <div className="d-flex justify-content-between m-1 align-items-center">
+                      <h6>Lock-up Period</h6>
+                      <p>Not Available</p>
+                    </div>
+                    <div className="d-flex justify-content-between m-1 align-items-center">
+                      <h6>Whitelist</h6>
+                      <p>Yes</p>
+                    </div>
+                    <div className="d-flex justify-content-between m-1 align-items-center">
+                      <h6>Legal</h6>
+                      <p>Prospectus, KYC, Disclamier</p>
+                    </div>
+
+                    <div className="align-items-center d-flex justify-content-center mt-4" >
+
+                    <button className="button button-effect">
+                      Start
+                    </button>
                     </div>
                   </div>
                   <div className="group brini">
