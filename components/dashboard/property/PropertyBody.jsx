@@ -106,12 +106,12 @@ const PropertyBody = () => {
                                           src={Pause}
                                           alt="pause"
                                         />
-                                        <a
+                                        <Link
                                           href="/property"
                                           className="editButton"
                                         >
                                           <FaEdit className="imgsize" />
-                                        </a>
+                                        </Link>
                                         <FaCopy className="imgsize" />
                                       </>
                                     ) : (
@@ -122,12 +122,12 @@ const PropertyBody = () => {
                                           alt="play"
                                           style={{ marginLeft: "35px" }}
                                         />
-                                        <a
-                                          herf="/property"
+                                        <Link
+                                          href="/property"
                                           className="editButton"
                                         >
                                           <FaEdit className="imgsize" />
-                                        </a>
+                                        </Link>
                                         <FaCopy className="imgsize" />
                                       </>
                                     )}
