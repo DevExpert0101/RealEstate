@@ -21,13 +21,18 @@ const ProductCardHorizontal = ({ singleItem }) => {
     security,
     detailsLink,
   } = singleItem;
+
+  const SetThroughEdit = () => {
+    localStorage.setItem("throughEdit", "false");
+  }
+
   return (
     <div className="row d-flex align-items-center">
       <div className="col-lg-5">
         <div className="property__item__image column__space--secondary">
           <div className="img__effect">
             <Link href="/property/{id}">
-              <Image src={img} alt="los" />
+              <Image src={img} alt="los" onClick={SetThroughEdit} />
             </Link>
           </div>
         </div>
@@ -134,6 +139,7 @@ const ProductCardHorizontal = ({ singleItem }) => {
                 href={singleItem.detailsLink}
                 singleItem = {singleItem}
                 className="button  button--effect"
+                onClick={SetThroughEdit}
               >
                 Details
               </Link>

@@ -10,7 +10,7 @@ import CountdownDisplay from "../common/CountdownDisplay";
 import SingleFaq from "../common/SingleFaq";
 import Social from "../social/Social";
 import Funding from "./Funding";
-// import InvestForm from "./InvestForm";
+import InvestForm from "./InvestForm";
 import check from "/public/images/check.png";
 import charge from "/public/images/icons/charge.png";
 import investor from "/public/images/icons/investor.png";
@@ -20,9 +20,9 @@ import reinvest from "/public/images/icons/reinvest.png";
 import owner from "/public/images/owner.jpg";
 import { useEffect, useState } from "react";
 
-const InvestForm = () => {
+const NewInvestCard = () => {
   return (
-
+    <div className="col-lg-5">
       <div className="p__details__sidebar">
         <div className="intro">
           <div className="countdown__wrapper">
@@ -144,20 +144,101 @@ const InvestForm = () => {
           <ReportsCard />
         </div>
       </div>
-  
+    </div>
+  );
+};
+
+const OldInvestCard = () => {
+  return (
+    <div className="col-lg-5">
+      <div className="p__details__sidebar">
+        <div className="intro">
+          <div className="countdown__wrapper">
+            <p className="secondary">
+              <FaClock /> Left to invest
+            </p>
+            <Countdown
+              date={Date.now() + 10000000000}
+              renderer={CountdownDisplay}
+            />
+          </div>
+          <h5>
+            Available for funding: <span>€134 514</span>
+          </h5>
+          {/* funding  */}
+          <Funding />
+        </div>
+        <div className="group brin">
+          <h5 className="neutral-top">Occupancy</h5>
+          <div className="acus__btns">
+            {[0, 20, 40, 60, 80, 100].map((item, i) => (
+              <Link key={item} href="/" className="acus__btn acus__btn__active">
+                {item}%
+              </Link>
+            ))}
+          </div>
+          <div className="acus__content">
+            {/* Invest Form  */}
+            <InvestForm />
+          </div>
+          <p className="text-center neutral-bottom">
+            <Link href="/contact-us">Request a free callback</Link>
+          </p>
+        </div>
+        <div className="group brini">
+          <h5 className="neutral-top">Investment Overview</h5>
+          <hr />
+          <p>
+            Purpose of the loan To increase the company&#39;s working capital,
+            magna a laoreet convallis, massa sapien tempor arcu, nec euismod
+            elit justo in lacus. Maecenas mattis massa lectus, vel tincidunt
+            augue porta non.
+          </p>
+          <p>
+            Duis quis orci vehicula, fermentum tortor vitae, imperdiet sem.
+            Quisque iaculis eu odio in lobortis. Sed vel ex non erat
+            pellentesque lobortis vel vitae diam. Donec gravida eleifend
+            pellentesque. Curabitur dictum blandit accumsan.
+          </p>
+          <Link href="/blog">Read More</Link>
+        </div>
+        <div className="group birinit">
+          <h6>Share via Social </h6>
+          <div className="social text-start">
+            {/* social icon */}
+            <Social />
+          </div>
+        </div>
+        <div className="group alt__brin">
+          {/* key update card */}
+          <KeyUpdatesCard />
+        </div>
+        <div className="group alt__brin__last">
+          {/* reaport card */}
+          <ReportsCard />
+        </div>
+      </div>
+    </div>
   );
 };
 
 const Details = (singleItem) => {
   const [role, setRole] = useState("1");
+  const [throughEdit, setThroughEdit] = useState(false);
 
   useEffect(() => {
-    let value;
-    value = localStorage.getItem("role") || "";
-    
-    setRole(value);
-    console.log(role)
-  },[]);
+      //  alert("into");
+      let value;
+      value = localStorage.getItem("role") || "";
+
+      setRole(value);
+      value = localStorage.getItem("throughEdit");
+      if(value == null) value = false;
+      setThroughEdit(value);
+     
+      console.log(value);
+
+  }, []);
 
   return (
     <>
@@ -166,7 +247,7 @@ const Details = (singleItem) => {
         <div className="container">
           <div className="p__details__area">
             <div className="row">
-              <div className={role=="investor" ? "col-lg-7" :"col-lg-12"}>
+              <div className="col-lg-7">
                 <div className="p__details__content">
                   <Link
                     href="/property/{id}"
@@ -339,8 +420,12 @@ const Details = (singleItem) => {
                   </div>
                 </div>
               </div>
-              
-              <div className= {role == "investor" && "col-lg-5"}>{role == "investor" && <InvestForm />}</div>
+              {/* <NewInvestCard /> */}
+              {role == "investor" && throughEdit == "true" ? (
+                <NewInvestCard />
+              ) : (
+                <OldInvestCard />
+              )}
             </div>
           </div>
         </div>

@@ -17,6 +17,10 @@ import Play from "/public/images/play.png";
 const PropertyBody = () => {
   const [activSidebar, setActivSidebar] = useState(false);
 
+  const clicEdit = () => {
+    localStorage.setItem("throughEdit", "true");
+  }
+
   return (
     <div className="dashboard section__space__bottom">
       <div className="container">
@@ -110,7 +114,7 @@ const PropertyBody = () => {
                                           href="/property/{item.id}"
                                           className="editButton"
                                         >
-                                          <FaEdit className="imgsize" />
+                                          <FaEdit className="imgsize" onClick={clicEdit} />
                                         </Link>
                                         <FaCopy className="imgsize" />
                                       </>
@@ -124,9 +128,9 @@ const PropertyBody = () => {
                                         />
                                         <Link
                                           href="/property/{item.id}"
-                                          className="editButton"
+                                          className="editButton"                                          
                                         >
-                                          <FaEdit className="imgsize" />
+                                          <FaEdit className="imgsize" onClick={clicEdit} />
                                         </Link>
                                         <FaCopy className="imgsize" />
                                       </>
