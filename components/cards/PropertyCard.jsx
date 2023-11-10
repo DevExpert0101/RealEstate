@@ -22,6 +22,11 @@ const PropertyCard = ({ singleData, colActiv }) => {
     investLink,
     detailsLink,
   } = singleData;
+
+  const SetThroughEdit = () => {
+    localStorage.setItem("throughEdit", "false");
+  }
+
   return (
     <div
       className={`property__grid__area__wrapper__inner ${
@@ -161,7 +166,7 @@ const PropertyCard = ({ singleData, colActiv }) => {
                   />
                 </div>
                 <div className="invest__cta">
-                  <Link href={detailsLink} className="button button--effect">
+                  <Link href={detailsLink} className="button button--effect" onClick={SetThroughEdit}>
                     Details
                   </Link>
                 </div>
