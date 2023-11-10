@@ -10,7 +10,7 @@ import CountdownDisplay from "../common/CountdownDisplay";
 import SingleFaq from "../common/SingleFaq";
 import Social from "../social/Social";
 import Funding from "./Funding";
-import InvestForm from "./InvestForm";
+// import InvestForm from "./InvestForm";
 import check from "/public/images/check.png";
 import charge from "/public/images/icons/charge.png";
 import investor from "/public/images/icons/investor.png";
@@ -18,8 +18,147 @@ import loan from "/public/images/icons/loan.png";
 import project from "/public/images/icons/project.png";
 import reinvest from "/public/images/icons/reinvest.png";
 import owner from "/public/images/owner.jpg";
+import { useEffect, useState } from "react";
+
+const InvestForm = () => {
+  return (
+
+      <div className="p__details__sidebar">
+        <div className="intro">
+          <div className="countdown__wrapper">
+            <p className="secondary">
+              <FaClock /> Left to invest
+            </p>
+            <Countdown
+              date={Date.now() + 10000000000}
+              renderer={CountdownDisplay}
+            />
+          </div>
+          <h5>
+            Available for funding: <span>CEE 3,000,000</span>
+          </h5>
+
+          <Funding />
+        </div>
+        <div className="group brin">
+          <div className="d-flex justify-content-between m-1 align-items-center">
+            <h6 className="">Token Name</h6>
+            <p>CEE Token</p>
+          </div>
+          <div className="d-flex flex-fill justify-content-between m-1 align-items-center">
+            <h6>Token Type</h6>
+            <p>ERC3643-Security</p>
+          </div>
+          <div className="d-flex justify-content-between m-1 align-items-center">
+            <h6>Issuer</h6>
+            <p>Organization</p>
+          </div>
+          <div className="d-flex justify-content-between m-1 align-items-center">
+            <h6>Asset-Backed</h6>
+            <p>Fraction of ownership</p>
+          </div>
+          <div className="d-flex justify-content-between m-1 align-items-center">
+            <h6>Offering Size</h6>
+            <div className="w-50">
+              <input
+                type="text"
+                placeholder="2,500,000"
+                className="d-flex bg-light text-black rounded-pill text-end"
+              ></input>
+            </div>
+          </div>
+          <div className="d-flex justify-content-between m-1 align-items-center">
+            <h6>Token Price</h6>
+            <div className="w-50">
+              <input
+                type="text"
+                placeholder="0,9"
+                className="d-flex bg-light text-black rounded-pill text-end"
+              ></input>
+            </div>
+          </div>
+          <div className="d-flex justify-content-between m-1 align-items-center">
+            <h6>Discount</h6>
+            <p>10%</p>
+          </div>
+          <div className="d-flex justify-content-between m-1 align-items-center">
+            <h6>Start Date</h6>
+            <p>01/01/2024</p>
+          </div>
+          <div className="d-flex justify-content-between m-1 align-items-center">
+            <h6>End Date</h6>
+            <p>01/31/2024</p>
+          </div>
+          <div className="d-flex justify-content-between m-1 align-items-center">
+            <h6>Divident Payment</h6>
+            <p>Monthly</p>
+          </div>
+          <div className="d-flex justify-content-between m-1 align-items-center">
+            <h6>Income Pool</h6>
+            <p>CRZ-01-ZAG</p>
+          </div>
+          <div className="d-flex justify-content-between m-1 align-items-center">
+            <h6>Lock-up Period</h6>
+            <p>Not Available</p>
+          </div>
+          <div className="d-flex justify-content-between m-1 align-items-center">
+            <h6>Whitelist</h6>
+            <p>Yes</p>
+          </div>
+          <div className="d-flex justify-content-between m-1 align-items-center">
+            <h6>Legal</h6>
+            <p>Prospectus, KYC, Disclamier</p>
+          </div>
+
+          <div className="align-items-center d-flex justify-content-center mt-4">
+            <button className="button button-effect">Start</button>
+          </div>
+        </div>
+        <div className="group brini">
+          <h5 className="neutral-top">Investment Overview</h5>
+          <hr />
+          <p>
+            Purpose of the loan To increase the company&#39;s working capital,
+            magna a laoreet convallis, massa sapien tempor arcu, nec euismod
+            elit justo in lacus. Maecenas mattis massa lectus, vel tincidunt
+            augue porta non.
+          </p>
+          <p>
+            Duis quis orci vehicula, fermentum tortor vitae, imperdiet sem.
+            Quisque iaculis eu odio in lobortis. Sed vel ex non erat
+            pellentesque lobortis vel vitae diam. Donec gravida eleifend
+            pellentesque. Curabitur dictum blandit accumsan.
+          </p>
+          <Link href="/blog">Read More</Link>
+        </div>
+        <div className="group birinit">
+          <h6>Share via Social </h6>
+          <div className="social text-start">
+            <Social />
+          </div>
+        </div>
+        <div className="group alt__brin">
+          <KeyUpdatesCard />
+        </div>
+        <div className="group alt__brin__last">
+          <ReportsCard />
+        </div>
+      </div>
+  
+  );
+};
 
 const Details = (singleItem) => {
+  const [role, setRole] = useState("1");
+
+  useEffect(() => {
+    let value;
+    value = localStorage.getItem("role") || "";
+    
+    setRole(value);
+    console.log(role)
+  },[]);
+
   return (
     <>
       <div className="property__details__banner property__details__bg bg__img clear__top"></div>
@@ -27,7 +166,7 @@ const Details = (singleItem) => {
         <div className="container">
           <div className="p__details__area">
             <div className="row">
-              <div className="col-lg-7">
+              <div className={role=="investor" ? "col-lg-7" :"col-lg-12"}>
                 <div className="p__details__content">
                   <Link
                     href="/property/{id}"
@@ -200,127 +339,8 @@ const Details = (singleItem) => {
                   </div>
                 </div>
               </div>
-              <div className="col-lg-5">
-                <div className="p__details__sidebar">
-                  <div className="intro">
-                    <div className="countdown__wrapper">
-                      <p className="secondary">
-                        <FaClock /> Left to invest
-                      </p>
-                      <Countdown
-                        date={Date.now() + 10000000000}
-                        renderer={CountdownDisplay}
-                      />
-                    </div>
-                    <h5>
-                      Available for funding: <span>CEE 3,000,000</span>
-                    </h5>
-                    {/* funding  */}
-                    <Funding />
-                  </div>
-                  <div className="group brin">
-                    <div className="d-flex justify-content-between m-1 align-items-center">
-                      <h6 className="">Token Name</h6>
-                      <p>CEE Token</p>
-                    </div>
-                    <div className="d-flex flex-fill justify-content-between m-1 align-items-center">
-                      <h6>Token Type</h6>
-                      <p>ERC3643-Security</p>
-                    </div>
-                    <div className="d-flex justify-content-between m-1 align-items-center" >
-                      <h6>Issuer</h6>
-                      <p>Organization</p>
-                    </div>
-                    <div className="d-flex justify-content-between m-1 align-items-center">
-                      <h6>Asset-Backed</h6>
-                      <p>Fraction of ownership</p>
-                    </div>
-                    <div className="d-flex justify-content-between m-1 align-items-center">
-                      <h6>Offering Size</h6>
-                      <div className="w-50">
-                        <input type="text" placeholder="2,500,000" className="d-flex bg-light text-black rounded-pill text-end"></input>
-                      </div>
-                    </div>
-                    <div className="d-flex justify-content-between m-1 align-items-center">
-                      <h6>Token Price</h6>
-                      <div className="w-50">
-                        <input type="text" placeholder="0,9" className="d-flex bg-light text-black rounded-pill text-end"></input>
-                      </div>
-                    </div>
-                    <div className="d-flex justify-content-between m-1 align-items-center">
-                      <h6>Discount</h6>
-                      <p>10%</p>
-                    </div>
-                    <div className="d-flex justify-content-between m-1 align-items-center">
-                      <h6>Start Date</h6>
-                      <p>01/01/2024</p>
-                    </div>
-                    <div className="d-flex justify-content-between m-1 align-items-center">
-                      <h6>End Date</h6>
-                      <p>01/31/2024</p>
-                    </div>
-                    <div className="d-flex justify-content-between m-1 align-items-center">
-                      <h6>Divident Payment</h6>
-                      <p>Monthly</p>
-                    </div>
-                    <div className="d-flex justify-content-between m-1 align-items-center">
-                      <h6>Income Pool</h6>
-                      <p>CRZ-01-ZAG</p>
-                    </div>
-                    <div className="d-flex justify-content-between m-1 align-items-center">
-                      <h6>Lock-up Period</h6>
-                      <p>Not Available</p>
-                    </div>
-                    <div className="d-flex justify-content-between m-1 align-items-center">
-                      <h6>Whitelist</h6>
-                      <p>Yes</p>
-                    </div>
-                    <div className="d-flex justify-content-between m-1 align-items-center">
-                      <h6>Legal</h6>
-                      <p>Prospectus, KYC, Disclamier</p>
-                    </div>
-
-                    <div className="align-items-center d-flex justify-content-center mt-4" >
-
-                    <button className="button button-effect">
-                      Start
-                    </button>
-                    </div>
-                  </div>
-                  <div className="group brini">
-                    <h5 className="neutral-top">Investment Overview</h5>
-                    <hr />
-                    <p>
-                      Purpose of the loan To increase the company&#39;s working
-                      capital, magna a laoreet convallis, massa sapien tempor
-                      arcu, nec euismod elit justo in lacus. Maecenas mattis
-                      massa lectus, vel tincidunt augue porta non.
-                    </p>
-                    <p>
-                      Duis quis orci vehicula, fermentum tortor vitae, imperdiet
-                      sem. Quisque iaculis eu odio in lobortis. Sed vel ex non
-                      erat pellentesque lobortis vel vitae diam. Donec gravida
-                      eleifend pellentesque. Curabitur dictum blandit accumsan.
-                    </p>
-                    <Link href="/blog">Read More</Link>
-                  </div>
-                  <div className="group birinit">
-                    <h6>Share via Social </h6>
-                    <div className="social text-start">
-                      {/* social icon */}
-                      <Social />
-                    </div>
-                  </div>
-                  <div className="group alt__brin">
-                    {/* key update card */}
-                    <KeyUpdatesCard />
-                  </div>
-                  <div className="group alt__brin__last">
-                    {/* reaport card */}
-                    <ReportsCard />
-                  </div>
-                </div>
-              </div>
+              
+              <div className= {role == "investor" && "col-lg-5"}>{role == "investor" && <InvestForm />}</div>
             </div>
           </div>
         </div>

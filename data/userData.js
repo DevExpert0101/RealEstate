@@ -8,7 +8,9 @@ const userData = {
     qualifications: "AAA",
     skills: "BBB",
     projects: "projects",
-    certifications: "certificates"
+    certifications: "certificates",
+    password: "123",
+    role: "investor"
 }
 
 export default userData;

@@ -9,6 +9,15 @@ import { FaGlobe } from "react-icons/fa";
 const NavBar = () => {
   const [toggleActive, setToggleActive] = useState(false);
   const [windowHeight, setWindowHeight] = useState(0);
+  const [role, setRole] = useState("1");
+
+  useEffect(() => {
+    let value
+    // Get the value from local storage if it exists
+    value = localStorage.getItem("role") || "1"
+    setRole(value)
+  }, [])
+
 
   useEffect(() => {
     window.addEventListener("scroll", navBarTop);
@@ -102,6 +111,7 @@ const NavBar = () => {
                       aria-expanded="false"
                     >
                       {itm}
+                      
                     </Link>
                     <ul className="dropdown-menu">
                       {dropdown_itms?.map(({ id, dp_itm, url }) => (
@@ -122,9 +132,16 @@ const NavBar = () => {
                     <Link
                       href={url}
                       className="nav-link"
-                      onClick={() => setToggleActive(false)}
+                      onClick={itm != "Log In" ? () => setToggleActive(false) : () => {}}
                     >
-                      {itm}
+                      {/* {itm} */}
+                      { itm == "Log In" && role != "1" ? (
+                        <div onClick={() => {
+                          localStorage.removeItem("role")
+                        }}>
+                          Log out
+                        </div>
+                      ) : itm}
                     </Link>
                   </li>
                 );

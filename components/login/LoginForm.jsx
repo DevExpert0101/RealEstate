@@ -1,7 +1,43 @@
 import Link from "next/link";
 import { GoogleLogin } from "@react-oauth/google";
+import { useState } from "react";
+import userData from "../../data/userData";
+import { useRouter } from "next/router";
+
 
 const LoginForm = () => {
+
+  
+
+  const [email, setEmail] = useState("")
+  const [pass, setPass] = useState("")
+  const router = useRouter();
+
+  const clickLogin = () => {
+    console.log(1)
+    console.log(userData.pass)
+    console.log(pass)
+    
+    if (email === userData.email && pass === userData.password) {
+      console.log(2)
+      localStorage.setItem("role", userData.role);
+      router.push('/');
+    } else {
+      alert("Invalid Information...")
+    }
+
+  }
+
+  const eamilInputChange = (value) => {
+    setEmail(value);
+  }
+
+  const passInputChange = (value) => {
+    setPass(value);
+  }
+
+
+
   return (
     <section className="registration clear__top">
       <div className="container">
@@ -11,7 +47,7 @@ const LoginForm = () => {
             Don&#39;t have an account?{" "}
             <Link href="/registration">Register here.</Link>
           </p>
-          <form
+          <div
             action="#"
             method="post"
             name="login__form"
@@ -25,6 +61,7 @@ const LoginForm = () => {
                 id="loginMail"
                 placeholder="Enter your email"
                 required="required"
+                onChange={e=>eamilInputChange(e.target.value)}
               />
             </div>
             <div className="input input--secondary">
@@ -35,6 +72,7 @@ const LoginForm = () => {
                 id="loginPass"
                 placeholder="Password"
                 required="required"
+                onChange={e => passInputChange(e.target.value)}
               />
             </div>
             <div className="checkbox login__checkbox">
@@ -51,16 +89,17 @@ const LoginForm = () => {
               <Link href="#">Forget Password</Link>
             </div>
             <div className="input__button">
-              <button type="submit" className="button button--effect">
+              <button 
+                // type="submit" 
+                onClick={clickLogin}
+                className="button button--effect">
                 Login
               </button>
               <div style={{ marginTop: "20px" }} className="googlelogin">
-                <GoogleLogin shape="re"/>  
+                <GoogleLogin shape="re" />
               </div>
-            </div>            
-            
-            
-          </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
