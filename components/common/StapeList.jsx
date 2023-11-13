@@ -32,7 +32,7 @@ const StapeList = () => {
       </div>
       <div className="col-md-6 col-xl-4">
         <div className="start__single__item">
-          <h4>Customer-Focused Approach</h4>
+          <h4>Client-Centric</h4>
           <p className="neutral-bottom">
             At CEEtokenized, our customers are at the center of our mission. We
             deeply understand their diverse needs, providing tailored solutions
