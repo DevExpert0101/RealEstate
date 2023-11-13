@@ -9,7 +9,7 @@ const TeamCard = ({ data }) => {
       <div className="team__single shadow__effect">
         <div className="team__thumb">
           <Image src={avt} alt={name} height={308} />
-          <Link href={profileLink}>
+          <Link href={profileLink} target="_blank" rel="noopener noreferrer">
             <FaLinkedinIn />
           </Link>
         </div>
