@@ -22,14 +22,12 @@ const AboutCEE = ({ bg, cls }) => {
             </h5>
             <h2>About CEEtokenized</h2>
             
-            <Link href="/about" className="button button--effect">
+            <Link href="/about" className="button button--effect mb-2">
                   About US
                 </Link>
                 
-            <p className="neutral-bottom">
-              Our mission is to empower individuals to find not just houses, but homes. 
-              We aim to revolutionize the real estate industry by providing unparalleled digital experiences, 
-              connecting buyers, sellers, and agents in a seamless and transparent manner.
+            <p className="neutral-bottom ">
+            Our mission at CEEtokenized is to redefine the future of real estate investment in Central Europe. We aim to break down barriers and empower a diverse global community of investors to access, participate, and prosper in the lucrative world of real estate. By leveraging the transformative potential of blockchain technology, we seek to create a seamless, secure, and transparent platform that opens doors to a new era of financial opportunities.
             </p>
           </div>
 

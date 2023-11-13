@@ -12,11 +12,12 @@ const Hero = () => {
               <div className="hero__content">
                 <h5 className="neutral-top">A smarter, better way to invest</h5>
                 <h1>
-                  Real Estate Investment For <span>Everyone</span>{" "}
+                  {/* Real Estate Investment For <span>Everyone</span>{" "} */}
+                  Seamless Real Estate Tokenization
                 </h1>
                 <p className="primary neutral-bottom">
-                  Buy shares of rental properties, earn monthly income, and
-                  watch your money grow
+                  Join the future of investing – Discover the power of
+                  blockchain-backed real estate investments in Central Europe
                 </p>
                 <div className="hero__cta__group">
                   <Link href="/property" className="button button--effect">
@@ -26,7 +27,7 @@ const Hero = () => {
                     href="/business-loan"
                     className="button button--secondary button--effect"
                   >
-                    Get Funding
+                    Tokenize Property
                   </Link>
                 </div>
               </div>

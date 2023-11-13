@@ -227,7 +227,7 @@ const Details = (singleItem) => {
   const [throughEdit, setThroughEdit] = useState(false);
 
   useEffect(() => {
-      //  alert("into");
+
       let value;
       value = localStorage.getItem("role") || "";
 
