@@ -2,7 +2,7 @@ import paul from "/public/images/team/paul.jpg";
 import robert from "/public/images/team/robert.jpg";
 import rosen from "/public/images/team/rosen.jpg";
 import ryan from "/public/images/team/ryan.jpg";
-import brent from "/public/images/team/brent.jpg";
+import brent from "/public/images/team/Brent.jpg";
 
 const teamData = [
   {
