@@ -14,7 +14,7 @@ const Team = () => {
               empowering the individual.
             </p>
           </div>
-          <div className="row">
+          <div className="row display-flex justify-content-center">
             {teamData.map((item) => (
               <TeamCard key={item.id} data={item} />
             ))}
