@@ -31,7 +31,7 @@ const Filter = () => {
                 <span className="location__select"></span>
                 <select className="border-1 w-100 text-capitalize">
                   <option data-display="Location">Select Location</option>
-                  <option value="angeles">Hungry</option>
+                  <option value="angeles">Hungary</option>
                   <option value="polabd">Poland</option>
                   <option value="czechia">Czechia Republic</option>
                   <option value="bulgaria">Bulgaria</option>
