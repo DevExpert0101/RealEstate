@@ -4,18 +4,19 @@ import san from "/public/images/property/san.png";
 import weldon from "/public/images/property/Weldon.webp";
 import LosAngeles from "/public/images/property/LosAngeles.webp";
 import Sanfrancisco from "/public/images/property/SanFrancisco.webp";
+import Ostrava from "/public/images/property/Ostrava-Profilepic.png"
 
 
 const featuredData = [
   {
     id: "238haas72&#",
-    city: "Los Angeles",
-    location: "8706 Herrick Ave, Los Angeles",
+    city: "Moravská Ostrava",
+    location: "",
     totalInvest: 119,
     investAmount: "4,94,196",
     investPer: 54.73,
     goal: "1,00,000",
-    img: LosAngeles,
+    img: Ostrava,
     annualReturn: {
       regular: 7.5,
       bonus: 3,
