@@ -10,12 +10,12 @@ import Ostrava from "/public/images/property/Ostrava-Profilepic.png"
 const featuredData = [
   {
     id: "238haas72&#",
-    city: "Moravská Ostrava",
+    city: "Park Cihelní - Ostrava, Czech Republic",
     location: "",
     totalInvest: 119,
     investAmount: "4,94,196",
     investPer: 54.73,
-    goal: "1,00,000",
+    goal: "1,500,000",
     img: Ostrava,
     annualReturn: {
       regular: 7.5,
@@ -27,6 +27,7 @@ const featuredData = [
     security: "1st-Rank",
     investLink: "/investment/{id}",
     detailsLink: "/property/{id}",
+    description: "Welcome to Park Cihelni, our flagship property offering on the vibrant streets of Ostrava, Czech Republic. Nestled across five dynamic phases, this premium development boasts 262 luxurious flats, creating a total gross floor area of 21,000 square meters. It's an irresistible opportunity for astute investors seeking an entry into Central Europe's burgeoning real estate market."
   },
   {
     id: "ahs$%@5q272&#",

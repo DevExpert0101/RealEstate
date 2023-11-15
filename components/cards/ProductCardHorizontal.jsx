@@ -20,6 +20,7 @@ const ProductCardHorizontal = ({ singleItem }) => {
     distribution,
     security,
     detailsLink,
+    description,
   } = singleItem;
 
   const SetThroughEdit = () => {
@@ -41,7 +42,7 @@ const ProductCardHorizontal = ({ singleItem }) => {
         <div className="property__item__content">
           <div className="item__head">
             <div className="item__head__left">
-              <h4>{city}</h4>
+              <h5 style={{ color : "#13216e"}}>{city}</h5>
               <p>
                 <i>
                   <FaMapMarkerAlt />
@@ -82,13 +83,13 @@ const ProductCardHorizontal = ({ singleItem }) => {
                 </span>{" "}
                 |{" "}
                 <span className="project__has__investors__amount">
-                  ${investAmount}
+                €{investAmount}
                 </span>{" "}
                 <span className="project__has__investors__percent">
                   ({investPer}%)
                 </span>
               </p>
-              <p className="project__goal">${goal} Goal</p>
+              <p className="project__goal">€{goal} Goal</p>
             </div>
           </div>
           <div className="item__info">
@@ -97,12 +98,7 @@ const ProductCardHorizontal = ({ singleItem }) => {
             </div>
               <h6>
                 {/* {annualReturn.regular}% + {annualReturn.bonus}% */}
-                The “CEETokenized“ team is introducing a new buy to let
-                investment opportunity: A19, Vilnius I. The invest ment
-                offer consists of administrative premises, which are
-                currently being converted into studio apartments/lofts. In
-                this way, the aim is to increase the rental income of this
-                real estate project
+                {description ? description : "The “CEETokenized“ team is introducing a new buy to let investment opportunity: A19, Vilnius I. The investment  offer consists of administrative premises, which are currently being converted into studio apartments/lofts. In this way, the aim is to increase the rental income of this real estate project."}
               </h6>
             
             {/* <div className="item__info__single">

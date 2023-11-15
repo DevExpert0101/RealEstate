@@ -281,7 +281,7 @@ const Details = (singleItem) => {
                       }}
                     >
                       <h5 style={{ color: "white" }}>Allocated CEE Tokens</h5>
-                      <p style={{ color: "white" }}>3,000,000</p>
+                      <p style={{ color: "white" }}>1,500,000</p>
                     </Link>
                   </div>
 
