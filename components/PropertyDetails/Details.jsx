@@ -318,18 +318,18 @@ const Details = (singleItem) => {
                     <div className="terms__wrapper">
                       <TermSingleCard
                         img={loan}
-                        p="Monthly rent"
-                        heading="€22,199.20"
+                        p="Token Price"
+                        heading="€1"
                       />
                       <TermSingleCard
                         img={revenue}
-                        p="Revenue share"
-                        heading="90%"
+                        p="Discount"
+                        heading="10%"
                       />
                       <TermSingleCard
                         img={project}
-                        p="Management Fee"
-                        heading="10%"
+                        p="Minimum Investment"
+                        heading="€1,000"
                       />
                     </div>
                   </div>
@@ -364,13 +364,13 @@ const Details = (singleItem) => {
                       <TermSingleCard
                         img={investor}
                         p="Investors"
-                        heading="40% - 60%"
+                        heading="90%"
                       />
-                      <TermSingleCard img={project} p="Project" heading="40%" />
+                      <TermSingleCard img={project} p="Properly Management Fee" heading="10%" />
                       <TermSingleCard
                         img={reinvest}
-                        p="CEETokenized"
-                        heading="Up to 20%"
+                        p="Yearly Revenue Pool"
+                        heading="€220,199"
                       />
                     </div>
                   </div>
