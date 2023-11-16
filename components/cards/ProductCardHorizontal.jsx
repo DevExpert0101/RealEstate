@@ -1,11 +1,21 @@
+"use client"
+
 import Image from "next/image";
 import Link from "next/link";
 import Countdown from "react-countdown";
 import { FaClock, FaMapMarkerAlt } from "react-icons/fa";
 import CountdownDisplay from "../common/CountdownDisplay";
 import home from "/public/images/home.png";
+import { useRouter } from 'next/router';
+
+//import components
+import SimpleBar from "simplebar-react";
+import 'simplebar-react/dist/simplebar.min.css';
 
 const ProductCardHorizontal = ({ singleItem }) => {
+  
+  const router = useRouter();
+  
   const {
     city,
     location,
@@ -22,19 +32,23 @@ const ProductCardHorizontal = ({ singleItem }) => {
     detailsLink,
     description,
   } = singleItem;
+  
 
   const SetThroughEdit = () => {
     localStorage.setItem("throughEdit", "false");
+  };
+  const GoDetailPage = (data) => () => {
+    localStorage.setItem('item', JSON.stringify(data));
+    router.push(`/property/{id}`);
   }
-
   return (
     <div className="row d-flex align-items-center">
       <div className="col-lg-5">
         <div className="property__item__image column__space--secondary">
-          <div className="img__effect">
-            <Link href="/property/{id}">
+          <div className="img__effect" style={{cursor: 'pointer'}}>
+            <div onClick={GoDetailPage(singleItem)}>
               <Image src={img} alt="los" onClick={SetThroughEdit} />
-            </Link>
+            </div>
           </div>
         </div>
       </div>
@@ -42,7 +56,7 @@ const ProductCardHorizontal = ({ singleItem }) => {
         <div className="property__item__content">
           <div className="item__head">
             <div className="item__head__left">
-              <h5 style={{ color : "#13216e"}}>{city}</h5>
+              <h5 style={{ color: "#13216e" }} className="mt-3">{city}</h5>
               <p>
                 <i>
                   <FaMapMarkerAlt />
@@ -83,7 +97,7 @@ const ProductCardHorizontal = ({ singleItem }) => {
                 </span>{" "}
                 |{" "}
                 <span className="project__has__investors__amount">
-                €{investAmount}
+                  €{investAmount}
                 </span>{" "}
                 <span className="project__has__investors__percent">
                   ({investPer}%)
@@ -96,44 +110,29 @@ const ProductCardHorizontal = ({ singleItem }) => {
             <div className="item__info__single">
               <h6>Project Description</h6>
             </div>
-              <h6>
-                {/* {annualReturn.regular}% + {annualReturn.bonus}% */}
-                {description ? description : "The “CEETokenized“ team is introducing a new buy to let investment opportunity: A19, Vilnius I. The investment  offer consists of administrative premises, which are currently being converted into studio apartments/lofts. In this way, the aim is to increase the rental income of this real estate project."}
-              </h6>
-            
-            {/* <div className="item__info__single">
-              <p>Maximum Term</p>
-              <h6>{max_term} Months</h6>
-            </div>
-            <div className="item__info__single">
-              <p>Property Type</p>
-              <h6>{type}</h6>
-            </div>
-            <div className="item__info__single">
-              <p>Distribution</p>
-              <h6>{distribution}</h6>
-            </div> */}
+            <SimpleBar style={{width: '100%', height: 130, paddingLeft: 10, paddingRight: 10}}>
+              <span>
+                {description 
+                ? description 
+                : 'The “CEETokenized“ team is introducing a new buy to let investment opportunity: A19, Vilnius I. The investment  offer consists of administrative premises, which are currently being converted into studio apartments/lofts. In this way, the aim is to increase the rental income of this real estate project.'
+                }
+              </span>
+            </SimpleBar>
           </div>
           <div className="item__footer">
-            <div className="item__security">
+            <div className="item__security mb-3" >
               <div className="icon__box">
                 <Image src={home} alt="home" />
               </div>
-              <div className="item__security__content">
-                <p className="secondary">Security</p>
+              <div className="item__security__content ">
+                <p className="secondary ">Security</p>
                 <h6>Asset-Backed Stablecoin</h6>
               </div>
             </div>
             <div className="item__cta__group">
-              {/* <Link
-                href={singleItem.investLink}
-                className="button button--effect"
-              >
-                Invest Now
-              </Link> */}
               <Link
                 href={singleItem.detailsLink}
-                singleItem = {singleItem}
+                //singleItem={singleItem}
                 className="button  button--effect"
                 onClick={SetThroughEdit}
               >
@@ -146,5 +145,4 @@ const ProductCardHorizontal = ({ singleItem }) => {
     </div>
   );
 };
-
 export default ProductCardHorizontal;

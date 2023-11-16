@@ -225,8 +225,11 @@ const OldInvestCard = () => {
 const Details = (singleItem) => {
   const [role, setRole] = useState("1");
   const [throughEdit, setThroughEdit] = useState(false);
+  const [item, setItem] = useState({});
 
   useEffect(() => {
+      //get item
+      setItem(JSON.parse(localStorage.getItem('item')));
 
       let value;
       value = localStorage.getItem("role") || "";
@@ -235,7 +238,6 @@ const Details = (singleItem) => {
       value = localStorage.getItem("throughEdit");
       if(value == null) value = false;
       setThroughEdit(value);
-     
       console.log(value);
 
   }, []);
@@ -257,24 +259,23 @@ const Details = (singleItem) => {
                     Browse Gallery
                   </Link>
                   <div
-                    className="intro"
+                    className="intro flex-sm-row flex-column"
                     style={{
                       display: "flex",
-                      flexDirection: "row",
                       justifyContent: "space-evenly",
                     }}
                   >
                     <div>
-                      <h3>Los Angeles</h3>
+                      <h3>{item.city}</h3>
                       <p className="d-flex align-items-center gap-1">
                         <FaMapMarkerAlt />
-                        8706 Herrick Ave, Los Angeles
+                        {item.city}
                       </p>
                     </div>
 
                     <Link
                       href="#"
-                      className="button button-effect d-none d-sm-inline-flex"
+                      className="button button-effect"
                       style={{
                         display: "flex",
                         flexDirection: "column",
@@ -287,29 +288,24 @@ const Details = (singleItem) => {
 
                   <div className="group__one">
                     <h4>Project Description</h4>
-                    <p>
-                      The “CEETokenized“ team is introducing a new buy to let
-                      investment opportunity: A19, Vilnius I. The invest ment
-                      offer consists of administrative premises, which are
-                      currently being converted into studio apartments/lofts. In
-                      this way, the aim is to increase the rental income of this
-                      real estate project.
-                    </p>
+                    <span>
+                      {item.description}
+                    </span>
                   </div>
                   <div className="group__two">
                     <h5>Reasons to invest in the project A19, Vilnius:</h5>
                     <ul>
                       {[
-                        "Lofts in an attractive area - in the center of Vilnius;",
-                        "ixed, attractive annual rental income;",
-                        "The fixed interest is indexed to inflation;",
-                        "The fixed interest is indexed to inflation;",
-                        "Variable capital gains;",
-                        "The premises were appraised by an independent valuer at 347 000 EUR",
-                        "The project owner is an experienced real estate administrator.",
+                        "Prime Location situated in the heart of Ostrava, Czech Republic, Park Cihelni enjoys a strategic position within a vibrant urban setting, offering convenience and access to essential amenities.",
+                        "Lucrative Investment Opportunity with 262 upscale flats spread across 21,000 square meters, Park Cihelni presents an enticing investment prospect in Central Europe's thriving real estate market.",                        
+                        "Thoughtful Design meticulously planned and architecturally impressive, each phase of Park Cihelni features modern and aesthetically pleasing living spaces, crafted for an exceptional residential experience.",                        
+                        "Spread across five distinct phases, investors have the opportunity to engage in different stages of this development, enabling diversified investment strategies tailored to their preferences.",                        
+                        "Ostrava, known for its economic dynamism, cultural richness, and ongoing development initiatives, positions Park Cihelni as a promising asset with potential for sustained growth and appreciation.",                        
+                        "The high-quality living spaces, combined with the city's expanding job opportunities and amenities, assure a strong demand for rentals, offering investors potential recurring income streams.",                        
+                        "Beyond financial gains, Park Cihelni offers residents and investors alike a superior quality of life, combining urban convenience with a sophisticated living experience in a thriving metropolitan environmen."
                       ].map((item, i) => (
-                        <li key={i}>
-                          <Image src={check} alt="Check" />
+                        <li key={i} className="align-items-start">
+                          <Image src={check} style={{ marginTop: "8px"}}  alt="Check" />
                           {item}
                         </li>
                       ))}

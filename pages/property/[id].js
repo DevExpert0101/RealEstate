@@ -3,11 +3,16 @@ import Market from "../../components/home/Market";
 import AllProperties from "../../components/PropertyDetails/AllProperties";
 import Details from "../../components/PropertyDetails/Details";
 
-const PropertyDetails = (singleItem) => {
+const PropertyDetails = ({singleItem}) => {
+
+  
+
   return (
     <>
       {/* Details start here */}
+
       <Details singleItem={singleItem}/>
+      
 
       {/* Gallery start here */}
       <Gallery />

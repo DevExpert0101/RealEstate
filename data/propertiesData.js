@@ -8,8 +8,8 @@ import grid_two from "/public/images/property/grid-two.webp";
 const propertiesData = [
   {
     id: "23as72&#",
-    city: "Los Angeles",
-    location: "8706 Herrick Ave, Los Angeles",
+    city: "Park Cihelní - Ostrava, Czech Republic",
+    location: "Park Cihelní - Ostrava, Czech Republic",
     totalInvest: 17,
     investAmount: "7,94,196",
     investPer: 14.73,
@@ -20,6 +20,7 @@ const propertiesData = [
     },
     type: "Commercial",
     investLink: "/property/{id}",
+    description: "Welcome to Park Cihelni, our flagship property offering on the vibrant streets of Ostrava, Czech Republic. Nestled across five dynamic phases, this premium development boasts 262 luxurious flats, creating a total gross floor area of 21,000 square meters. It's an irresistible opportunity for astute investors seeking an entry into Central Europe's burgeoning real estate market."
   },
   {
     id: "2as72&#",
