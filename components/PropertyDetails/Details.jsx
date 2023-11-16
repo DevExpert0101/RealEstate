@@ -337,24 +337,24 @@ const Details = (singleItem) => {
                     <h5>When investing:</h5>
                     <ul>
                       <li>
-                        <Image src={check} alt="Check" /> Up to 4999 € - the
-                        annual return is 7%.
+                        <Image src={check} alt="Check" /> Up to 1000 € - the
+                        annual return is 0.72%.
                       </li>
                       <li>
                         <Image src={check} alt="Check" /> 5000 € – 14999 € - the
-                        annual return is 7.1%.
+                        annual return is 7.2%.
                       </li>
                       <li>
                         <Image src={check} alt="Check" /> 15000 € – 29999 € -
-                        the annual return is 7.2%.
+                        the annual return is 13.5%.
                       </li>
                       <li>
                         <Image src={check} alt="Check" /> 30000 € – 49999 € -
-                        the annual return is 7.35%.
+                        the annual return is 21.6%.
                       </li>
                       <li>
                         <Image src={check} alt="Check" /> 50000 € and more - the
-                        annual return is 7.5%.
+                        annual return is 27%.
                       </li>
                     </ul>
                   </div>
