@@ -34,8 +34,10 @@ const ProductCardHorizontal = ({ singleItem }) => {
   } = singleItem;
   
 
-  const SetThroughEdit = () => {
+  const SetThroughEdit = (data) => () => {
     localStorage.setItem("throughEdit", "false");
+    localStorage.setItem('item', JSON.stringify(data));
+    router.push(singleItem.detailsLink);
   };
   const GoDetailPage = (data) => () => {
     localStorage.setItem('item', JSON.stringify(data));
@@ -130,14 +132,14 @@ const ProductCardHorizontal = ({ singleItem }) => {
               </div>
             </div>
             <div className="item__cta__group">
-              <Link
-                href={singleItem.detailsLink}
+              <div style={{cursor: 'pointer'}}
+                //href={singleItem.detailsLink}
                 //singleItem={singleItem}
                 className="button  button--effect"
-                onClick={SetThroughEdit}
+                onClick={SetThroughEdit(singleItem)}
               >
                 Details
-              </Link>
+              </div>
             </div>
           </div>
         </div>
