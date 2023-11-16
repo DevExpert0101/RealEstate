@@ -398,14 +398,14 @@ const Details = (singleItem) => {
                   <div className="group__one">
                     <h4>Key investment risks:</h4>
                     <p>
-                      Risk of falling prices: The price of the property might
-                      fall due to the increase in supply or decrease in demand
-                      in the area or other economic factors.Liquidity risk: The
-                      borrower might be unable to find a buyer in order to sell
-                      the property.Tenant risk: There is a risk that the asset
-                      can lose a tenant and it can take time to find
-                      replacements, which can have impact on the property&#39;s
-                      cash-flow.
+                    This opportunity may be subject to fluctuations influenced by changes in the local real estate market, 
+                    economic conditions, and demand-supply dynamics. These fluctuations could impact property valuations and potential resale values.  
+                    Unforeseen economic downturns, changes in interest rates, or financial crises could adversely affect the property&#39;s performance, 
+                    rental yields, and overall profitability. Vacancy rates or unexpected tenant turnover could result in income disruptions, 
+                    impacting rental revenues and, consequently, dividend distributions to investors. Unexpected maintenance or repair expenses, 
+                    higher operational costs, or capital expenditures may affect the property&#39;s net income, potentially reducing the dividends 
+                    distributed to investors. Investors should carefully assess these risks, conduct thorough due diligence, consider their risk tolerance, 
+                    and seek professional advice before making investment decisions in Park Cihelni or any real estate-backed assets.
                     </p>
                     <div className="map__wrapper">
                       <iframe
