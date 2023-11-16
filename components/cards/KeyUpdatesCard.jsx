@@ -17,15 +17,15 @@ const KeyUpdatesCard = () => {
         <div className="singl">
           <Image src={check} alt="check" />
           <div>
-            <p>30-Aug-2022</p>
-            <Link href="/terms-conditions">Term Sheet Signed</Link>
+            <p>15-NOV-2023</p>
+            <Link href="/terms-conditions">Prspectus Released</Link>
           </div>
         </div>
         <div className="singl">
           <Image src={check} alt="check" />
           <div>
-            <p>30-Aug-2022</p>
-            <Link href="/privacy-policy">Listing Live</Link>
+            <p>20-NOV-2023</p>
+            <Link href="/privacy-policy">STO Live</Link>
           </div>
         </div>
       </div>

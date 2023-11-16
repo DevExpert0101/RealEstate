@@ -6,19 +6,18 @@ const ReportsCard = () => {
     <>
       <h5>Reports</h5>
       <hr />
-      <h6>Investment Note</h6>
-      <p>Property Share&rsquo;s Detailed Investment Note</p>
+      <h6>Property Valuation</h6>
+      <p>Property Valuation Detailed Memorandum</p>
       <Link href="/" className="button">
-        DOWNLOAD INVESTMENT NOTE <FaDownload className="ms-1" />
+        DOWNLOAD VALUATION REPORT <FaDownload className="ms-1" />
       </Link>
 
-      <h6>Legal Title Report</h6>
+      <h6>Prospectus</h6>
       <p>
-        Detailed Report on the Title diligence of the property by Amarchand
-        Mangaldas
+        Details Prospectus for the tokenized property
       </p>
       <Link href="/" className="button">
-        DOWNLOAD TITLE REPORT <FaDownload className="ms-1" />
+        DOWNLOAD PROSPECTUS <FaDownload className="ms-1" />
       </Link>
     </>
   );
