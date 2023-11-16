@@ -18,6 +18,8 @@ import loan from "/public/images/icons/loan.png";
 import project from "/public/images/icons/project.png";
 import reinvest from "/public/images/icons/reinvest.png";
 import owner from "/public/images/owner.jpg";
+import revenue from "/public/images/icons/revenue.png";
+
 import { useEffect, useState } from "react";
 
 const NewInvestCard = () => {
@@ -316,18 +318,18 @@ const Details = (singleItem) => {
                     <div className="terms__wrapper">
                       <TermSingleCard
                         img={loan}
-                        p="Maximum loan term"
-                        heading="36 Months"
+                        p="Monthly rent"
+                        heading="€22,199.20"
                       />
                       <TermSingleCard
-                        img={charge}
-                        p="Security"
-                        heading="1st charge Mortgage"
+                        img={revenue}
+                        p="Revenue share"
+                        heading="90%"
                       />
                       <TermSingleCard
                         img={project}
-                        p="Annual Return"
-                        heading="7%"
+                        p="Management Fee"
+                        heading="10%"
                       />
                     </div>
                   </div>

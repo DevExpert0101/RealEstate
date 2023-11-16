@@ -131,10 +131,11 @@ const ProductCardHorizontal = ({ singleItem }) => {
                 <h6>Asset-Backed Stablecoin</h6>
               </div>
             </div>
-            <div className="item__cta__group">
-              <div style={{cursor: 'pointer'}}
+            <div className="item__cta__group" style={{cursor: 'pointer'}}>
+              <div
                 //href={singleItem.detailsLink}
                 //singleItem={singleItem}
+                style={{paddingTop: '20px!important', paddingBottom: '20px!important'}}
                 className="button  button--effect"
                 onClick={SetThroughEdit(singleItem)}
               >
