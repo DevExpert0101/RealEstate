@@ -189,7 +189,12 @@ const OldInvestCard = () => {
           <h5 className="neutral-top">Occupancy</h5>
           <div className="acus__btns">
             {[0, 20, 40, 60, 80, 100].map((item, i) => (
-              <Link key={item} href="/" className="acus__btn acus__btn__active" style={{ backgroundColor: item === 100 ? '#99ff99' : ''}}>
+              <Link
+                key={item}
+                href="/"
+                className="acus__btn acus__btn__active"
+                style={{ backgroundColor: item === 100 ? "#99ff99" : "" }}
+              >
                 {item}%
               </Link>
             ))}
@@ -258,19 +263,23 @@ const Details = (singleItem) => {
   const [role, setRole] = useState("1");
   const [throughEdit, setThroughEdit] = useState(false);
   const [item, setItem] = useState({});
+  const [reasons, setReasons] = useState([]);
 
   useEffect(() => {
     //get item
+    let value;
+    value = JSON.parse(localStorage.getItem("item"));
     setItem(JSON.parse(localStorage.getItem("item")));
 
-    let value;
+    setReasons(value.reasons);
+
     value = localStorage.getItem("role") || "";
 
     setRole(value);
     value = localStorage.getItem("throughEdit");
     if (value == null) value = false;
     setThroughEdit(value);
-    console.log(value);
+
   }, []);
 
   return (
@@ -310,7 +319,7 @@ const Details = (singleItem) => {
                       style={{
                         display: "flex",
                         flexDirection: "column",
-                        width: "350px"
+                        width: "350px",
                       }}
                     >
                       <h6 style={{ color: "white" }}>Allocated CEE Tokens</h6>
@@ -325,15 +334,7 @@ const Details = (singleItem) => {
                   <div className="group__two">
                     <h5>Reasons to invest in the project:</h5>
                     <ul>
-                      {[
-                        "Prime Location situated in the heart of Ostrava, Czech Republic, Park Cihelni enjoys a strategic position within a vibrant urban setting, offering convenience and access to essential amenities.",
-                        "Lucrative Investment Opportunity with 262 upscale flats spread across 21,000 square meters, Park Cihelni presents an enticing investment prospect in Central Europe's thriving real estate market.",
-                        "Thoughtful Design meticulously planned and architecturally impressive, each phase of Park Cihelni features modern and aesthetically pleasing living spaces, crafted for an exceptional residential experience.",
-                        "Spread across five distinct phases, investors have the opportunity to engage in different stages of this development, enabling diversified investment strategies tailored to their preferences.",
-                        "Ostrava, known for its economic dynamism, cultural richness, and ongoing development initiatives, positions Park Cihelni as a promising asset with potential for sustained growth and appreciation.",
-                        "The high-quality living spaces, combined with the city's expanding job opportunities and amenities, assure a strong demand for rentals, offering investors potential recurring income streams.",
-                        "Beyond financial gains, Park Cihelni offers residents and investors alike a superior quality of life, combining urban convenience with a sophisticated living experience in a thriving metropolitan environmen.",
-                      ].map((item, i) => (
+                      {reasons ? reasons.map((item, i) => (
                         <li key={i} className="align-items-start">
                           <Image
                             src={check}
@@ -342,7 +343,7 @@ const Details = (singleItem) => {
                           />
                           {item}
                         </li>
-                      ))}
+                      )) : <div></div>}
                     </ul>
                   </div>
                   <div className="terms">

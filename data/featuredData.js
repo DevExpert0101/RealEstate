@@ -30,12 +30,21 @@ const featuredData = [
     description: "Welcome to Park Cihelni, our flagship property offering on the vibrant streets of Ostrava, Czech Republic. Nestled across five dynamic phases, this premium development boasts 262 luxurious flats, creating a total gross floor area of 21,000 m². It's an irresistible opportunity for astute investors seeking an entry into Central Europe's burgeoning real estate market. \
     Park Cihelni consist of 5 development phases, each presents a unique chance to partake in the growth story of this meticulously planned residential paradise. With modern architecture and thoughtfully designed living spaces, these flats promise an exquisite lifestyle within a bustling urban landscape. \
     The property not only offers a slice of contemporary living but also stands as a lucrative investment. Its strategic location in Ostrava, a city known for its economic vitality and cultural charm, ensures high demand and potential appreciation for investors. \
-    This irresistible offer invites you to be a part of a thriving community, delivering an exceptional living experience while securing an enticing investment opportunity in the heart of Czech Republic's evolving real estate landscape. Embrace Park Cihelni and step into a world where luxury meets promising investment potential."
+    This irresistible offer invites you to be a part of a thriving community, delivering an exceptional living experience while securing an enticing investment opportunity in the heart of Czech Republic's evolving real estate landscape. Embrace Park Cihelni and step into a world where luxury meets promising investment potential.",
+    reasons : [
+      "Prime Location situated in the heart of Ostrava, Czech Republic, Park Cihelni enjoys a strategic position within a vibrant urban setting, offering convenience and access to essential amenities.",
+      "Lucrative Investment Opportunity with 262 upscale flats spread across 21,000 square meters, Park Cihelni presents an enticing investment prospect in Central Europe's thriving real estate market.",
+      "Thoughtful Design meticulously planned and architecturally impressive, each phase of Park Cihelni features modern and aesthetically pleasing living spaces, crafted for an exceptional residential experience.",
+      "Spread across five distinct phases, investors have the opportunity to engage in different stages of this development, enabling diversified investment strategies tailored to their preferences.",
+      "Ostrava, known for its economic dynamism, cultural richness, and ongoing development initiatives, positions Park Cihelni as a promising asset with potential for sustained growth and appreciation.",
+      "The high-quality living spaces, combined with the city's expanding job opportunities and amenities, assure a strong demand for rentals, offering investors potential recurring income streams.",
+      "Beyond financial gains, Park Cihelni offers residents and investors alike a superior quality of life, combining urban convenience with a sophisticated living experience in a thriving metropolitan environmen.",
+    ]
   },
   {
     id: "ahs$%@5q272&#",
     city: "Prague Vinohrady, Czech Public",
-    location: "st. no. 20, Bělehradská, Prague",
+    location: "Bělehradká st. no. 20, Praha 4",
     totalInvest: 179,
     investAmount: "1,64,296",
     investPer: 64.73,
@@ -51,10 +60,8 @@ const featuredData = [
     security: "1st-Rank",
     investLink: "/investment/{id}",
     detailsLink: "/property/{id}",
-    description: `The site is a triangular shape 1 570 m²  site between the rail tracks \
-    on the north — north east, Bělehradská street on the west and Na Ostruvku street in the south. The site is mostly zoned for mixed residential use except for the strip between the rails and the mixed \
-    use zone which needs to be kept as a reserve for future potential road construction with is not planned in any realistic city traffic strategy but is built into the zoning plan. \
-    The site is currently occupied by a gas station and the previous owner is the ex-head of real-estate having permitted a mixed-use 2 500 m&sup2; + 6 story building with two underground garages with the city gas station on the property. The permit for this building Is currently issued and our development will change the current permit to a single-use residential building increasing the net rentable m².`
+    description: `The project is located on property lot no. 4394/38 and 4394/55 in the cadastral Vinohrady in Prague Czech Republic at Bělehradká st. no. 20, Praha 4. The area 
+    is a very well-known and well-established residential district of Vinohrady that will become even more vibrant upon the completion of the residential project of Penta Development known as the Nuselsky Pivovar with many services and amenities which it brings.`
   },
   {
     id: "ahs$%@272&#",
