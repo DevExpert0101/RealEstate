@@ -1,6 +1,8 @@
 import Link from "next/link";
 import propertiesData from "../../data/propertiesData";
 import ProductCard from "../cards/ProductCard";
+import PropertyCard from "../cards/PropertyCard";
+
 
 const AllProperties = () => {
   return (

@@ -23,11 +23,17 @@ const ProductCard = ({ singleItem }) => {
           <Image src={img} alt={city} />
         </Link>
       </div>
-      <div className="property__grid__single__inner">
+      <div className="property__grid__single__inner ">
+        <div style={{ height: "160px"}} className="d-flex flex-column justify-content-center">
         <h4>{city}</h4>
+
+        </div>
+        <div>
+
         <p className="sub__info d-flex align-items-center gap-1">
           <FaMapMarkerAlt /> {location}
         </p>
+        </div>
         <div className="progress__type">
           <div className="progress">
             <div
