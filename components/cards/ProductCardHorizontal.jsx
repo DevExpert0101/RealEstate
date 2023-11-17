@@ -132,15 +132,15 @@ const ProductCardHorizontal = ({ singleItem }) => {
               </div>
             </div>
             <div className="item__cta__group" style={{cursor: 'pointer'}}>
-              <div
-                //href={singleItem.detailsLink}
+              <button
+                // href={singleItem.detailsLink}
                 //singleItem={singleItem}
-                style={{paddingTop: '20px!important', paddingBottom: '20px!important'}}
+                // style={{paddingTop: '20px!important', paddingBottom: '20px!important' , height: "60px"}}
                 className="button  button--effect"
                 onClick={SetThroughEdit(singleItem)}
               >
                 Details
-              </div>
+              </button>
             </div>
           </div>
         </div>

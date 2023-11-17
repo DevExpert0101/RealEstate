@@ -37,7 +37,7 @@ const NewInvestCard = () => {
             />
           </div>
           <h5>
-            Available for funding: <span>CEE 3,000,000</span>
+            Available for funding: <span>CEE 5,000,000</span>
           </h5>
 
           <Funding />
@@ -120,16 +120,31 @@ const NewInvestCard = () => {
           <h5 className="neutral-top">Investment Overview</h5>
           <hr />
           <p>
-            Purpose of the loan To increase the company&#39;s working capital,
-            magna a laoreet convallis, massa sapien tempor arcu, nec euismod
-            elit justo in lacus. Maecenas mattis massa lectus, vel tincidunt
-            augue porta non.
+            Park Cihelni, strategically located in Ostrava, Czech Republic,
+            stands as a promising investment opportunity within the burgeoning
+            real estate market of the region. This modern residential complex
+            spans across 21,000 square meters and comprises 262 residential
+            flats, divided into five phases. Ostrava, known for its economic
+            growth and development initiatives, presents an attractive
+            investment landscape with a thriving real estate market. Park
+            Cihelni aligns with the growing demand for contemporary living
+            spaces and offers an ideal setting for potential investors seeking
+            stable returns within a vibrant and evolving community.
           </p>
           <p>
-            Duis quis orci vehicula, fermentum tortor vitae, imperdiet sem.
-            Quisque iaculis eu odio in lobortis. Sed vel ex non erat
-            pellentesque lobortis vel vitae diam. Donec gravida eleifend
-            pellentesque. Curabitur dictum blandit accumsan.
+            <h6>
+              Investment Appeal:<br></br>
+            </h6>
+            Investing in Park Cihelni represents an opportunity to partake in
+            the growth of Ostrava&#39;s real estate sector. The property&#39;s
+            modern design, combined with its strategic location and diverse
+            housing options, aims to cater to the evolving demands of residents
+            seeking quality homes. With an emphasis on community living and
+            modern amenities, Park Cihelni aims to deliver steady returns
+            supported by the upward trajectory of the Ostrava property market.
+            This investment avenue is tailored for individuals seeking a
+            foothold in a promising real estate venture poised for
+            growth and stability.
           </p>
           <Link href="/blog">Read More</Link>
         </div>
@@ -165,7 +180,7 @@ const OldInvestCard = () => {
             />
           </div>
           <h5>
-            Available for funding: <span>€134 514</span>
+            Available for funding: <span>CEE 500,000</span>
           </h5>
           {/* funding  */}
           <Funding />
@@ -174,7 +189,7 @@ const OldInvestCard = () => {
           <h5 className="neutral-top">Occupancy</h5>
           <div className="acus__btns">
             {[0, 20, 40, 60, 80, 100].map((item, i) => (
-              <Link key={item} href="/" className="acus__btn acus__btn__active">
+              <Link key={item} href="/" className="acus__btn acus__btn__active" style={{ backgroundColor: item === 100 ? '#99ff99' : ''}}>
                 {item}%
               </Link>
             ))}
@@ -191,16 +206,31 @@ const OldInvestCard = () => {
           <h5 className="neutral-top">Investment Overview</h5>
           <hr />
           <p>
-            Purpose of the loan To increase the company&#39;s working capital,
-            magna a laoreet convallis, massa sapien tempor arcu, nec euismod
-            elit justo in lacus. Maecenas mattis massa lectus, vel tincidunt
-            augue porta non.
+            Park Cihelni, strategically located in Ostrava, Czech Republic,
+            stands as a promising investment opportunity within the burgeoning
+            real estate market of the region. This modern residential complex
+            spans across 21,000 square meters and comprises 262 residential
+            flats, divided into five phases. Ostrava, known for its economic
+            growth and development initiatives, presents an attractive
+            investment landscape with a thriving real estate market. Park
+            Cihelni aligns with the growing demand for contemporary living
+            spaces and offers an ideal setting for potential investors seeking
+            stable returns within a vibrant and evolving community.
           </p>
           <p>
-            Duis quis orci vehicula, fermentum tortor vitae, imperdiet sem.
-            Quisque iaculis eu odio in lobortis. Sed vel ex non erat
-            pellentesque lobortis vel vitae diam. Donec gravida eleifend
-            pellentesque. Curabitur dictum blandit accumsan.
+            <h6>
+              Investment Appeal:<br></br>
+            </h6>
+            Investing in Park Cihelni represents an opportunity to partake in
+            the growth of Ostrava&#39;s real estate sector. The property&#39;s
+            modern design, combined with its strategic location and diverse
+            housing options, aims to cater to the evolving demands of residents
+            seeking quality homes. With an emphasis on community living and
+            modern amenities, Park Cihelni aims to deliver steady returns
+            supported by the upward trajectory of the Ostrava property market.
+            This investment avenue is tailored for individuals seeking a
+            foothold in a promising real estate venture poised for
+            growth and stability.
           </p>
           <Link href="/blog">Read More</Link>
         </div>
@@ -230,18 +260,17 @@ const Details = (singleItem) => {
   const [item, setItem] = useState({});
 
   useEffect(() => {
-      //get item
-      setItem(JSON.parse(localStorage.getItem('item')));
+    //get item
+    setItem(JSON.parse(localStorage.getItem("item")));
 
-      let value;
-      value = localStorage.getItem("role") || "";
+    let value;
+    value = localStorage.getItem("role") || "";
 
-      setRole(value);
-      value = localStorage.getItem("throughEdit");
-      if(value == null) value = false;
-      setThroughEdit(value);
-      console.log(value);
-
+    setRole(value);
+    value = localStorage.getItem("throughEdit");
+    if (value == null) value = false;
+    setThroughEdit(value);
+    console.log(value);
   }, []);
 
   return (
@@ -268,7 +297,7 @@ const Details = (singleItem) => {
                     }}
                   >
                     <div>
-                      <h3>{item.city}</h3>
+                      <h4>{item.city}</h4>
                       <p className="d-flex align-items-center gap-1">
                         <FaMapMarkerAlt />
                         {item.city}
@@ -281,33 +310,36 @@ const Details = (singleItem) => {
                       style={{
                         display: "flex",
                         flexDirection: "column",
+                        width: "350px"
                       }}
                     >
-                      <h5 style={{ color: "white" }}>Allocated CEE Tokens</h5>
+                      <h6 style={{ color: "white" }}>Allocated CEE Tokens</h6>
                       <p style={{ color: "white" }}>1,500,000</p>
                     </Link>
                   </div>
 
                   <div className="group__one">
                     <h4>Project Description</h4>
-                    <span>
-                      {item.description}
-                    </span>
+                    <span>{item.description}</span>
                   </div>
                   <div className="group__two">
                     <h5>Reasons to invest in the project A19, Vilnius:</h5>
                     <ul>
                       {[
                         "Prime Location situated in the heart of Ostrava, Czech Republic, Park Cihelni enjoys a strategic position within a vibrant urban setting, offering convenience and access to essential amenities.",
-                        "Lucrative Investment Opportunity with 262 upscale flats spread across 21,000 square meters, Park Cihelni presents an enticing investment prospect in Central Europe's thriving real estate market.",                        
-                        "Thoughtful Design meticulously planned and architecturally impressive, each phase of Park Cihelni features modern and aesthetically pleasing living spaces, crafted for an exceptional residential experience.",                        
-                        "Spread across five distinct phases, investors have the opportunity to engage in different stages of this development, enabling diversified investment strategies tailored to their preferences.",                        
-                        "Ostrava, known for its economic dynamism, cultural richness, and ongoing development initiatives, positions Park Cihelni as a promising asset with potential for sustained growth and appreciation.",                        
-                        "The high-quality living spaces, combined with the city's expanding job opportunities and amenities, assure a strong demand for rentals, offering investors potential recurring income streams.",                        
-                        "Beyond financial gains, Park Cihelni offers residents and investors alike a superior quality of life, combining urban convenience with a sophisticated living experience in a thriving metropolitan environmen."
+                        "Lucrative Investment Opportunity with 262 upscale flats spread across 21,000 square meters, Park Cihelni presents an enticing investment prospect in Central Europe's thriving real estate market.",
+                        "Thoughtful Design meticulously planned and architecturally impressive, each phase of Park Cihelni features modern and aesthetically pleasing living spaces, crafted for an exceptional residential experience.",
+                        "Spread across five distinct phases, investors have the opportunity to engage in different stages of this development, enabling diversified investment strategies tailored to their preferences.",
+                        "Ostrava, known for its economic dynamism, cultural richness, and ongoing development initiatives, positions Park Cihelni as a promising asset with potential for sustained growth and appreciation.",
+                        "The high-quality living spaces, combined with the city's expanding job opportunities and amenities, assure a strong demand for rentals, offering investors potential recurring income streams.",
+                        "Beyond financial gains, Park Cihelni offers residents and investors alike a superior quality of life, combining urban convenience with a sophisticated living experience in a thriving metropolitan environmen.",
                       ].map((item, i) => (
                         <li key={i} className="align-items-start">
-                          <Image src={check} style={{ marginTop: "8px"}}  alt="Check" />
+                          <Image
+                            src={check}
+                            style={{ marginTop: "8px" }}
+                            alt="Check"
+                          />
                           {item}
                         </li>
                       ))}
@@ -316,11 +348,7 @@ const Details = (singleItem) => {
                   <div className="terms">
                     <h5>Financial terms of the investment:</h5>
                     <div className="terms__wrapper">
-                      <TermSingleCard
-                        img={loan}
-                        p="Token Price"
-                        heading="€1"
-                      />
+                      <TermSingleCard img={loan} p="Token Price" heading="€1" />
                       <TermSingleCard
                         img={revenue}
                         p="Discount"
@@ -366,7 +394,11 @@ const Details = (singleItem) => {
                         p="Investors"
                         heading="90%"
                       />
-                      <TermSingleCard img={project} p="Properly Management Fee" heading="10%" />
+                      <TermSingleCard
+                        img={project}
+                        p="Properly Management Fee"
+                        heading="10%"
+                      />
                       <TermSingleCard
                         img={reinvest}
                         p="Yearly Revenue Pool"
@@ -377,7 +409,7 @@ const Details = (singleItem) => {
                   <div className="owner">
                     <Image src={owner} alt="owner" />
                     <div>
-                      <h5>The project owner (borrower)</h5>
+                      <h5>Project Owner</h5>
                       <p>
                         MB „Rego Properties“ - is a company serving as a special
                         vehicle for CEETokenized investments. The CEO of the
@@ -398,18 +430,29 @@ const Details = (singleItem) => {
                   <div className="group__one">
                     <h4>Key investment risks:</h4>
                     <p>
-                    This opportunity may be subject to fluctuations influenced by changes in the local real estate market, 
-                    economic conditions, and demand-supply dynamics. These fluctuations could impact property valuations and potential resale values.  
-                    Unforeseen economic downturns, changes in interest rates, or financial crises could adversely affect the property&#39;s performance, 
-                    rental yields, and overall profitability. Vacancy rates or unexpected tenant turnover could result in income disruptions, 
-                    impacting rental revenues and, consequently, dividend distributions to investors. Unexpected maintenance or repair expenses, 
-                    higher operational costs, or capital expenditures may affect the property&#39;s net income, potentially reducing the dividends 
-                    distributed to investors. Investors should carefully assess these risks, conduct thorough due diligence, consider their risk tolerance, 
-                    and seek professional advice before making investment decisions in Park Cihelni or any real estate-backed assets.
+                      This opportunity may be subject to fluctuations influenced
+                      by changes in the local real estate market, economic
+                      conditions, and demand-supply dynamics. These fluctuations
+                      could impact property valuations and potential resale
+                      values. Unforeseen economic downturns, changes in interest
+                      rates, or financial crises could adversely affect the
+                      property&#39;s performance, rental yields, and overall
+                      profitability. Vacancy rates or unexpected tenant turnover
+                      could result in income disruptions, impacting rental
+                      revenues and, consequently, dividend distributions to
+                      investors. Unexpected maintenance or repair expenses,
+                      higher operational costs, or capital expenditures may
+                      affect the property&#39;s net income, potentially reducing
+                      the dividends distributed to investors. Investors should
+                      carefully assess these risks, conduct thorough due
+                      diligence, consider their risk tolerance, and seek
+                      professional advice before making investment decisions in
+                      Park Cihelni or any real estate-backed assets.
                     </p>
                     <div className="map__wrapper">
                       <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20342.411046372905!2d-74.16638039276373!3d40.719832743885284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1649562691355!5m2!1sen!2sbd"
+                        // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20342.411046372905!2d-74.16638039276373!3d40.719832743885284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1649562691355!5m2!1sen!2sbd"
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29121.557129272667!2d18.22578674304041!3d49.823546497482475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sru!4v1700168021163!5m2!1sen!2sru"
                         width="746"
                         height="312"
                         loading="lazy"

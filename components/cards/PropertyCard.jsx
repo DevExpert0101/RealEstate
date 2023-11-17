@@ -59,7 +59,7 @@ const PropertyCard = ({ singleData, colActiv }) => {
           >
             <div className="property__item__content">
               <div className="item__head">
-                <div className="item__head__left">
+                <div className="item__head__left d-flex flex-column justify-content-center "  style={{ height: "160px"}}>
                   <h4>{city}</h4>
                   <p>
                     <i>

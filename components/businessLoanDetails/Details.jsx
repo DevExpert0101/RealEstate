@@ -202,16 +202,33 @@ const Details = () => {
                     <h5 className="neutral-top">Investment Overview</h5>
                     <hr />
                     <p>
-                      Purpose of the loan To increase the company&rsquo;s
-                      working capital, magna a laoreet convallis, massa sapien
-                      tempor arcu, nec euismod elit justo in lacus. Maecenas
-                      mattis massa lectus, vel tincidunt augue porta non.
+                      Park Cihelni, strategically located in Ostrava, Czech
+                      Republic, stands as a promising investment opportunity
+                      within the burgeoning real estate market of the region.
+                      This modern residential complex spans across 21,000 square
+                      meters and comprises 262 residential flats, divided into
+                      five phases. Ostrava, known for its economic growth and
+                      development initiatives, presents an attractive investment
+                      landscape with a thriving real estate market. Park Cihelni
+                      aligns with the growing demand for contemporary living
+                      spaces and offers an ideal setting for potential investors
+                      seeking stable returns within a vibrant and evolving
+                      community.
                     </p>
                     <p>
-                      Duis quis orci vehicula, fermentum tortor vitae, imperdiet
-                      sem. Quisque iaculis eu odio in lobortis. Sed vel ex non
-                      erat pellentesque lobortis vel vitae diam. Donec gravida
-                      eleifend pellentesque. Curabitur dictum blandit accumsan.
+                      <h6>Investment Appeal:</h6>
+                      <br></br>
+                      Investing in Park Cihelni represents an opportunity to
+                      partake in the growth of Ostrava&rsquo;s real estate
+                      sector. The property&rsquo;s modern design, combined with
+                      its strategic location and diverse housing options, aims
+                      to cater to the evolving demands of residents seeking
+                      quality homes. With an emphasis on community living and
+                      modern amenities, Park Cihelni aims to deliver steady
+                      returns supported by the upward trajectory of the Ostrava
+                      property market. This investment avenue is tailored for
+                      individuals seeking a foothold in a promising real estate
+                      venture poised for growth and stability.
                     </p>
                     <Link href="/blog">Read More</Link>
                   </div>

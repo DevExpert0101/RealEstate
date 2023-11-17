@@ -2,11 +2,11 @@ import eight from "/public/images/gallery/eight.webp";
 import five from "/public/images/gallery/five.webp";
 import four from "/public/images/gallery/four.webp";
 import nine from "/public/images/gallery/nine.webp";
-import one from "/public/images/gallery/one.webp";
+import one from "/public/images/gallery/one.jpg";
 import seven from "/public/images/gallery/seven.webp";
 import six from "/public/images/gallery/six.webp";
-import three from "/public/images/gallery/three.webp";
-import two from "/public/images/gallery/two.webp";
+import three from "/public/images/gallery/three.jpg";
+import two from "/public/images/gallery/two.jpg";
 
 const imgArray = [
   {
