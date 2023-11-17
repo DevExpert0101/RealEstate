@@ -323,7 +323,7 @@ const Details = (singleItem) => {
                     <span>{item.description}</span>
                   </div>
                   <div className="group__two">
-                    <h5>Reasons to invest in the project A19, Vilnius:</h5>
+                    <h5>Reasons to invest in the project:</h5>
                     <ul>
                       {[
                         "Prime Location situated in the heart of Ostrava, Czech Republic, Park Cihelni enjoys a strategic position within a vibrant urban setting, offering convenience and access to essential amenities.",
