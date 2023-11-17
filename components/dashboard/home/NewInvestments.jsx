@@ -40,7 +40,7 @@ const NewInvestments = () => {
                     </span>{" "}
                     |{" "}
                     <span className="project__has__investors__amount">
-                      $4,94,196
+                      $494,196
                     </span>{" "}
                     <span className="project__has__investors__percent">
                       (54.73%)
