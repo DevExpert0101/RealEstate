@@ -1,6 +1,6 @@
 const CountdownDisplay = (props) => {
   return (
-    <div className="countdown">
+    <div className="countdown" style={{ width: 'max-content'}}>
       <h5>
         <span className="days">{props.days}</span>
         <span className="ref">d</span>
