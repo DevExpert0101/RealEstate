@@ -17,6 +17,7 @@ const ProductCardHorizontal = ({ singleItem }) => {
   const router = useRouter();
   
   const {
+    id,
     city,
     location,
     totalInvest,
@@ -48,9 +49,9 @@ const ProductCardHorizontal = ({ singleItem }) => {
       <div className="col-lg-5">
         <div className="property__item__image column__space--secondary">
           <div className="img__effect" style={{cursor: 'pointer'}}>
-            <div onClick={GoDetailPage(singleItem)}>
+            <Link href={`/property/${id}`}>
               <Image src={img} alt="los" onClick={SetThroughEdit} />
-            </div>
+            </Link>
           </div>
         </div>
       </div>
