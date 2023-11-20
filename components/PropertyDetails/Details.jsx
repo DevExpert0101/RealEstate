@@ -132,9 +132,9 @@ const NewInvestCard = () => {
             stable returns within a vibrant and evolving community.
           </p>
           <p>
-            <h6>
+            {/* <h6>
               Investment Appeal:<br></br>
-            </h6>
+            </h6> */}
             Investing in Park Cihelni represents an opportunity to partake in
             the growth of Ostrava&#39;s real estate sector. The property&#39;s
             modern design, combined with its strategic location and diverse
@@ -222,7 +222,7 @@ const OldInvestCard = () => {
             spaces and offers an ideal setting for potential investors seeking
             stable returns within a vibrant and evolving community.
           </p>
-          <p>
+          <div>
             <h6>
               Investment Appeal:<br></br>
             </h6>
@@ -236,7 +236,7 @@ const OldInvestCard = () => {
             This investment avenue is tailored for individuals seeking a
             foothold in a promising real estate venture poised for
             growth and stability.
-          </p>
+          </div>
           <Link href="/blog">Read More</Link>
         </div>
         <div className="group birinit">
@@ -259,26 +259,25 @@ const OldInvestCard = () => {
   );
 };
 
-const Details = (singleItem) => {
+const Details = ({ data }) => {
   const [role, setRole] = useState("1");
   const [throughEdit, setThroughEdit] = useState(false);
-  const [item, setItem] = useState({});
-  const [reasons, setReasons] = useState([]);
-
+  //const [item, setItem] = useState({});
+  //const [reasons, setReasons] = useState([]);
   useEffect(() => {
     //get item
-    let value;
-    value = JSON.parse(localStorage.getItem("item"));
-    setItem(JSON.parse(localStorage.getItem("item")));
+    // let value;
+    // value = JSON.parse(localStorage.getItem("item"));
+    // setItem(JSON.parse(localStorage.getItem("item")));
 
-    setReasons(value.reasons);
+    // //setReasons(value.reasons);
 
-    value = localStorage.getItem("role") || "";
+    // value = localStorage.getItem("role") || "";
 
-    setRole(value);
-    value = localStorage.getItem("throughEdit");
-    if (value == null) value = false;
-    setThroughEdit(value);
+    // setRole(value);
+    // value = localStorage.getItem("throughEdit");
+    // if (value == null) value = false;
+    // setThroughEdit(value);
 
   }, []);
 
@@ -306,10 +305,10 @@ const Details = (singleItem) => {
                     }}
                   >
                     <div>
-                      <h4>{item.city}</h4>
+                      <h4>{data.city}</h4>
                       <p className="d-flex align-items-center gap-1">
                         <FaMapMarkerAlt />
-                        {item.city}
+                        {data.city}
                       </p>
                     </div>
 
@@ -329,12 +328,12 @@ const Details = (singleItem) => {
 
                   <div className="group__one">
                     <h4>Project Description</h4>
-                    <span>{item.description}</span>
+                    <span>{data.description}</span>
                   </div>
                   <div className="group__two">
                     <h5>Reasons to invest in the project:</h5>
                     <ul>
-                      {reasons ? reasons.map((item, i) => (
+                      {data.reasons ? data.reasons.map((item, i) => (
                         <li key={i} className="align-items-start">
                           <Image
                             src={check}

@@ -45,15 +45,13 @@ const Properties = () => {
           </div>
         </div>
         <div className="row property__grid__area__wrapper">
-          {featuredData.map((singleData) => {
-            return (
+          {featuredData.map((data, index) => 
               <PropertyCard
-                key={singleData.id}
-                singleData={singleData}
-                colActiv={colActiv}
+                key = { data.id }
+                data = {data}
+                //colActiv = { colActiv }
               />
-            );
-          })}
+          )}
         </div>
         <div className="row property__grid__area__wrapper mt-30"></div>
         <div className="cta__btn">

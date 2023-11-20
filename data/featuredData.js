@@ -5,11 +5,11 @@ import weldon from "/public/images/property/Weldon.webp";
 import LosAngeles from "/public/images/property/LosAngeles.webp";
 import Sanfrancisco from "/public/images/property/SanFrancisco.webp";
 import Ostrava from "/public/images/property/Ostrava-Profilepic.png"
-
+import Belehradska from "/public/images/property/BĚLEHRADSKÁ.png";
 
 const featuredData = [
   {
-    id: "238haas72&#",
+    id: "2389",
     city: "Ostrava,Moravska, Czech Republic",
     location: "Cihelni, 87",
     totalInvest: 119,
@@ -39,17 +39,28 @@ const featuredData = [
       "Ostrava, known for its economic dynamism, cultural richness, and ongoing development initiatives, positions Park Cihelni as a promising asset with potential for sustained growth and appreciation.",
       "The high-quality living spaces, combined with the city's expanding job opportunities and amenities, assure a strong demand for rentals, offering investors potential recurring income streams.",
       "Beyond financial gains, Park Cihelni offers residents and investors alike a superior quality of life, combining urban convenience with a sophisticated living experience in a thriving metropolitan environmen.",
+    ],
+    propertyGallery: [
+      '/images/gallery/one.jpg',
+      '/images/gallery/two.jpg',
+      '/images/gallery/three.jpg',
+      '/images/gallery/four.webp',
+      '/images/gallery/five.webp',
+      '/images/gallery/six.webp',
+      '/images/gallery/seven.webp',
+      '/images/gallery/eight.webp',
+      '/images/gallery/nine.webp',
     ]
   },
   {
-    id: "ahs$%@5q272&#",
+    id: "32424",
     city: "Prague Vinohrady, Czech Public",
     location: "Bělehradká st. no. 20, Praha 4",
     totalInvest: 179,
     investAmount: "164,296",
     investPer: 64.73,
     goal: "5,00,000",
-    img: Sanfrancisco,
+    img: Belehradska,
     annualReturn: {
       regular: 3.5,
       bonus: 6,
@@ -61,10 +72,21 @@ const featuredData = [
     investLink: "/investment/{id}",
     detailsLink: "/property/{id}",
     description: `The project is located on property lot no. 4394/38 and 4394/55 in the cadastral Vinohrady in Prague Czech Republic at Bělehradká st. no. 20, Praha 4. The area 
-    is a very well-known and well-established residential district of Vinohrady that will become even more vibrant upon the completion of the residential project of Penta Development known as the Nuselsky Pivovar with many services and amenities which it brings.`
+    is a very well-known and well-established residential district of Vinohrady that will become even more vibrant upon the completion of the residential project of Penta Development known as the Nuselsky Pivovar with many services and amenities which it brings.`,
+    propertyGallery: [
+      '/images/gallery/0.png',
+      '/images/gallery/1.png',
+      '/images/gallery/3.png',
+      '/images/gallery/4.png',
+      '/images/gallery/nine.webp',
+      '/images/gallery/one.jpg',
+      '/images/gallery/two.webp',
+      '/images/gallery/three.webp',
+      '/images/gallery/four.webp',
+    ]
   },
   {
-    id: "ahs$%@272&#",
+    id: "3244",
     city: "The Weldon",
     location: "Gastonia, NC",
     totalInvest: 579,
@@ -84,7 +106,7 @@ const featuredData = [
     detailsLink: "/property/{id}",
   },
   {
-    id: "ahs$%@2(7272&#",
+    id: "23245",
     city: "The Lily",
     location: "Colorado Springs, CO",
     totalInvest: 359,
@@ -104,7 +126,7 @@ const featuredData = [
     detailsLink: "/property/{id}",
   },
   {
-    id: "a$%@5q272&#",
+    id: "fwgweg",
     city: "San Francisco, CA",
     location: "3335 21 St, San Francisco",
     totalInvest: 179,
@@ -124,7 +146,7 @@ const featuredData = [
     detailsLink: "/property/{id}",
   },
   {
-    id: "23s72&#",
+    id: "23s72wf",
     city: "Los Angeles",
     location: "8706 Herrick Ave, Los Angeles",
     totalInvest: 119,

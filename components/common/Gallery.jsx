@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
-import imgArray from "../../data/imgArray";
 import Modal from "./Modal";
 
-const Gallery = () => {
+const Gallery = ({ imageUrls }) => {
   const [findImg, setFindImg] = useState();
   const [activeModal, setActiveModal] = useState(false);
 
@@ -44,16 +43,16 @@ const Gallery = () => {
               </div>
             </div>
             <div className="row p__gallery__single">
-              {imgArray.map((singleImg, i) => (
+              {imageUrls ? imageUrls.map((url, index) => (
                 <div
-                  key={singleImg.id}
+                  key={index}
                   className="col-md-6 col-lg-4 gallery__single__two"
                 >
                   <div onClick={() => handleModal(singleImg.id)}>
-                    <Image src={singleImg.img} alt={singleImg.img} />
+                    <Image src={ url } alt={''} width = { 416 } height = { 242 } loading="lazy"/>
                   </div>
                 </div>
-              ))}
+              )): <></>}
             </div>
           </div>
         </div>

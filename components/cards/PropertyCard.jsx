@@ -5,28 +5,27 @@ import { FaClock, FaMapMarkerAlt } from "react-icons/fa";
 import CountdownDisplay from "../common/CountdownDisplay";
 import home from "/public/images/home.png";
 
-const PropertyCard = ({ singleData, colActiv }) => {
-  const {
-    city,
-    location,
-    totalInvest,
-    investAmount,
-    investPer,
-    goal,
-    img,
-    annualReturn,
-    max_term,
-    type,
-    distribution,
-    security,
-    investLink,
-    detailsLink,
-  } = singleData;
-
+const PropertyCard = ({ data, colActiv }) => {
+  // const {
+  //   id,
+  //   city,
+  //   location,
+  //   totalInvest,
+  //   investAmount,
+  //   investPer,
+  //   goal,
+  //   img,
+  //   annualReturn,
+  //   max_term,
+  //   type,
+  //   distribution,
+  //   security,
+  //   investLink,
+  //   detailsLink,
+  // } = data;;
   const SetThroughEdit = () => {
     localStorage.setItem("throughEdit", "false");
   }
-
   return (
     <div
       className={`property__grid__area__wrapper__inner ${
@@ -46,8 +45,8 @@ const PropertyCard = ({ singleData, colActiv }) => {
           >
             <div className="property__item__image column__space--secondary">
               <div className="img__effect">
-                <Link href={detailsLink}>
-                  <Image src={img} alt="los" />
+                <Link href={'/property/' + data.id} >
+                  <Image src={data.img} alt="los" style={{height: '291px'}}/>
                 </Link>
               </div>
             </div>
@@ -60,12 +59,12 @@ const PropertyCard = ({ singleData, colActiv }) => {
             <div className="property__item__content">
               <div className="item__head">
                 <div className="item__head__left d-flex flex-column justify-content-center "  style={{ height: "160px"}}>
-                  <h4>{city}</h4>
+                  <h4>{data.city}</h4>
                   <p>
                     <i>
                       <FaMapMarkerAlt />
                     </i>{" "}
-                    {location}
+                    {data.location}
                   </p>
                 </div>
                 <div className="item__head__right">
@@ -96,17 +95,17 @@ const PropertyCard = ({ singleData, colActiv }) => {
                 <div className="project__info">
                   <p className="project__has">
                     <span className="project__has__investors">
-                      {totalInvest} Investors
+                      {data.totalInvest} Investors
                     </span>{" "}
                     |{" "}
                     <span className="project__has__investors__amount">
-                      $ {investAmount}
+                      $ {data.investAmount}
                     </span>{" "}
                     <span className="project__has__investors__percent">
-                      ({investPer}%)
+                      ({data.investPer}%)
                     </span>
                   </p>
-                  <p className="project__goal">${goal} Goal</p>
+                  <p className="project__goal">${data.goal} Goal</p>
                 </div>
               </div>
               <div className="item__info">
@@ -119,33 +118,33 @@ const PropertyCard = ({ singleData, colActiv }) => {
                 </div>
                 <div className="item__info__single">
                   <p>Maximum Term</p>
-                  <h6>{max_term} Months</h6>
+                  <h6>{data.max_term} Months</h6>
                 </div>
                 <div className="item__info__single">
                   <p>Property Type</p>
-                  <h6>{type}</h6>
+                  <h6>{data.type}</h6>
                 </div>
                 <div className="item__info__single">
                   <p>Distribution</p>
-                  <h6>{type}</h6>
+                  <h6>{data.type}</h6>
                 </div>
               </div>
               <div className="item__footer">
                 <div className="item__security">
                   <div className="icon__box">
-                    <Image src={home} alt="Security" />
+                    {/* <Image src={''} alt="Security" /> */}
                   </div>
                   <div className="item__security__content">
                     <p className="secondary">Security</p>
-                    <h6>{security} Mortgage</h6>
+                    <h6>{data.security} Mortgage</h6>
                   </div>
                 </div>
                 <div className="item__cta__group">
-                  <Link href={investLink} className="button button--effect">
+                  <Link href={data.investLink} className="button button--effect">
                     Invest Now
                   </Link>
                   <Link
-                    href={detailsLink}
+                    href={data.detailsLink}
                     className="button button--secondary button--effect"
                   >
                     Details
@@ -166,7 +165,7 @@ const PropertyCard = ({ singleData, colActiv }) => {
                   />
                 </div>
                 <div className="invest__cta">
-                  <Link href={detailsLink} className="button button--effect" onClick={SetThroughEdit}>
+                  <Link href={data.detailsLink} className="button button--effect" onClick={SetThroughEdit}>
                     Details
                   </Link>
                 </div>
