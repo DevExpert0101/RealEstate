@@ -71,8 +71,9 @@ const featuredData = [
     security: "1st-Rank",
     investLink: "/investment/{id}",
     detailsLink: "/property/{id}",
-    description: `The project is located on property lot no. 4394/38 and 4394/55 in the cadastral Vinohrady in Prague Czech Republic at Bělehradká st. no. 20, Praha 4. The area 
-    is a very well-known and well-established residential district of Vinohrady that will become even more vibrant upon the completion of the residential project of Penta Development known as the Nuselsky Pivovar with many services and amenities which it brings.`,
+    description: `The site is a triangular shape 1 570 m²  site between the rail tracks on the north — north east, Bělehradská street on the west and Na Ostruvku street in the south. \
+                  The site is mostly zoned for mixed residential use except for the strip between the rails and the mixed use zone which needs to be kept as a reserve for future potential\
+                  road construction with is not planned in any realistic city traffic strategy but is built into the zoning plan. `,
     propertyGallery: [
       '/images/gallery/0.png',
       '/images/gallery/1.png',

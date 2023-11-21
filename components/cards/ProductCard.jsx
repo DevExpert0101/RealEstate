@@ -6,6 +6,7 @@ import CountdownDisplay from "../common/CountdownDisplay";
 
 const ProductCard = ({ singleItem }) => {
   const {
+    id,
     city,
     location,
     totalInvest,
@@ -16,11 +17,21 @@ const ProductCard = ({ singleItem }) => {
     type,
     investLink,
   } = singleItem;
+
+  const SetThroughEdit = (data) => () => {
+    localStorage.setItem("throughEdit", "false");
+    localStorage.setItem('item', JSON.stringify(data));
+    router.push(singleItem.detailsLink);
+  };
+
   return (
     <div className="property__grid__single">
       <div className="img__effect">
-        <Link href={investLink}>
-          <Image src={img} alt={city} />
+        <Link 
+        // href={investLink}
+        href={`/property/${id}`}
+        >
+          <Image src={img} alt={city} onClick={SetThroughEdit}/>
         </Link>
       </div>
       <div className="property__grid__single__inner ">
