@@ -104,6 +104,17 @@ const featuredData = [
     security: "1st-Rank",
     investLink: "/investment/{id}",
     detailsLink: "/property/{id}",
+    propertyGallery: [
+      '/images/gallery/one.jpg',
+      '/images/gallery/two.jpg',
+      '/images/gallery/three.jpg',
+      '/images/gallery/four.webp',
+      '/images/gallery/five.webp',
+      '/images/gallery/six.webp',
+      '/images/gallery/seven.webp',
+      '/images/gallery/eight.webp',
+      '/images/gallery/nine.webp',
+    ]
   },
   {
     id: "23245",
@@ -124,6 +135,17 @@ const featuredData = [
     security: "1st-Rank",
     investLink: "/investment/{id}",
     detailsLink: "/property/{id}",
+    propertyGallery: [
+      '/images/gallery/one.jpg',
+      '/images/gallery/two.jpg',
+      '/images/gallery/three.jpg',
+      '/images/gallery/four.webp',
+      '/images/gallery/five.webp',
+      '/images/gallery/six.webp',
+      '/images/gallery/seven.webp',
+      '/images/gallery/eight.webp',
+      '/images/gallery/nine.webp',
+    ]
   },
   {
     id: "fwgweg",
@@ -144,6 +166,17 @@ const featuredData = [
     security: "1st-Rank",
     investLink: "/investment/{id}",
     detailsLink: "/property/{id}",
+    propertyGallery: [
+      '/images/gallery/one.jpg',
+      '/images/gallery/two.jpg',
+      '/images/gallery/three.jpg',
+      '/images/gallery/four.webp',
+      '/images/gallery/five.webp',
+      '/images/gallery/six.webp',
+      '/images/gallery/seven.webp',
+      '/images/gallery/eight.webp',
+      '/images/gallery/nine.webp',
+    ]
   },
   {
     id: "23s72wf",
@@ -164,6 +197,17 @@ const featuredData = [
     security: "1st-Rank",
     investLink: "/investment/{id}",
     detailsLink: "/property/{id}",
+    propertyGallery: [
+      '/images/gallery/one.jpg',
+      '/images/gallery/two.jpg',
+      '/images/gallery/three.jpg',
+      '/images/gallery/four.webp',
+      '/images/gallery/five.webp',
+      '/images/gallery/six.webp',
+      '/images/gallery/seven.webp',
+      '/images/gallery/eight.webp',
+      '/images/gallery/nine.webp',
+    ]
   },
 ];
 
