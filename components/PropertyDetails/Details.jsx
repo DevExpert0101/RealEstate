@@ -132,9 +132,10 @@ const NewInvestCard = () => {
             stable returns within a vibrant and evolving community.
           </p>
           <p>
-            {/* <h6>
+            <h6>
               Investment Appeal:<br></br>
-            </h6> */}
+            </h6>
+          
             Investing in Park Cihelni represents an opportunity to partake in
             the growth of Ostrava&#39;s real estate sector. The property&#39;s
             modern design, combined with its strategic location and diverse
@@ -226,6 +227,7 @@ const OldInvestCard = () => {
             <h6>
               Investment Appeal:<br></br>
             </h6>
+            <p>
             Investing in Park Cihelni represents an opportunity to partake in
             the growth of Ostrava&#39;s real estate sector. The property&#39;s
             modern design, combined with its strategic location and diverse
@@ -236,6 +238,7 @@ const OldInvestCard = () => {
             This investment avenue is tailored for individuals seeking a
             foothold in a promising real estate venture poised for
             growth and stability.
+            </p>
           </div>
           <Link href="/blog">Read More</Link>
         </div>
