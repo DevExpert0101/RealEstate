@@ -328,7 +328,13 @@ const Details = ({ data }) => {
 
                   <div className="group__one">
                     <h4>Project Description</h4>
-                    <span>{data.description}</span>
+                    <span>{data.description ? data.description : 
+                    (`The "CEETokenized" team is introducing a new buy to let
+                      investment opportunity: A19, Vilnius I. The invest ment
+                      offer consists of administrative premises, which are
+                      currently being converted into studio apartments/lofts. In
+                      this way, the aim is to increase the rental income of this
+                      real estate project.`)}</span>
                   </div>
                   <div className="group__two">
                     <h5>Reasons to invest in the project:</h5>
@@ -342,7 +348,24 @@ const Details = ({ data }) => {
                           />
                           {item}
                         </li>
-                      )) : <div></div>}
+                      )) : 
+                      [
+                        "Lofts in an attractive area - in the center of Vilnius;",
+                        "ixed, attractive annual rental income;",
+                        "The fixed interest is indexed to inflation;",
+                        "The fixed interest is indexed to inflation;",
+                        "Variable capital gains;",
+                        "The premises were appraised by an independent valuer at 347 000 EUR",
+                        "The project owner is an experienced real estate administrator.",
+                      ].map((item, i) => (
+                        <li key={i} className="align-items-start">
+                          <Image
+                            src={check}
+                            style={{ marginTop: "8px" }}
+                            alt="Check"
+                          />
+                          {item}
+                        </li>))}
                     </ul>
                   </div>
                   <div className="terms">
