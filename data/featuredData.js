@@ -6,6 +6,8 @@ import LosAngeles from "/public/images/property/LosAngeles.webp";
 import Sanfrancisco from "/public/images/property/SanFrancisco.webp";
 import Ostrava from "/public/images/property/Ostrava-Profilepic.png"
 import Belehradska from "/public/images/property/BĚLEHRADSKÁ.png";
+import First from "/public/images/owner.jpg";
+import Second from "/public/images/second.jpg";
 
 const featuredData = [
   {
@@ -17,10 +19,13 @@ const featuredData = [
     investPer: 54.73,
     goal: "1,500,000",
     img: Ostrava,
-    annualReturn: {
-      regular: 7.5,
-      bonus: 3,
-    },
+    annualReturn: 7.5,
+    monthlyEarning: 1.2,
+    yearlyRevenue: "220,199",
+    investors: 90,
+    propertyOwner: 10,
+    projectOwner: "MB „Rego Properties“ - is a company serving as a special vehicle for CEETokenized investments. The CEO of the company - Andrius Rimdeika is a former investment banker, who has worked in investment firms such as ”Morgan Stanley” and “Prime investment”.",
+    projectOwnerImage: First,
     max_term: 26,
     type: "Commercial",
     distribution: "Monthly",
@@ -66,7 +71,10 @@ const featuredData = [
       carefully assess these risks, conduct thorough due\
       diligence, consider their risk tolerance, and seek\
       professional advice before making investment decisions in\
-      Park Cihelni or any real estate-backed assets."
+      Park Cihelni or any real estate-backed assets.",
+    investmentOverview: "Park Cihelni, strategically located in Ostrava, Czech Republic, stands as a promising investment opportunity within the burgeoning real estate market of the region. This modern residential complex spans across 21,000 square meters and comprises 262 residential flats, divided into five phases. Ostrava, known for its economic growth and development initiatives, presents an attractive investment landscape with a thriving real estate market. Park Cihelni aligns with the growing demand for contemporary living spaces and offers an ideal setting for potential investors seeking stable returns within a vibrant and evolving community.",
+    investmentAppeal: "Potential investors should be mindful of several key risks linked to the EDIFICE Investment project. These include regulatory hurdles concerning necessary approvals from the Prague 2 and 4 building departments, infrastructure complexities related to reserved road construction areas and existing rail tracks, as well as uncertainties surrounding zoning alterations and permit adjustments impacting the intended residential unit configuration. Moreover, market fluctuations, construction-related challenges, tenant acquisition difficulties, and economic instabilities within Prague's real estate market could significantly affect project timelines, rental yields, and overall investor returns.",
+    map: "https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29121.557129272667!2d18.22578674304041!3d49.823546497482475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sru!4v1700168021163!5m2!1sen!2sru"
   },
   {
     id: "32424",
@@ -77,10 +85,13 @@ const featuredData = [
     investPer: 64.73,
     goal: "4,000,000",
     img: Belehradska,
-    annualReturn: {
-      regular: 3.5,
-      bonus: 6,
-    },
+    annualReturn: 17.59,
+    monthlyEarning: 1.2,
+    yearlyRevenue: "610,400",
+    investors: 70,
+    propertyOwner: 30,
+    projectOwner: "EDIFICE Investment, s.r.o. is a dynamic and innovative investment company dedicated to fostering growth and success in various industries. Renowned for its strategic approach and commitment to financial excellence, EDIFICE Investment specializes in identifying promising investment opportunities, facilitating partnerships, and delivering sustainable value to its stakeholders. With a focus on prudent investment practices and a forward-thinking mindset, EDIFICE Investment stands as a trusted partner, driving prosperity and contributing to the advancement of businesses within its portfolio.",
+    projectOwnerImage: Second,
     max_term: 48,
     type: "Commercial",
     distribution: "Monthly",
@@ -112,7 +123,10 @@ const featuredData = [
       '/images/gallery/four.webp',
     ],
     allocatedCEETokens: "4,000,000",
-    investmentRisks: "Potential investors should be mindful of several key risks linked to the EDIFICE Investment project. These include regulatory hurdles concerning necessary approvals from the Prague 2 and 4 building departments, infrastructure complexities related to reserved road construction areas and existing rail tracks, as well as uncertainties surrounding zoning alterations and permit adjustments impacting the intended residential unit configuration. Moreover, market fluctuations, construction-related challenges, tenant acquisition difficulties, and economic instabilities within Prague's real estate market could significantly affect project timelines, rental yields, and overall investor returns."
+    investmentRisks: "Potential investors should be mindful of several key risks linked to the EDIFICE Investment project. These include regulatory hurdles concerning necessary approvals from the Prague 2 and 4 building departments, infrastructure complexities related to reserved road construction areas and existing rail tracks, as well as uncertainties surrounding zoning alterations and permit adjustments impacting the intended residential unit configuration. Moreover, market fluctuations, construction-related challenges, tenant acquisition difficulties, and economic instabilities within Prague's real estate market could significantly affect project timelines, rental yields, and overall investor returns.",
+    investmentOverview: "The EDIFICE Investment opportunity presents a strategically positioned development venture in the heart of Prague's Vinohrady residential district. Situated at Bělehradká, Prague, this project occupies property lots 4394/38 and 4394/55, offering a 1570m2 triangular site primed for a re-permitted single-use residential building. With proximity to tram terminals, upcoming metro access, and well-connected roadways, this project capitalizes on accessibility. The development aims to reshape the current permit, housing 36 separate rental units within a vibrant community hub, fostering a dynamic residential landscape.",
+    investmentAppeal: "Investing in the EDIFICE Investment project appeals to astute investors seeking opportunities in Prague's evolving real estate landscape. The project boasts a strategic location within a well-established residential district, promising increased vibrancy and convenience with forthcoming metro connectivity. Its design, catering to modern residential demands, emph",
+    map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.993362996952!2d14.432455492320788!3d50.06768594142834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94887ea8726d%3A0xde73120a1efea5a!2zQsSbbGVocmFkc2vDoSwgUHJhaGEgNCwgQ3plY2hpYQ!5e0!3m2!1sen!2sru!4v1700659372978!5m2!1sen!2sru"
   },
   {
     id: "3244",
@@ -127,6 +141,10 @@ const featuredData = [
       regular: 2.5,
       bonus: 2,
     },
+    monthlyEarning: 1.2,
+    yearlyRevenue: 610400,
+    investors: 70,
+    propertyOwner: 30,
     max_term: 36,
     type: "Commercial",
     distribution: "Monthly",
@@ -159,7 +177,10 @@ const featuredData = [
       carefully assess these risks, conduct thorough due\
       diligence, consider their risk tolerance, and seek\
       professional advice before making investment decisions in\
-      Park Cihelni or any real estate-backed assets."
+      Park Cihelni or any real estate-backed assets.",
+      investmentOverview: "Park Cihelni, strategically located in Ostrava, Czech Republic, stands as a promising investment opportunity within the burgeoning real estate market of the region. This modern residential complex spans across 21,000 square meters and comprises 262 residential flats, divided into five phases. Ostrava, known for its economic growth and development initiatives, presents an attractive investment landscape with a thriving real estate market. Park Cihelni aligns with the growing demand for contemporary living spaces and offers an ideal setting for potential investors seeking stable returns within a vibrant and evolving community.",
+      investmentAppeal: "Potential investors should be mindful of several key risks linked to the EDIFICE Investment project. These include regulatory hurdles concerning necessary approvals from the Prague 2 and 4 building departments, infrastructure complexities related to reserved road construction areas and existing rail tracks, as well as uncertainties surrounding zoning alterations and permit adjustments impacting the intended residential unit configuration. Moreover, market fluctuations, construction-related challenges, tenant acquisition difficulties, and economic instabilities within Prague's real estate market could significantly affect project timelines, rental yields, and overall investor returns.",
+      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.993362996952!2d14.432455492320788!3d50.06768594142834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94887ea8726d%3A0xde73120a1efea5a!2zQsSbbGVocmFkc2vDoSwgUHJhaGEgNCwgQ3plY2hpYQ!5e0!3m2!1sen!2sru!4v1700659372978!5m2!1sen!2sru"
   },
   {
     id: "23245",
@@ -174,6 +195,10 @@ const featuredData = [
       regular: 7.5,
       bonus: 2,
     },
+    monthlyEarning: 1.2,
+    yearlyRevenue: 610400,
+    investors: 70,
+    propertyOwner: 30,
     max_term: 36,
     type: "Commercial",
     distribution: "Monthly",
@@ -206,7 +231,10 @@ const featuredData = [
       carefully assess these risks, conduct thorough due\
       diligence, consider their risk tolerance, and seek\
       professional advice before making investment decisions in\
-      Park Cihelni or any real estate-backed assets."
+      Park Cihelni or any real estate-backed assets.",
+      investmentOverview: "Park Cihelni, strategically located in Ostrava, Czech Republic, stands as a promising investment opportunity within the burgeoning real estate market of the region. This modern residential complex spans across 21,000 square meters and comprises 262 residential flats, divided into five phases. Ostrava, known for its economic growth and development initiatives, presents an attractive investment landscape with a thriving real estate market. Park Cihelni aligns with the growing demand for contemporary living spaces and offers an ideal setting for potential investors seeking stable returns within a vibrant and evolving community.",
+      investmentAppeal: "Potential investors should be mindful of several key risks linked to the EDIFICE Investment project. These include regulatory hurdles concerning necessary approvals from the Prague 2 and 4 building departments, infrastructure complexities related to reserved road construction areas and existing rail tracks, as well as uncertainties surrounding zoning alterations and permit adjustments impacting the intended residential unit configuration. Moreover, market fluctuations, construction-related challenges, tenant acquisition difficulties, and economic instabilities within Prague's real estate market could significantly affect project timelines, rental yields, and overall investor returns.",
+      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.993362996952!2d14.432455492320788!3d50.06768594142834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94887ea8726d%3A0xde73120a1efea5a!2zQsSbbGVocmFkc2vDoSwgUHJhaGEgNCwgQ3plY2hpYQ!5e0!3m2!1sen!2sru!4v1700659372978!5m2!1sen!2sru"
   },
   {
     id: "fwgweg",
@@ -221,6 +249,10 @@ const featuredData = [
       regular: 3.5,
       bonus: 6,
     },
+    monthlyEarning: 1.2,
+    yearlyRevenue: 610400,
+    investors: 70,
+    propertyOwner: 30,
     max_term: 48,
     type: "Commercial",
     distribution: "Monthly",
@@ -253,7 +285,10 @@ const featuredData = [
       carefully assess these risks, conduct thorough due\
       diligence, consider their risk tolerance, and seek\
       professional advice before making investment decisions in\
-      Park Cihelni or any real estate-backed assets."
+      Park Cihelni or any real estate-backed assets.",
+      investmentOverview: "Park Cihelni, strategically located in Ostrava, Czech Republic, stands as a promising investment opportunity within the burgeoning real estate market of the region. This modern residential complex spans across 21,000 square meters and comprises 262 residential flats, divided into five phases. Ostrava, known for its economic growth and development initiatives, presents an attractive investment landscape with a thriving real estate market. Park Cihelni aligns with the growing demand for contemporary living spaces and offers an ideal setting for potential investors seeking stable returns within a vibrant and evolving community.",
+      investmentAppeal: "Potential investors should be mindful of several key risks linked to the EDIFICE Investment project. These include regulatory hurdles concerning necessary approvals from the Prague 2 and 4 building departments, infrastructure complexities related to reserved road construction areas and existing rail tracks, as well as uncertainties surrounding zoning alterations and permit adjustments impacting the intended residential unit configuration. Moreover, market fluctuations, construction-related challenges, tenant acquisition difficulties, and economic instabilities within Prague's real estate market could significantly affect project timelines, rental yields, and overall investor returns.",
+      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.993362996952!2d14.432455492320788!3d50.06768594142834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94887ea8726d%3A0xde73120a1efea5a!2zQsSbbGVocmFkc2vDoSwgUHJhaGEgNCwgQ3plY2hpYQ!5e0!3m2!1sen!2sru!4v1700659372978!5m2!1sen!2sru"
   },
   {
     id: "23s72wf",
@@ -268,6 +303,10 @@ const featuredData = [
       regular: 7.5,
       bonus: 3,
     },
+    monthlyEarning: 1.2,
+    yearlyRevenue: 610400,
+    investors: 70,
+    propertyOwner: 30,
     max_term: 26,
     type: "Commercial",
     distribution: "Monthly",
@@ -300,7 +339,10 @@ const featuredData = [
       carefully assess these risks, conduct thorough due\
       diligence, consider their risk tolerance, and seek\
       professional advice before making investment decisions in\
-      Park Cihelni or any real estate-backed assets."
+      Park Cihelni or any real estate-backed assets.",
+      investmentOverview: "Park Cihelni, strategically located in Ostrava, Czech Republic, stands as a promising investment opportunity within the burgeoning real estate market of the region. This modern residential complex spans across 21,000 square meters and comprises 262 residential flats, divided into five phases. Ostrava, known for its economic growth and development initiatives, presents an attractive investment landscape with a thriving real estate market. Park Cihelni aligns with the growing demand for contemporary living spaces and offers an ideal setting for potential investors seeking stable returns within a vibrant and evolving community.",
+      investmentAppeal: "Potential investors should be mindful of several key risks linked to the EDIFICE Investment project. These include regulatory hurdles concerning necessary approvals from the Prague 2 and 4 building departments, infrastructure complexities related to reserved road construction areas and existing rail tracks, as well as uncertainties surrounding zoning alterations and permit adjustments impacting the intended residential unit configuration. Moreover, market fluctuations, construction-related challenges, tenant acquisition difficulties, and economic instabilities within Prague's real estate market could significantly affect project timelines, rental yields, and overall investor returns.",
+      map: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.993362996952!2d14.432455492320788!3d50.06768594142834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b94887ea8726d%3A0xde73120a1efea5a!2zQsSbbGVocmFkc2vDoSwgUHJhaGEgNCwgQ3plY2hpYQ!5e0!3m2!1sen!2sru!4v1700659372978!5m2!1sen!2sru"
   },
 ];
 

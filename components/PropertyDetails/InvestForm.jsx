@@ -39,7 +39,8 @@ const Tooltip = ({ children, text }) => {
 };
 
 const InvestForm = (singleItem) => {
-  const id = singleItem.id;
+  console.log(singleItem)
+  
   return (
     <form action="#" method="post">
       <div className="input input--secondary">
@@ -48,7 +49,7 @@ const InvestForm = (singleItem) => {
           type="number"
           name="an__num"
           id="anNum"
-          placeholder="17.59%"
+          placeholder={`${singleItem.singleitem.data.annualReturn}%`}
           required="required"
         />
       </div>
@@ -68,7 +69,7 @@ const InvestForm = (singleItem) => {
           type="number"
           name="an__num_in_two"
           id="anNumInTwo"
-          placeholder="€ 733"
+          placeholder={`${singleItem.singleitem.data.monthlyEarning}%`}
           required="required"
         />
       </div>

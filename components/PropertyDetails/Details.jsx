@@ -22,7 +22,7 @@ import revenue from "/public/images/icons/revenue.png";
 
 import { useEffect, useState } from "react";
 
-const NewInvestCard = () => {
+const NewInvestCard = (data) => {
   return (
     <div className="col-lg-5">
       <div className="p__details__sidebar">
@@ -120,16 +120,7 @@ const NewInvestCard = () => {
           <h5 className="neutral-top">Investment Overview</h5>
           <hr />
           <p>
-            Park Cihelni, strategically located in Ostrava, Czech Republic,
-            stands as a promising investment opportunity within the burgeoning
-            real estate market of the region. This modern residential complex
-            spans across 21,000 square meters and comprises 262 residential
-            flats, divided into five phases. Ostrava, known for its economic
-            growth and development initiatives, presents an attractive
-            investment landscape with a thriving real estate market. Park
-            Cihelni aligns with the growing demand for contemporary living
-            spaces and offers an ideal setting for potential investors seeking
-            stable returns within a vibrant and evolving community.
+            {data.investmentOverview}
           </p>
           <p>
             <h6>
@@ -167,6 +158,7 @@ const NewInvestCard = () => {
 };
 
 const OldInvestCard = (data) => {
+  console.log(data)
   return (
     <div className="col-lg-5">
       <div className="p__details__sidebar">
@@ -181,7 +173,7 @@ const OldInvestCard = (data) => {
             />
           </div>
           <h5>
-            Available for funding: <span>CEE {data.availableFunding} </span>
+            Available for funding: <span>CEE {data.data.availableFunding} </span>
           </h5>
           {/* funding  */}
           <Funding />
@@ -202,7 +194,7 @@ const OldInvestCard = (data) => {
           </div>
           <div className="acus__content">
             {/* Invest Form  */}
-            <InvestForm />
+            <InvestForm singleitem={data}/>
           </div>
           <p className="text-center neutral-bottom">
             <Link href="/contact-us">Request a free callback</Link>
@@ -212,32 +204,14 @@ const OldInvestCard = (data) => {
           <h5 className="neutral-top">Investment Overview</h5>
           <hr />
           <p>
-            Park Cihelni, strategically located in Ostrava, Czech Republic,
-            stands as a promising investment opportunity within the burgeoning
-            real estate market of the region. This modern residential complex
-            spans across 21,000 square meters and comprises 262 residential
-            flats, divided into five phases. Ostrava, known for its economic
-            growth and development initiatives, presents an attractive
-            investment landscape with a thriving real estate market. Park
-            Cihelni aligns with the growing demand for contemporary living
-            spaces and offers an ideal setting for potential investors seeking
-            stable returns within a vibrant and evolving community.
+            {data.data.investmentOverview}
           </p>
           <div>
             <h6>
               Investment Appeal:<br></br>
             </h6>
             <p>
-            Investing in Park Cihelni represents an opportunity to partake in
-            the growth of Ostrava&#39;s real estate sector. The property&#39;s
-            modern design, combined with its strategic location and diverse
-            housing options, aims to cater to the evolving demands of residents
-            seeking quality homes. With an emphasis on community living and
-            modern amenities, Park Cihelni aims to deliver steady returns
-            supported by the upward trajectory of the Ostrava property market.
-            This investment avenue is tailored for individuals seeking a
-            foothold in a promising real estate venture poised for
-            growth and stability.
+              {data.data.investmentAppeal}
             </p>
           </div>
           <Link href="/blog">Read More</Link>
@@ -410,30 +384,26 @@ const Details = ({ data }) => {
                       <TermSingleCard
                         img={investor}
                         p="Investors"
-                        heading="90%"
+                        heading={`${data.investors}%`}
                       />
                       <TermSingleCard
                         img={project}
                         p="Properly Management Fee"
-                        heading="10%"
+                        heading={`${data.propertyOwner}%`}
                       />
                       <TermSingleCard
                         img={reinvest}
                         p="Yearly Revenue Pool"
-                        heading="€220,199"
+                        heading={`€${data.yearlyRevenue}`}
                       />
                     </div>
                   </div>
                   <div className="owner">
-                    <Image src={owner} alt="owner" />
+                    <Image src={data.projectOwnerImage} alt="owner"/>
                     <div>
                       <h5>Project Owner</h5>
                       <p>
-                        MB „Rego Properties“ - is a company serving as a special
-                        vehicle for CEETokenized investments. The CEO of the
-                        company - Andrius Rimdeika is a former investment
-                        banker, who has worked in investment firms such as
-                        ”Morgan Stanley” and “Prime investment”.
+                        {data.projectOwner}
                       </p>
                     </div>
                   </div>
@@ -451,9 +421,8 @@ const Details = ({ data }) => {
                       {data.investmentRisks}
                     </p>
                     <div className="map__wrapper">
-                      <iframe
-                        // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20342.411046372905!2d-74.16638039276373!3d40.719832743885284!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2sbd!4v1649562691355!5m2!1sen!2sbd"
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d29121.557129272667!2d18.22578674304041!3d49.823546497482475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sru!4v1700168021163!5m2!1sen!2sru"
+                      <iframe                        
+                        src={data.map}
                         width="746"
                         height="312"
                         loading="lazy"
@@ -464,9 +433,9 @@ const Details = ({ data }) => {
               </div>
               {/* <NewInvestCard /> */}
               {role == "investor" && throughEdit == "true" ? (
-                <NewInvestCard />
-              ) : (
-                <OldInvestCard availableFunding={data.availableFunding}/>
+                <NewInvestCard availableFunding={data.availableFunding} investmentRisks={data.investmentRisks} investmentOverview={data.investmentOverview} investmentAppeal={data.investmentAppeal}/>
+              ) : (                
+                <OldInvestCard data={data}/>
               )}
             </div>
           </div>
