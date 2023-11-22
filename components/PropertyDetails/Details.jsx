@@ -166,7 +166,7 @@ const NewInvestCard = () => {
   );
 };
 
-const OldInvestCard = () => {
+const OldInvestCard = (data) => {
   return (
     <div className="col-lg-5">
       <div className="p__details__sidebar">
@@ -181,7 +181,7 @@ const OldInvestCard = () => {
             />
           </div>
           <h5>
-            Available for funding: <span>CEE 500,000</span>
+            Available for funding: <span>CEE {data.availableFunding} </span>
           </h5>
           {/* funding  */}
           <Funding />
@@ -265,6 +265,8 @@ const OldInvestCard = () => {
 const Details = ({ data }) => {
   const [role, setRole] = useState("1");
   const [throughEdit, setThroughEdit] = useState(false);
+
+  console.log(data.availableFunding)
 
   useEffect(() => {
     let value;
@@ -481,7 +483,7 @@ const Details = ({ data }) => {
               {role == "investor" && throughEdit == "true" ? (
                 <NewInvestCard />
               ) : (
-                <OldInvestCard />
+                <OldInvestCard availableFunding={data.availableFunding}/>
               )}
             </div>
           </div>

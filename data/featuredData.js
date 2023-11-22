@@ -27,6 +27,7 @@ const featuredData = [
     security: "1st-Rank",
     investLink: "/investment/{id}",
     detailsLink: "/property/{id}",
+    availableFunding: "500,000",
     description: "Welcome to Park Cihelni, our flagship property offering on the vibrant streets of Ostrava, Czech Republic. Nestled across five dynamic phases, this premium development boasts 262 luxurious flats, creating a total gross floor area of 21,000 m². It's an irresistible opportunity for astute investors seeking an entry into Central Europe's burgeoning real estate market. \
     Park Cihelni consist of 5 development phases, each presents a unique chance to partake in the growth story of this meticulously planned residential paradise. With modern architecture and thoughtfully designed living spaces, these flats promise an exquisite lifestyle within a bustling urban landscape. \
     The property not only offers a slice of contemporary living but also stands as a lucrative investment. Its strategic location in Ostrava, a city known for its economic vitality and cultural charm, ensures high demand and potential appreciation for investors. \
@@ -71,6 +72,7 @@ const featuredData = [
     security: "1st-Rank",
     investLink: "/investment/{id}",
     detailsLink: "/property/{id}",
+    availableFunding: "4,000,000",
     description: `The site is a triangular shape 1 570 m²  site between the rail tracks on the north — north east, Bělehradská street on the west and Na Ostruvku street in the south. \
                   The site is mostly zoned for mixed residential use except for the strip between the rails and the mixed use zone which needs to be kept as a reserve for future potential\
                   road construction with is not planned in any realistic city traffic strategy but is built into the zoning plan. `,
@@ -115,6 +117,7 @@ const featuredData = [
     security: "1st-Rank",
     investLink: "/investment/{id}",
     detailsLink: "/property/{id}",
+    availableFunding: "500,000",
     propertyGallery: [
       '/images/gallery/one.jpg',
       '/images/gallery/two.jpg',
@@ -146,6 +149,7 @@ const featuredData = [
     security: "1st-Rank",
     investLink: "/investment/{id}",
     detailsLink: "/property/{id}",
+    availableFunding: "500,000",
     propertyGallery: [
       '/images/gallery/one.jpg',
       '/images/gallery/two.jpg',
@@ -177,6 +181,7 @@ const featuredData = [
     security: "1st-Rank",
     investLink: "/investment/{id}",
     detailsLink: "/property/{id}",
+    availableFunding: "500,000",
     propertyGallery: [
       '/images/gallery/one.jpg',
       '/images/gallery/two.jpg',
@@ -208,6 +213,7 @@ const featuredData = [
     security: "1st-Rank",
     investLink: "/investment/{id}",
     detailsLink: "/property/{id}",
+    availableFunding: "500,000",
     propertyGallery: [
       '/images/gallery/one.jpg',
       '/images/gallery/two.jpg',
