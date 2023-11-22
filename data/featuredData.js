@@ -135,7 +135,7 @@ const featuredData = [
     totalInvest: 579,
     investAmount: "464,196",
     investPer: 74.33,
-    goal: "2,00,000",
+    goal: "2,000,000",
     img: weldon,
     annualReturn: {
       regular: 2.5,
@@ -190,7 +190,7 @@ const featuredData = [
     totalInvest: 359,
     investAmount: "114,196",
     investPer: 64.73,
-    goal: "5,00,000",
+    goal: "5,000,000",
     img: lily,
     annualReturn: {
       regular: 7.5,
@@ -245,7 +245,7 @@ const featuredData = [
     totalInvest: 179,
     investAmount: "164,296",
     investPer: 64.73,
-    goal: "5,00,000",
+    goal: "5,000,000",
     img: Sanfrancisco,
     annualReturn: {
       regular: 3.5,
@@ -300,7 +300,7 @@ const featuredData = [
     totalInvest: 119,
     investAmount: "494,196",
     investPer: 54.73,
-    goal: "1,00,000",
+    goal: "1,000,000",
     img: LosAngeles,
     annualReturn: {
       regular: 7.5,

@@ -37,7 +37,7 @@ const NewInvestCard = (data) => {
             />
           </div>
           <h5>
-            Available for funding: <span>CEE 5,000,000</span>
+            Available for funding: <span>CEE {data.data.availableFunding} </span>
           </h5>
 
           <Funding />
@@ -176,7 +176,7 @@ const OldInvestCard = (data) => {
             Available for funding: <span>CEE {data.data.availableFunding} </span>
           </h5>
           {/* funding  */}
-          <Funding />
+          <Funding data={data.data}/>
         </div>
         <div className="group brin">
           <h5 className="neutral-top">Occupancy</h5>

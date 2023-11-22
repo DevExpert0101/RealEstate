@@ -1,4 +1,5 @@
-const Funding = () => {
+const Funding = (data) => {
+  console.log(data)
   return (
     <div className="progress__type progress__type--two">
       <div className="progress">
@@ -15,7 +16,7 @@ const Funding = () => {
           <span className="project__has__investors">150 Investors</span> |{" "}
           <span className="project__has__investors__amount">CEE 1,000,000</span>
         </p>
-        <p className="project__goal">CEE 1,500,000 Goal</p>
+        <p className="project__goal">{`CEE ${data.data.goal} Goal`}</p>
       </div>
     </div>
   );
