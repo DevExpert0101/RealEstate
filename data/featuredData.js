@@ -54,12 +54,12 @@ const featuredData = [
   },
   {
     id: "32424",
-    city: "Prague Vinohrady, Czech Public",
+    city: "Prague Bělehradská, Czech Public",
     location: "Bělehradká st. no. 20, Praha 4",
     totalInvest: 179,
     investAmount: "164,296",
     investPer: 64.73,
-    goal: "5,00,000",
+    goal: "4,00,000",
     img: Belehradska,
     annualReturn: {
       regular: 3.5,
@@ -84,7 +84,8 @@ const featuredData = [
       '/images/gallery/two.webp',
       '/images/gallery/three.webp',
       '/images/gallery/four.webp',
-    ]
+    ],
+    allocatedCEETokens: "4,000,000"
   },
   {
     id: "3244",

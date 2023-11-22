@@ -265,23 +265,13 @@ const OldInvestCard = () => {
 const Details = ({ data }) => {
   const [role, setRole] = useState("1");
   const [throughEdit, setThroughEdit] = useState(false);
-  //const [item, setItem] = useState({});
-  //const [reasons, setReasons] = useState([]);
+
   useEffect(() => {
-    //get item
-    // let value;
-    // value = JSON.parse(localStorage.getItem("item"));
-    // setItem(JSON.parse(localStorage.getItem("item")));
-
-    // //setReasons(value.reasons);
-
-    // value = localStorage.getItem("role") || "";
-
-    // setRole(value);
-    // value = localStorage.getItem("throughEdit");
-    // if (value == null) value = false;
-    // setThroughEdit(value);
-
+    let value;
+    value = localStorage.getItem("role") || "";
+    setRole(value);
+    value = localStorage.getItem("throughEdit");
+    setThroughEdit(value);        
   }, []);
 
   return (
@@ -325,7 +315,7 @@ const Details = ({ data }) => {
                       }}
                     >
                       <h6 style={{ color: "white" }}>Allocated CEE Tokens</h6>
-                      <p style={{ color: "white" }}>1,500,000</p>
+                      <p style={{ color: "white" }}>{data.allocatedCEETokens ? data.allocatedCEETokens : "1,500,000"}</p>
                     </Link>
                   </div>
 
