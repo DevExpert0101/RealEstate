@@ -74,6 +74,15 @@ const featuredData = [
     description: `The site is a triangular shape 1 570 m²  site between the rail tracks on the north — north east, Bělehradská street on the west and Na Ostruvku street in the south. \
                   The site is mostly zoned for mixed residential use except for the strip between the rails and the mixed use zone which needs to be kept as a reserve for future potential\
                   road construction with is not planned in any realistic city traffic strategy but is built into the zoning plan. `,
+    reasons: [
+      "Strategic location, situated in Prague's Vinohrady residential district, the project site at Bělehradká, Prague, enjoys proximity to the bustling Nuselsky Pivovar residential development by Penta Development. The area promises increased vibrancy with added amenities and services.",
+      "Excellent Connectivity positioned just 150m from tram terminals Otakarova and Nam. Bratří synků, and the forthcoming metro line D (expected by 2027), the project ensures swift access to the city center, reducing travel time from 15 to 5 minutes.",
+      "Transport Accessibility easily reachable by car via the D1 highway and 5. kvetna street, the location benefits from well-connected transportation links, including the upcoming metro station, enhancing its accessibility.",
+      "Cadastral Details located in the cadastral Vinohrady in Prague, the property, spanning property lots 4394/38 and 4394/55, offers a triangular-shaped 1570m2 site, facilitating mixed residential use potential and space for future construction.",
+      "Strategic Zoning as the site is primarily zoned for mixed residential use, allowing for a re-permit to develop a single-use residential building. The project aims to reorient the existing permit, maximizing the net rentable area and facilitating 36 separate rental market units.",
+      "Parking and Amenities includes provisions for 37 parking spaces across two underground garages, alongside plans for commercial units catering to local retail demands and community services for tenants and residents.",
+      "Thoughtful Design orientation emphasizes comfortable living, with facades facing south and west, an internal courtyard to create a serene ambiance, and a thoughtful layout aimed at satisfying future tenants' diverse needs and preferences."
+    ],
     propertyGallery: [
       '/images/gallery/0.png',
       '/images/gallery/1.png',
