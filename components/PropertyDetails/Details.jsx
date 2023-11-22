@@ -277,7 +277,7 @@ const Details = ({ data }) => {
                       <h4>{data.city}</h4>
                       <p className="d-flex align-items-center gap-1">
                         <FaMapMarkerAlt />
-                        {data.city}
+                        {data.location}
                       </p>
                     </div>
 
