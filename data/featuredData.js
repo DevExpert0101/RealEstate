@@ -51,7 +51,22 @@ const featuredData = [
       '/images/gallery/seven.webp',
       '/images/gallery/eight.webp',
       '/images/gallery/nine.webp',
-    ]
+    ],
+    investmentRisks: "This opportunity may be subject to fluctuations influenced by changes in the local real estate market, economic conditions, and demand-supply dynamics. These fluctuations could impact property valuations and potential resale\
+      values. Unforeseen economic downturns, changes in interest\
+      rates, or financial crises could adversely affect the\
+      property&#39;s performance, rental yields, and overall\
+      profitability. Vacancy rates or unexpected tenant turnover\
+      could result in income disruptions, impacting rental\
+      revenues and, consequently, dividend distributions to\
+      investors. Unexpected maintenance or repair expenses,\
+      higher operational costs, or capital expenditures may\
+      affect the property&#39;s net income, potentially reducing\
+      the dividends distributed to investors. Investors should\
+      carefully assess these risks, conduct thorough due\
+      diligence, consider their risk tolerance, and seek\
+      professional advice before making investment decisions in\
+      Park Cihelni or any real estate-backed assets."
   },
   {
     id: "32424",
@@ -96,7 +111,8 @@ const featuredData = [
       '/images/gallery/three.webp',
       '/images/gallery/four.webp',
     ],
-    allocatedCEETokens: "4,000,000"
+    allocatedCEETokens: "4,000,000",
+    investmentRisks: "Potential investors should be mindful of several key risks linked to the EDIFICE Investment project. These include regulatory hurdles concerning necessary approvals from the Prague 2 and 4 building departments, infrastructure complexities related to reserved road construction areas and existing rail tracks, as well as uncertainties surrounding zoning alterations and permit adjustments impacting the intended residential unit configuration. Moreover, market fluctuations, construction-related challenges, tenant acquisition difficulties, and economic instabilities within Prague's real estate market could significantly affect project timelines, rental yields, and overall investor returns."
   },
   {
     id: "3244",
@@ -128,7 +144,22 @@ const featuredData = [
       '/images/gallery/seven.webp',
       '/images/gallery/eight.webp',
       '/images/gallery/nine.webp',
-    ]
+    ],
+    investmentRisks: "This opportunity may be subject to fluctuations influenced by changes in the local real estate market, economic conditions, and demand-supply dynamics. These fluctuations could impact property valuations and potential resale\
+      values. Unforeseen economic downturns, changes in interest\
+      rates, or financial crises could adversely affect the\
+      property&#39;s performance, rental yields, and overall\
+      profitability. Vacancy rates or unexpected tenant turnover\
+      could result in income disruptions, impacting rental\
+      revenues and, consequently, dividend distributions to\
+      investors. Unexpected maintenance or repair expenses,\
+      higher operational costs, or capital expenditures may\
+      affect the property&#39;s net income, potentially reducing\
+      the dividends distributed to investors. Investors should\
+      carefully assess these risks, conduct thorough due\
+      diligence, consider their risk tolerance, and seek\
+      professional advice before making investment decisions in\
+      Park Cihelni or any real estate-backed assets."
   },
   {
     id: "23245",
@@ -160,7 +191,22 @@ const featuredData = [
       '/images/gallery/seven.webp',
       '/images/gallery/eight.webp',
       '/images/gallery/nine.webp',
-    ]
+    ],
+    investmentRisks: "This opportunity may be subject to fluctuations influenced by changes in the local real estate market, economic conditions, and demand-supply dynamics. These fluctuations could impact property valuations and potential resale\
+      values. Unforeseen economic downturns, changes in interest\
+      rates, or financial crises could adversely affect the\
+      property&#39;s performance, rental yields, and overall\
+      profitability. Vacancy rates or unexpected tenant turnover\
+      could result in income disruptions, impacting rental\
+      revenues and, consequently, dividend distributions to\
+      investors. Unexpected maintenance or repair expenses,\
+      higher operational costs, or capital expenditures may\
+      affect the property&#39;s net income, potentially reducing\
+      the dividends distributed to investors. Investors should\
+      carefully assess these risks, conduct thorough due\
+      diligence, consider their risk tolerance, and seek\
+      professional advice before making investment decisions in\
+      Park Cihelni or any real estate-backed assets."
   },
   {
     id: "fwgweg",
@@ -192,7 +238,22 @@ const featuredData = [
       '/images/gallery/seven.webp',
       '/images/gallery/eight.webp',
       '/images/gallery/nine.webp',
-    ]
+    ],
+    investmentRisks: "This opportunity may be subject to fluctuations influenced by changes in the local real estate market, economic conditions, and demand-supply dynamics. These fluctuations could impact property valuations and potential resale\
+      values. Unforeseen economic downturns, changes in interest\
+      rates, or financial crises could adversely affect the\
+      property&#39;s performance, rental yields, and overall\
+      profitability. Vacancy rates or unexpected tenant turnover\
+      could result in income disruptions, impacting rental\
+      revenues and, consequently, dividend distributions to\
+      investors. Unexpected maintenance or repair expenses,\
+      higher operational costs, or capital expenditures may\
+      affect the property&#39;s net income, potentially reducing\
+      the dividends distributed to investors. Investors should\
+      carefully assess these risks, conduct thorough due\
+      diligence, consider their risk tolerance, and seek\
+      professional advice before making investment decisions in\
+      Park Cihelni or any real estate-backed assets."
   },
   {
     id: "23s72wf",
@@ -224,7 +285,22 @@ const featuredData = [
       '/images/gallery/seven.webp',
       '/images/gallery/eight.webp',
       '/images/gallery/nine.webp',
-    ]
+    ],
+    investmentRisks: "This opportunity may be subject to fluctuations influenced by changes in the local real estate market, economic conditions, and demand-supply dynamics. These fluctuations could impact property valuations and potential resale\
+      values. Unforeseen economic downturns, changes in interest\
+      rates, or financial crises could adversely affect the\
+      property&#39;s performance, rental yields, and overall\
+      profitability. Vacancy rates or unexpected tenant turnover\
+      could result in income disruptions, impacting rental\
+      revenues and, consequently, dividend distributions to\
+      investors. Unexpected maintenance or repair expenses,\
+      higher operational costs, or capital expenditures may\
+      affect the property&#39;s net income, potentially reducing\
+      the dividends distributed to investors. Investors should\
+      carefully assess these risks, conduct thorough due\
+      diligence, consider their risk tolerance, and seek\
+      professional advice before making investment decisions in\
+      Park Cihelni or any real estate-backed assets."
   },
 ];
 
