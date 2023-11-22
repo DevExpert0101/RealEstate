@@ -78,7 +78,7 @@ const featuredData = [
   },
   {
     id: "32424",
-    city: "Czech Public",
+    city: "Czech Republic",
     location: "Bělehradká st. no. 20, Praha 4",
     totalInvest: 179,
     investAmount: "164,296",
