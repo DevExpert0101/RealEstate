@@ -85,7 +85,7 @@ const featuredData = [
     investPer: 64.73,
     goal: "4,000,000",
     img: Belehradska,
-    annualReturn: 17.59,
+    annualReturn: 15.26,
     monthlyEarning: 1.2,
     yearlyRevenue: "610,400",
     investors: 70,
