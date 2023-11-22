@@ -59,7 +59,7 @@ const featuredData = [
     totalInvest: 179,
     investAmount: "164,296",
     investPer: 64.73,
-    goal: "4,00,000",
+    goal: "4,000,000",
     img: Belehradska,
     annualReturn: {
       regular: 3.5,
